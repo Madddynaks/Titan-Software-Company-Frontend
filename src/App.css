@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+:root {
+  background-color: #dbdee0;
+  --btncolor: #1351D8;
+  font-family: DM;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.navlogo {
+  /* width: 3vw;
+    height: 6vh; */
+  width: 50px;
+  height: 50px;
+  margin-left: 10vw;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navitem {
+  padding-left: 35px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbtn {
+  border-radius: 80px;
+  background-color: var(--btncolor);
+  margin-right: 10vw;
+  width: 140px;
+  height: 47px;
+  margin-left: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.navcallus {
+  color: var(--btncolor);
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 9px;
+  margin-bottom: 3px;
+  margin-right: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calluslogo {
+  height: 13px;
+  width: 13px;
+  /* padding-bottom: 3px; */
+  margin-top: 15px;
+}
+
+.navnum {
+  margin-top: 0px;
+}
+.navbar{
+
+  background-color: rgb(255, 255, 255);
 }
