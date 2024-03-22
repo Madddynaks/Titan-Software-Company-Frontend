@@ -28,13 +28,24 @@ body {
   font-weight: 500;
 }
 
-.navbtn {
+.contactusbtn {
   border-radius: 80px;
   background-color: var(--btncolor);
   margin-right: 10vw;
   width: 140px;
   height: 47px;
   margin-left: 20px;
+}
+
+.letstalkbtn {
+  border-radius: 80px;
+  /* background-color: var(--btncolor); */
+  margin-right: 10vw;
+  width: 140px;
+  height: 47px;
+  margin-left: 20px;
+  background-color: rgb(191, 228, 253);
+  color: #1351D8;
 }
 
 .navcallus {
@@ -59,12 +70,24 @@ body {
 }
 
 .navbar {
-
+/* position: fixed; */
+/* z-index: 1000px; */
+/* top: 1px; */
   background-color: rgb(255, 255, 255);
 }
 
 .servicenavcard {
   background-color: #d9dce4;
+
+  padding: 20px;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.howedocard {
+  background-color: #fdfdfd;
 
   padding: 20px;
   margin-top: 15px;
@@ -99,7 +122,7 @@ li {
   object-fit: cover;
   /* width: 100%; */
   /* height: 50%; */
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 .portfolionavcard {
@@ -116,15 +139,193 @@ li {
 .portfolionavcardtext {
   margin-left: 18px;
   margin-top: 15px;
- 
+
 }
-.portfolionavcon{
+
+.portfolionavcon {
   margin-top: 20px;
 }
-.navourproduct{
+
+.navourproduct {
+  margin-left: 40px;
   margin-top: 18px;
   padding: 10px;
   flex-direction: column;
   display: flex;
-  background: linear-gradient(180deg, rgba(67, 98, 170, 0.7) 0%, rgba(243, 246, 253, 0) 86.26%);
+  /* background: linear-gradient(180deg, rgba(67, 98, 170, 0.7) 0%, rgba(243, 246, 253, 0) 86.26%); */
+}
+
+.howedo {
+  background-color: black;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.howedotext {
+  font-size: 50px;
+  color: aliceblue;
+}
+
+.ourmodeltext {
+  color: rgb(66, 118, 163);
+}
+
+.savetimetext {
+  color: rgb(194, 201, 207);
+}
+
+.delingcontent {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 655px;
+  color: rgb(28 28 28 / 80%);
+}
+
+.delingheading {
+  font-family: var(--font_yantramanv);
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -1px;
+}
+
+.delinglogheading {
+  font-family: var(--font_syne);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: var(--primary_color);
+  margin: 0;
+  text-transform: uppercase;
+  color: #1351d8;
+}
+
+.services5 {
+  /* height: auto; */
+  /* max-width: 100%; */
+  /* border: none; */
+  /* border-radius: 0; */
+  /* box-shadow: none; */
+  /* object-fit: contain; */
+  height: 35px;
+  width: 35px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+.professionalservicescard {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.professionalservicescontainer {
+  margin-top: 70px;
+  padding-bottom: 150px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.footerlogo {
+  width: 50px;
+}
+
+.footercontainer {
+  /* margin-top: 60px; */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footerinput {
+  background-color: black;
+  border: 2px solid white;
+  width: 250px;
+}
+
+.footercomlogo {
+  height: 24px;
+  width: 109px;
+  margin-left: 20px;
+}
+
+.apontmentbtn {
+  background-color: #1351d8;
+  color: #fdfdfd;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 30px;
+}
+
+.footerdivider {
+  /* border-right: 1px solid rgb(122, 116, 113); */
+  padding-top: 50px;
+  /* border-top: 1px solid rgb(122, 116, 113); */
+}
+
+.inputdiv {
+  border-right: 1px solid rgb(122, 116, 113);
+  /* border-style:solid; */
+}
+
+.footersignup {
+  border-top: 1px solid rgb(122, 116, 113);
+  border-bottom: 1px solid rgb(122, 116, 113);
+  padding-bottom: 40px;
+}
+
+.getintouch {
+  padding: 40px;
+  /* background-color: #b7bed1; */
+}
+
+.getintouch1 {
+  background-color: #f3f6fd;
+  padding: 50px;
+  border-radius: 15px;
+}
+.touchform{
+  border-top: 1px solid rgb(122, 116, 113);
+  margin-top: 30px;
+}
+.inputarea{                                   
+  width: 240px;
+  border-radius: 5px;
+  height: 40px;
+  border-color: rgb(228, 228, 228);
+}
+.emailtextaria{
+  width: 519px;
+  margin-left: 12px;
+  border-radius: 5px;
+  height: 40px;
+}
+.formsubmit{  
+  margin-top: 30px;
+  width: 550px;
+  background-color: #44547e;
+}
+.exprience{
+  padding: 30px;
+  background-color: #f3f6fd;
+  border-radius: 15px;
+}
+.expeince1con{
+  padding: 35px;
+  border-bottom: 1px solid rgb(122, 116, 113);
+}
+.years22{
+    font-size: 30px;
+    font-weight: 600;
+}
+.inhow{
+  color: #1351d8;
+}
+.thirdcolicon{
+  width: 35px;
+  margin-bottom: 25px;
 }
