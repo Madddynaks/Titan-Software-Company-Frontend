@@ -28,6 +28,16 @@ body {
   font-weight: 500;
 }
 
+.contactusbtncard {
+  border-radius: 80px;
+  background-color: var(--btncolor);
+  margin-right: 10vw;
+  width: 140px;
+  height: 47px;
+  margin-left: 20px;
+  margin-top: 220px;
+}
+
 .contactusbtn {
   border-radius: 80px;
   background-color: var(--btncolor);
@@ -35,6 +45,7 @@ body {
   width: 140px;
   height: 47px;
   margin-left: 20px;
+
 }
 
 .letstalkbtn {
@@ -70,9 +81,9 @@ body {
 }
 
 .navbar {
-/* position: fixed; */
-/* z-index: 1000px; */
-/* top: 1px; */
+  /* position: fixed; */
+  /* z-index: 1000px; */
+  /* top: 1px; */
   background-color: rgb(255, 255, 255);
 }
 
@@ -89,10 +100,11 @@ body {
 .howedocard {
   background-color: #fdfdfd;
 
-  padding: 20px;
+  /* padding: 25px; */
   margin-top: 15px;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 
 }
 
@@ -216,7 +228,7 @@ li {
 }
 
 .professionalservicescard {
-  padding: 20px;
+  padding: 31px;
   border-radius: 10px;
 }
 
@@ -288,44 +300,134 @@ li {
   padding: 50px;
   border-radius: 15px;
 }
-.touchform{
+
+.touchform {
   border-top: 1px solid rgb(122, 116, 113);
   margin-top: 30px;
 }
-.inputarea{                                   
+
+.inputarea {
   width: 240px;
   border-radius: 5px;
   height: 40px;
   border-color: rgb(228, 228, 228);
 }
-.emailtextaria{
+
+.emailtextaria {
   width: 519px;
   margin-left: 12px;
   border-radius: 5px;
   height: 40px;
 }
-.formsubmit{  
+
+.formsubmit {
   margin-top: 30px;
   width: 550px;
   background-color: #44547e;
 }
-.exprience{
+
+.exprience {
   padding: 30px;
   background-color: #f3f6fd;
   border-radius: 15px;
+  padding-top: 50px;
 }
-.expeince1con{
-  padding: 35px;
+
+.expeince1con {
+  padding: 38px;
   border-bottom: 1px solid rgb(122, 116, 113);
 }
-.years22{
-    font-size: 30px;
-    font-weight: 600;
+
+.years22 {
+  font-size: 30px;
+  font-weight: 600;
 }
-.inhow{
+
+.inhow {
   color: #1351d8;
 }
-.thirdcolicon{
+
+.thirdcolicon {
   width: 35px;
   margin-bottom: 25px;
+}
+
+.contactcard {
+  padding: 70px;
+  background-color: #f3f6fd;
+  border-radius: 20px;
+  justify-content: center;
+
+}
+
+.productivity {
+  background-color: #44547e;
+  padding: 70px;
+  width: 100vw;
+  margin-left: 1px;
+}
+
+.productivitybtn {
+  width: 170px;
+  height: 45px;
+  margin: 13px;
+  margin-top: 50px;
+
+}
+
+.sliderimage {
+  height: 128px;
+  width: 290px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  justify-content: center;
+}
+
+.home-slider-img {
+  height: 108px;
+  width: 128px;
+  object-fit: contain;
+
+}
+
+.articlecard {
+  margin-top: 40px            ;
+  background-color: #000000;
+  color: rgb(206, 206, 206);
+  border-radius: 15px;
+}
+
+.articlecard img {
+  width: 650px;
+}
+
+.product {
+  background-color: #f3f6fd;
+  padding: 30px;
+  color: #34363d;
+  margin-top: 25px;
+  border-radius: 15px ;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  width: 70vh;
+
+}
+
+.endbtn {
+  /* float: right; */
+  /* clear: both; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  background-color: #44547e;
+
+}
+.productcard{
+  display: flex;
+  gap: 30px;
 }

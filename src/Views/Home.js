@@ -46,19 +46,17 @@ function Home() {
                     disableOnInteraction: false,
                 }}
             >
-                <SwiperSlide><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo2-1.svg" alt="" style={{ height: '128px', width: '148px', objectFit: 'contain' }} /></SwiperSlide>
-                <SwiperSlide><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo3-1.svg" alt="" style={{ height: '108px', width: '108px' }} /></SwiperSlide>
-                <SwiperSlide><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo5-1.svg" alt="" style={{ height: '108px', width: '148px' }} /></SwiperSlide>
-                <SwiperSlide><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo4-1.svg" alt="" style={{ height: '128px', width: '148px', }} /></SwiperSlide>
-                <SwiperSlide><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo1-1.svg" alt="" style={{ height: '108px', width: '108px', }} /></SwiperSlide>
-                <SwiperSlide><img className="home-slider-img" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-icon.png" alt="" style={{ height: '108px', width: '148px', }} /></SwiperSlide>
-                <SwiperSlide><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo2-1.svg" alt="" style={{ height: '128px', width: '148px', objectFit: 'contain' }} /></SwiperSlide>
-                <SwiperSlide><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo3-1.svg" alt="" style={{ height: '108px', width: '108px' }} /></SwiperSlide>
-                <SwiperSlide><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo5-1.svg" alt="" style={{ height: '108px', width: '148px' }} /></SwiperSlide>
-                <SwiperSlide><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo4-1.svg" alt="" style={{ height: '128px', width: '148px', }} /></SwiperSlide>
-                <SwiperSlide><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo1-1.svg" alt="" style={{ height: '108px', width: '108px', }} /></SwiperSlide>
-                <SwiperSlide><img className="home-slider-img" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/google-icon.png" alt="" style={{ height: '108px', width: '148px', }} /></SwiperSlide>
-
+                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo3-1.svg" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage'  ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo5-1.svg" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage'  ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo4-1.svg" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo1-1.svg" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://ik.imagekit.io/2q7cgnqzi/icon/google-ar21.svg?updatedAt=1711448191760" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo2-1.svg" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo3-1.svg" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo5-1.svg" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo4-1.svg" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo1-1.svg" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo1-1.svg" alt="" /></Card> </SwiperSlide>
             </Swiper>
 
             <Container className='howedo' >
@@ -67,7 +65,7 @@ function Home() {
                         <h6 className='ourmodeltext' >OUR MODEL</h6>
                         <h1 className='howedotext' >How we do</h1>
                         <h5 className='savetimetext' >Save time and money with our powerful method.</h5>
-                        <Button className='contactusbtn' >Contact Us</Button>
+                        <Button className='contactusbtncard' >Contact Us</Button>
                     </Col>
 
 
@@ -75,7 +73,7 @@ function Home() {
 
                         <Row style={{ display: 'flex', justifyContent: 'space-between', padding: '20px' }} >
                             <Col md="3">
-                                <Card style={{ width: '250px' }} >
+                                <Card style={{ width: '250px', height: '300' }} >
                                     <div className='howedocard' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/brain-svgrepo-com.svg?updatedAt=1710937497361" alt="" height={50} width={50} />
@@ -174,6 +172,10 @@ function Home() {
                     </Col>
                 </Row>
             </Container>
+
+
+
+
             <Container style={{ marginTop: '120px' }} >
                 <Row>
                     <Col md='6' >
@@ -226,6 +228,209 @@ function Home() {
                     </Col>
                 </Row>
             </Container>
+
+
+
+
+
+
+            <Container >
+                <Row>
+                    <Col>
+                        <p style={{ color: 'blue' }} >INTERESTING ARTICLES</p>
+                        <h1 style={{ fontSize: '50px' }} >Read daily news about startup companies</h1>
+                    </Col>
+                    <Col>
+                        <h5>In today's rapidly evolving world, technology is constantly shaping the way we live and interact.
+                            From artificial intelligence and automation to virtual reality, the pace of technological advancements is staggering.</h5>
+                    </Col>
+                </Row>
+                <Row className='articlecard' >
+                    <Col md='6' style={{ padding: '25px' }} >
+                        <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/news-1.png" alt="" style={{ borderRadius: '15px' }} />
+
+                    </Col>
+                    <Col md='6' style={{ padding: '25px', paddingLeft: '60px' }} >
+
+                        <p style={{ color: 'blue' }} >INTERESTING ARTICLES</p>
+                        <h4>OpenAI launches new alignment division to tackle risks of superintelligent AI</h4>
+
+                        <h5 style={{ marginTop: '35px' }} >Small UK merchants, businesses, and other enterprises can now use Tap to Pay on service to replace payment terminals
+                            at point of sale.</h5>
+
+                        <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
+                            <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                            <h5>PPD Development </h5>
+                        </Row>
+
+                        <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
+                            <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                            <h5>Easy to Use </h5>
+                        </Row>
+
+
+
+                    </Col>
+                </Row>
+            </Container>
+
+
+
+            <Container>
+                <Row className='productcard' >
+                    <Col md='5' className='product' style={{}} >
+                        <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/news-2.jpg" alt="" width={600} style={{ borderRadius: '15px' }} />
+                        <h6 style={{ marginTop: '25px', color: 'blue' }} >WEB DEVELOPMENT</h6>
+                        <h3 style={{ marginTop: '20px', color: 'black' }} >Bluebase launches Tap to Pay on smartphone for international and domestic business</h3>
+
+                        <h6 style={{ marginTop: '23px' }} >Small UK merchants, businesses, and other enterprises can now use Tap to Pay on service to replace
+                            payment terminals at point of sale.</h6>
+                        <p style={{ marginTop: '23px' }}>Small UK merchants, businesses, and other enterprises can now use Tap to Pay on service to replace payment terminals at point of sale.</p>
+
+                        <hr />
+                        <Row>
+                            <Col md='6' >
+                                <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
+                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                                    <h5>Easy to Use </h5>
+                                </Row>
+                                <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
+                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                                    <h5>Easy to Use </h5>
+                                </Row>
+
+                            </Col>
+                            <Col md='6' >
+                                <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
+                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                                    <h5>Easy to Use </h5>
+                                </Row>
+                                <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
+                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                                    <h5>Easy to Use </h5>
+                                </Row>
+
+                            </Col>
+                        </Row>
+                        <Row>
+                            <div style={{ display: 'flex', justifyContent: 'end' }} >
+                                <div className='endbtn'>
+                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/reshot-icon-arrow-up-26SV9QGPE5.svg?updatedAt=1710503019445" alt="" width={30} />
+
+                                </div>
+                            </div>
+
+                        </Row>
+
+                    </Col>
+
+
+                    <Col md='5' className='product'  >
+                        <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/news-2.jpg" alt="" width={600} style={{ borderRadius: '15px' }} />
+                        <h6 style={{ marginTop: '25px', color: 'blue' }} >WEB DEVELOPMENT</h6>
+                        <h3 style={{ marginTop: '20px', color: 'black' }} >Bluebase launches Tap to Pay on smartphone for international and domestic business</h3>
+
+                        <h6 style={{ marginTop: '23px' }} >Small UK merchants, businesses, and other enterprises can now use Tap to Pay on service to replace
+                            payment terminals at point of sale.</h6>
+                        <p style={{ marginTop: '23px' }}>Small UK merchants, businesses, and other enterprises can now use Tap to Pay on service to replace payment terminals at point of sale.</p>
+
+                        <hr />
+                        <Row>
+                            <Col md='6' >
+                                <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
+                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                                    <h5>Easy to Use </h5>
+                                </Row>
+                                <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
+                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                                    <h5>Easy to Use </h5>
+                                </Row>
+
+                            </Col>
+                            <Col md='6' >
+                                <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
+                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                                    <h5>Easy to Use </h5>
+                                </Row>
+                                <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
+                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                                    <h5>Easy to Use </h5>
+                                </Row>
+
+                            </Col>
+                        </Row>
+                        <Row>
+                            <div style={{ display: 'flex', justifyContent: 'end' }} >
+                                <div className='endbtn'>
+                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/reshot-icon-arrow-up-26SV9QGPE5.svg?updatedAt=1710503019445" alt="" width={30} />
+
+                                </div>
+                            </div>
+
+                        </Row>
+
+                    </Col>
+                </Row>
+            </Container>
+
+
+
+
+
+
+
+
+            <div className='productivity'>
+                <Row>
+                    <Col md='6' >
+                        <Row>
+                            <Col md='6' style={{ position: 'relative' }} >
+                                <div>
+                                    <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-1.png" alt="" />
+                                </div>
+                                <div style={{ position: 'relative', bottom: '470px', marginLeft: '30px' }} >
+                                    <h1>Start your <br />
+                                        project from <br />
+                                        your pocket.</h1>
+                                </div>
+
+                            </Col>
+                            <Col md='6' style={{ position: 'relative' }} >
+                                <div>
+                                    <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-1.png" alt="" />
+                                </div>
+                                <div style={{ position: 'relative', bottom: '470px', marginLeft: '30px' }} >
+                                    <h1>Start your <br />
+                                        project from <br />
+                                        your pocket.</h1>
+                                </div>
+                            </Col>
+
+                        </Row>
+                    </Col>
+                    <Col md='6' style={{ padding: '40px', color: 'white' }} >
+                        <h6 className='inhow' >FEATURED PRODUCT</h6>
+                        <h1 style={{ color: 'white', fontSize: '50px', marginTop: '25px' }} >Seamless productivity <br /> with our new app</h1>
+                        <h4 style={{ marginTop: '20px', color: '#cfcfcf' }} >Download Slack and experience a new era of organization <br /> and accomplishment.</h4>
+
+                        <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
+                            <img src="https://ik.imagekit.io/2q7cgnqzi/icon/done-svgrepo-com.svg?updatedAt=1711442715529" alt="" style={{ width: 50 }} />
+                            <h5>PPD Development </h5>
+                        </Row>
+                        <Row style={{ display: 'flex', flexFlow: 'row  ', marginTop: '25px' }} >
+                            <img src="https://ik.imagekit.io/2q7cgnqzi/icon/done-svgrepo-com.svg?updatedAt=1711442715529" alt="" style={{ width: 50 }} />
+                            <h5>Easy to use  </h5>
+                        </Row>
+                        <Row  >
+                            <Button className='productivitybtn' >Get  Started Now!</Button>
+                            <Button className='productivitybtn' >Learn More</Button>
+                        </Row>
+                    </Col>
+
+                </Row>
+            </div>
+
+
 
 
             <Container className='getintouch' >
@@ -307,7 +512,7 @@ function Home() {
                                 </div>
                                 <p className='inhow'>Established On</p>
                             </Row>
-                            <Row className='expeince1con' >
+                            <Row className='expeince1con' style={{ borderBottom: 'none' }} >
                                 <div style={{ display: 'flex' }} >
                                     <span className='years22' >2</span><span style={{ marginTop: '15px', marginLeft: '10px' }}>Mins </span>
 
@@ -320,22 +525,65 @@ function Home() {
 
                     </Col>
                     <Col md='3' >
-
-                        <Row>
-                            <Col>
-
+                        <div className="contactcard">
                             <Row>
-                                <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/support-icon.svg" alt="" className='thirdcolicon' />
+                                <Col>
+                                    <Row style={{ marginTop: '10px' }} >
+                                        <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/support-icon.svg" alt="" className='thirdcolicon' style={{ width: 78 }} />
+                                    </Row>
+                                    <h4>
+                                        Contact info
+                                    </h4>
+
+                                    <Row style={{ marginLeft: '5px' }} >
+                                        809624333
+                                        panacee@gmail.com
+                                    </Row>
+                                    <Row style={{ marginTop: '30px' }} >
+                                        <hr />
+                                    </Row>
+
+
+
+                                    <Row style={{ marginTop: '30px' }} >
+                                        <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/12/map-icon.svg" alt="" className='thirdcolicon' style={{ width: 78 }} />
+                                    </Row>
+                                    <h4>
+                                        Visit our office
+                                    </h4>
+                                    <Row style={{ marginLeft: '3px' }} >
+                                        16/9, Down Street Edinburgh, Scotland United Kingdom
+                                    </Row>
+
+                                    <Row style={{ marginTop: '30px' }} >
+                                        <hr />
+                                    </Row>
+                                    <div style={{ display: 'flex', marginLeft: '2px' }}>
+                                        <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/football-svgrepo-com.svg?updatedAt=1711438889596" alt="" style={{ width: 20 }} />
+                                        <p style={{ marginTop: '15px', marginLeft: '10px' }} >Dubblin</p>
+                                    </div>
+                                    <div style={{ display: 'flex', marginTop: '18px' }}>
+                                        <img src="https://ik.imagekit.io/2q7cgnqzi/icon/twitter.svg?updatedAt=1711439397169" alt="" style={{ width: 25, height: 25 }} />
+                                        <p style={{ marginLeft: '10px' }} >Twitter</p>
+                                    </div>
+                                    <div style={{ display: 'flex', marginTop: '18px' }}>
+                                        <img src="https://ik.imagekit.io/2q7cgnqzi/icon/instagram.svg?updatedAt=1711439653309" alt="" style={{ width: 25, height: 25 }} />
+                                        <p style={{ marginLeft: '10px' }} >Instagram</p>
+                                    </div>
+                                    <div style={{ display: 'flex', marginTop: '18px', marginLeft: '5px' }}>
+                                        <img src="https://ik.imagekit.io/2q7cgnqzi/icon/linkedin.svg?updatedAt=1711439762894" alt="" style={{ width: 18, height: 18 }} />
+                                        <p style={{ marginLeft: '10px' }} >Instagram</p>
+                                    </div>
+                                </Col>
                             </Row>
-                            </Col>
-                        </Row>
-
-
-
+                        </div>
                     </Col>
                 </Row>
-
             </Container>
+
+
+
+
             <Footer />
         </>
     )
