@@ -176,6 +176,26 @@ function Home() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <Container style={{ marginTop: '120px' }} >
                 <Row>
                     <Col md='6' >
@@ -233,8 +253,70 @@ function Home() {
 
 
 
+            <div className='showcasework' >
+                <Row>
+                    <Col className='col1' md='4' >
+                        <p style={{ color: 'blue' }} >PROJECTS</p>
+                        <h1  >Showcase of our <br /> recognized
+                            work</h1> <br />
+                        <p className='dim' >Our collaborative approach ensures that we truly understand our clients unique requirements and challenges.</p>
+                        <hr />
+                        <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
+                            <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                            <h5>PPD Development </h5>
+                        </Row>
 
-            <Container >
+                        <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
+                            <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                            <h5>Easy to Use </h5>
+                        </Row>
+                    </Col>
+
+                    <Col className='col2' md='7' >
+                        <Row style={{ display: 'flex', justifyContent: 'center', gap: '50px' }} >
+
+                            <Col md='3' className='ecom' >
+                                <h1 style={{ marginTop: '30px' }} >Software as a service </h1>
+
+                            </Col>
+                            <Col md='3' className='saas' >
+                                <h1 style={{ marginTop: '30px' }} >Software as a service </h1>                                                                                                                                                                              
+
+                            </Col>
+                            <Col md='3' className='app' >
+                                <h1 style={{ marginTop: '30px' }} >Software as a service </h1>
+
+                            </Col>
+                        </Row>
+
+
+                    </Col>
+                </Row>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <Container style={{ marginTop: '70px' }} >
                 <Row>
                     <Col>
                         <p style={{ color: 'blue' }} >INTERESTING ARTICLES</p>
