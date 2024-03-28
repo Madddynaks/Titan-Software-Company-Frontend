@@ -8,8 +8,13 @@
 }
 
 body {
-
-  max-width: 100%;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 100%;
+  /* max-width: 100%; */
   background: linear-gradient(180deg, rgba(243, 246, 253, 0.7) 0%, rgba(243, 246, 253, 0) 86.26%);
 
 }
@@ -28,6 +33,11 @@ body {
   font-weight: 500;
 }
 
+Button {
+  outline-color: 2px solid red;
+
+}
+
 .contactusbtncard {
   border-radius: 80px;
   background-color: var(--btncolor);
@@ -36,6 +46,19 @@ body {
   height: 47px;
   margin-left: 20px;
   margin-top: 220px;
+  border: 2px solid var(--btncolor);
+  /* outline:1px solid rgb(55, 75, 252); */
+}
+
+.contactusbtnfoot {
+  border-radius: 80px;
+  background-color: var(--btncolor);
+  margin-right: 10vw;
+  width: 140px;
+  height: 47px;
+  /* margin-top: 5px; */
+  /* margin-left: 20px; */
+  border: 2px solid var(--btncolor);
 }
 
 .contactusbtn {
@@ -48,6 +71,16 @@ body {
 
 }
 
+.contactusbtnhome {
+  border-radius: 80px;
+  background-color: var(--btncolor);
+  /* margin-right: 10vw; */
+  width: 150px;
+  height: 47px;
+outline: #1d241c;
+
+}
+
 .letstalkbtn {
   border-radius: 80px;
   /* background-color: var(--btncolor); */
@@ -56,6 +89,17 @@ body {
   height: 47px;
   margin-left: 20px;
   background-color: rgb(191, 228, 253);
+  color: #1351D8;
+}
+
+.letstalkbtnhome {
+  border-radius: 80px;
+  /* background-color: var(--btncolor); */
+  margin-right: 10vw;
+  width: 150px;
+  height: 47px;
+  margin-left: 20px;
+  background-color: #eef7ff;
   color: #1351D8;
 }
 
@@ -178,8 +222,9 @@ li {
   color: aliceblue;
 }
 
-.ourmodeltext {
-  color: rgb(66, 118, 163);
+.ourmodeltext { 
+  color: #1351d8;
+  letter-spacing: 2px;
 }
 
 .savetimetext {
@@ -235,6 +280,9 @@ li {
 .professionalservicescontainer {
   margin-top: 70px;
   padding-bottom: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer {
@@ -255,13 +303,15 @@ li {
 .footerinput {
   background-color: black;
   border: 2px solid white;
-  width: 250px;
+  width: 100%;
+  height: 40px;
+  /* margin-top: 5px; */
 }
 
 .footercomlogo {
-  height: 24px;
+  /* height: 24px;
   width: 109px;
-  margin-left: 20px;
+  margin-left: 20px; */
 }
 
 .apontmentbtn {
@@ -271,6 +321,7 @@ li {
   padding-left: 30px;
   padding-right: 30px;
   margin-top: 30px;
+  border: 2px solid var(--btncolor);
 }
 
 .footerdivider {
@@ -282,6 +333,7 @@ li {
 .inputdiv {
   border-right: 1px solid rgb(122, 116, 113);
   /* border-style:solid; */
+  padding: 30px;
 }
 
 .footersignup {
@@ -293,37 +345,52 @@ li {
 .getintouch {
   padding: 40px;
   /* background-color: #b7bed1; */
+  box-sizing: border-box;
 }
 
 .getintouch1 {
   background-color: #f3f6fd;
   padding: 50px;
   border-radius: 15px;
+  box-sizing: border-box;
 }
 
 .touchform {
   border-top: 1px solid rgb(122, 116, 113);
   margin-top: 30px;
+  box-sizing: border-box;
 }
 
 .inputarea {
-  width: 240px;
+  width: 100%;
+  outline: #575757;
   border-radius: 5px;
   height: 40px;
-  border-color: rgb(228, 228, 228);
+  border: 1px solid #cfcfcf;
+  /* border-color: rgb(228, 228, 228); */
 }
 
+.textarea{
+  width: 100%;
+  border: 1px solid #cfcfcf;
+}
 .emailtextaria {
-  width: 519px;
-  margin-left: 12px;
+  /* width: 28vw; */
+  /* margin-left: 12px; */
+  border: 1px solid #cfcfcf;
+
   border-radius: 5px;
   height: 40px;
+  width: 100%;
 }
 
 .formsubmit {
   margin-top: 30px;
-  width: 550px;
+  
+  /* width: 550px; */
   background-color: #44547e;
+  max-width: 100%;
+  width: 100%;
 }
 
 .exprience {
@@ -345,13 +412,16 @@ li {
 
 .inhow {
   color: #1351d8;
+  letter-spacing: 2px;
 }
 
 .thirdcolicon {
   width: 35px;
   margin-bottom: 25px;
 }
-
+/* .home1{
+  background-image: url("https://images.pexels.com/photos/3184613/pexels-photo-3184613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+} */
 .contactcard {
   padding: 70px;
   background-color: #f3f6fd;
@@ -360,22 +430,44 @@ li {
 
 }
 
+.footcontact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: left;
+                                                                                                                                                                              
+}
+
 .productivity {
-  background-color: #44547e;
-  padding: 70px;
-  width: 100vw;
+  background-color: #000000;
+  /* padding: 70px; */
+  margin-top: 25px;
+  width: 100%;
   margin-left: 1px;
+  color: rgb(197, 95, 95);
+  padding-top: 50px;
+}
+
+.footitem {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .productivitybtn {
   width: 170px;
   height: 45px;
-  margin: 13px;
-  margin-top: 50px;
+  /* margin: 13px; */
+  /* margin-top: 50px; */
 
 }
 
 .sliderimage {
+  box-sizing: border-box;
   height: 128px;
   width: 290px;
   display: flex;
@@ -392,14 +484,23 @@ li {
 }
 
 .articlecard {
-  margin-top: 40px;
+  margin-top: 50px;
   background-color: #000000;
   color: rgb(206, 206, 206);
   border-radius: 15px;
+  box-sizing: border-box;
+  /* padding: 15px; */
 }
 
 .articlecard img {
   width: 650px;
+}
+
+
+
+img {
+  object-fit: cover;
+  max-width: 100%;
 }
 
 .product {
@@ -408,7 +509,6 @@ li {
   color: #34363d;
   margin-top: 25px;
   border-radius: 15px;
-  box-sizing: border-box;
   box-sizing: border-box;
   width: 70vh;
 
@@ -455,23 +555,28 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
   height: 60vh;
-  color: #141212;
+  color: #000000;
+  background-position: center;
+  display: block;
   background-image: url("https://wpriverthemes.com/synck/wp-content/uploads/2023/11/project-3.png");
 }
 
-.app {  
+.app {
   background-size: cover;
   background-repeat: no-repeat;
   height: 60vh;
   color: #000000;
+  background-position: center;
+  display: block;
   background-image: url("https://wpriverthemes.com/synck/wp-content/uploads/2023/11/project-2.png");
 }
-.ecom{
+
+.ecom {
   background-size: cover;
   background-repeat: no-repeat;
   height: 60vh;
   color: #fdfdfd;
-  background-position: center; 
-
+  background-position: center;
+  display: block;
   background-image: url("https://wpriverthemes.com/synck/wp-content/uploads/2023/11/project-1.png");
 }
