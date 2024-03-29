@@ -23,7 +23,6 @@ function Home() {
                             </Col>
 
                         </Row>
-
                     </Col>
                     <Col md='6'>
                         <img src="https://images.pexels.com/photos/3184613/pexels-photo-3184613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style={{ marginTop: '20px', borderRadius: '20px' }} />
@@ -31,13 +30,25 @@ function Home() {
                 </Row>
                 <br /><br />
 
-                <hr />
+                <hr /><br />
+
             </Container>
             <Swiper style={{ paddingTop: "0", paddingBottom: "5em" }}
                 modules={[Navigation, Pagination, A11y, Autoplay]}
                 spaceBetween={20}
                 slidesPerView={6}
-                // pagination={{ clickable: true }}
+
+                breakpoints={{
+                    300: {
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    1024: {
+                        slidesPerView: 6,
+                    },
+                }}
                 autoplay={{
                     delay: 4000,
                     disableOnInteraction: false,
@@ -56,9 +67,12 @@ function Home() {
                 <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo1-1.svg" alt="" /></Card> </SwiperSlide>
             </Swiper>
 
+
+
+
             <Container className='howedo' >
                 <Row>
-                    <Col md='3' >
+                    <Col md='3'  >
                         <h6 className='ourmodeltext' >OUR MODEL</h6>
                         <h1 className='howedotext' >How we do</h1>
                         <h5 className='savetimetext' >Save time and money with our powerful method.</h5>
@@ -69,8 +83,8 @@ function Home() {
                     <Col md='9' >
 
                         <Row style={{ display: 'flex', padding: '20px', gap: '15px', justifyContent: 'space-around' }} >
-                            <Col md="3">
-                                <Card style={{ width: '250px', height: '300' }} >
+                            <Col md="3" style={{ padding: '0px' }}>
+                                <Card className='howedocard1' style={{ width: '250px', height: '300' }} >
                                     <div className='howedocard' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/brain-svgrepo-com.svg?updatedAt=1710937497361" alt="" height={50} width={50} />
@@ -83,8 +97,8 @@ function Home() {
                                 </Card>
 
                             </Col>
-                            <Col md="3">
-                                <Card style={{ width: '250px', height: '300' }} >
+                            <Col md="3" style={{ padding: '0px' }}>
+                                <Card className='howedocard1' style={{ width: '250px', height: '300' }} >
                                     <div className='howedocard' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519" alt="" height={50} width={50} />
@@ -97,8 +111,8 @@ function Home() {
                                 </Card>
 
                             </Col>
-                            <Col md="3">
-                                <Card style={{ width: '250px', height: '300' }} >
+                            <Col md="3" style={{ padding: '0px' }}>
+                                <Card className='howedocard1' style={{ width: '250px', height: '300' }} >
                                     <div className='howedocard' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/graphic-design.png?updatedAt=1711008512725" alt="" height={50} width={50} />
@@ -109,20 +123,14 @@ function Home() {
                                         </div>
                                     </div>
                                 </Card>
-
                             </Col>
-
-
                         </Row>
 
 
 
-
-
-
                         <Row style={{ display: 'flex', justifyContent: 'center', padding: '20px', gap: '15px' }} >
-                            <Col md="4">
-                                <Card style={{ width: '250px', height: '300' }} >
+                            <Col md="4" style={{ padding: '0px' }} >
+                                <Card className='howedocard1' style={{ width: '250px', height: '300' }} >
                                     <div className='howedocard' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519" alt="" height={50} width={50} />
@@ -133,10 +141,10 @@ function Home() {
                                         </div>
                                     </div>
                                 </Card>
-
                             </Col>
-                            <Col md="4">
-                                <Card style={{ width: '250px', height: '300' }} >
+
+                            <Col md="4" style={{ padding: '0px' }}>
+                                <Card className='howedocard1' style={{ width: '250px', height: '300' }} >
                                     <div className='howedocard' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519" alt="" height={50} width={50} />
@@ -152,11 +160,9 @@ function Home() {
 
 
 
-
-
                         <Row>
-                            <Col style={{ display: 'flex', justifyContent: 'center' , marginRight : '40px' }} >
-                                <Card style={{ width: '250px', height: '300' }} >
+                            <Col style={{ display: 'flex', justifyContent: 'center', marginTop: '15px' }} >
+                                <Card className='howedocard1' style={{ width: '250px' }} >
                                     <div className='howedocard' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519" alt="" height={50} width={50} />
@@ -178,27 +184,6 @@ function Home() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <Container style={{ marginTop: '120px' }} >
                 <Row>
                     <Col md='6' >
@@ -213,36 +198,36 @@ function Home() {
             </Container>
 
             <Container className='professionalservicescontainer' >
-                <Row>
-                    <Col>
+                <Row className='professionalservicesrow' >
+                    <Col md='2' >
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg" alt="" className='services5' />
                             <h4>Development</h4>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
-                    <Col>
+                    <Col md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-2-2.svg" alt="" className='services5' />
                             <h4>Woo Commerce</h4>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
-                    <Col>
+                    <Col md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-3-2.svg" alt="" className='services5' />
                             <h4>CRM Solutions</h4>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
-                    <Col>
+                    <Col md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg" alt="" className='services5' />
                             <h4>Web Design</h4>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
-                    <Col>
+                    <Col md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-5-2.svg" alt="" className='services5' />
                             <h4>IT Support</h4>
@@ -279,15 +264,15 @@ function Home() {
                         <Row style={{ display: 'flex', justifyContent: 'space-around' }} >
 
                             <Col md='3' className='ecom' >
-                                <h1 style={{ marginTop: '30px', padding: '20px' }} >E-commerce platform development </h1>
+                                <h2 style={{ marginTop: '30px', padding: '20px' }} >E-commerce platform development </h2>
 
                             </Col>
                             <Col md='3' className='saas' >
-                                <h1 style={{ marginTop: '30px', padding: '20px' }} >Software as a service integration</h1>
+                                <h2 style={{ marginTop: '30px', padding: '20px' }} >Software as a service integration</h2>
 
                             </Col>
                             <Col md='3' className='app' >
-                                <h1 style={{ marginTop: '30px', padding: '20px' }} >Mobile platform Development</h1>
+                                <h2 style={{ marginTop: '30px', padding: '20px' }} >Mobile platform Development</h2>
 
                             </Col>
                         </Row>
@@ -297,23 +282,6 @@ function Home() {
                 </Row>
 
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -352,8 +320,6 @@ function Home() {
                             <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
                             <h5>Easy to Use </h5>
                         </Row>
-
-
 
                     </Col>
                 </Row>
@@ -396,15 +362,7 @@ function Home() {
 
                             </Col>
                         </Row>
-                        <Row>
-                            <div style={{ display: 'flex', justifyContent: 'end' }} >
-                                <div className='endbtn'>
-                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/reshot-icon-arrow-up-26SV9QGPE5.svg?updatedAt=1710503019445" alt="" width={30} />
 
-                                </div>
-                            </div>
-
-                        </Row>
 
                     </Col>
 
@@ -442,30 +400,14 @@ function Home() {
 
                             </Col>
                         </Row>
-                        <Row>
-                            <div style={{ display: 'flex', justifyContent: 'end' }} >
-                                <div className='endbtn'>
-                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/reshot-icon-arrow-up-26SV9QGPE5.svg?updatedAt=1710503019445" alt="" width={30} />
-
-                                </div>
-                            </div>
-
-                        </Row>
-
                     </Col>
                 </Row>
             </Container>
 
 
-
-
-
-
-
-
             <div className='productivity'>
                 <Row>
-                    <Col md='6' style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around', alignItems: 'center', justifyItems: 'center', padding: '10px' }} >
+                    <Col md='6' style={{ display: 'flex', flexWrap: 'wrap', padding: '10px', justifyContent: 'space-evenly' }} >
 
                         <Col md='5' style={{ position: 'relative' }} >
                             <div>
@@ -480,16 +422,14 @@ function Home() {
                         </Col>
                         <Col md='5' style={{ position: 'relative' }} >
                             <div>
-                                <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-1.png" alt="" />
+                                <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-2.png" alt="" />
                             </div>
                             <div style={{ position: 'relative', bottom: '470px', marginLeft: '30px' }} >
-                                <h1>Start your <br />
-                                    project from <br />
-                                    your pocket.</h1>
+                                <h1>Available on <br />
+                                    all responsive <br />
+                                    devices.</h1>
                             </div>
                         </Col>
-
-
                     </Col>
                     <Col md='6' style={{ padding: '40px', color: 'white' }} >
                         <Row>
@@ -510,8 +450,8 @@ function Home() {
                             <h5>Easy to use  </h5>
                         </Row>
 
-                        <Row style={{display : 'flex' , gap : '10px' , marginTop : '40px'}} >
-                            <Col md = '3'>
+                        <Row style={{ display: 'flex', gap: '10px', marginTop: '40px' }} >
+                            <Col md='3'>
                                 <Button className='productivitybtn' >Get  Started Now!</Button>
 
                             </Col>
@@ -525,9 +465,6 @@ function Home() {
                 </Row>
             </div>
 
-
-
-
             <Container className='getintouch' >
                 <Row>
                     <Col md='6' className='getintouch1'>
@@ -537,7 +474,7 @@ function Home() {
                             <a href="/"> bluebase@mail.com</a>
                         </h6>
                         <Row className='touchform'>
-                            <Col style={{}} >
+                            <Col  >
                                 <Row style={{ marginTop: "30px", display: 'flex' }} >
                                     <Col md='6' >
                                         <h6>First Name</h6>
@@ -572,8 +509,6 @@ function Home() {
                                 <Button className='formsubmit' >Submit</Button>
                             </Col>
                         </Row>
-
-
 
                     </Col>
                     <Col md='3' >
@@ -619,7 +554,6 @@ function Home() {
 
                         </div>
 
-
                     </Col>
                     <Col md='3' >
                         <div className="contactcard">
@@ -640,8 +574,6 @@ function Home() {
                                         <hr />
                                     </Row>
 
-
-
                                     <Row style={{ marginTop: '30px' }} >
                                         <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/12/map-icon.svg" alt="" className='thirdcolicon' style={{ width: 78 }} />
                                     </Row>
@@ -656,7 +588,6 @@ function Home() {
 
                                         <hr />
                                     </Row>
-
 
 
                                     <Row style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '30px' }} >
@@ -683,7 +614,6 @@ function Home() {
                                             </Col>
                                         </Row>
                                     </Row>
-
                                 </Col>
                             </Row>
                         </div>

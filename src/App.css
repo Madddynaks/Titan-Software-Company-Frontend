@@ -2,21 +2,32 @@
 
 
 :root {
-  /* background-color: #dbdee0; */
+
   --btncolor: #1351D8;
   font-family: DM;
+
+
+ 
+ 
 }
 
 body {
   box-sizing: border-box;
   /* overflow: hidden; */
+  overflow-x: hidden;
+
   margin: 0px;
   padding: 0px;
   height: 100vh;
   width: 100%;
-  /* max-width: 100%; */
-  background: linear-gradient(180deg, rgba(243, 246, 253, 0.7) 0%, rgba(243, 246, 253, 0) 86.26%);
+  /* background: linear-gradient(180deg, rgba(243, 246, 253, 0.7) 0%, rgba(243, 246, 253, 0) 86.26%); */
 
+}
+
+@media screen and (max-width: 768px) {
+  html, body {
+      overflow-x: hidden;
+  }
 }
 
 .navlogo {
@@ -77,7 +88,7 @@ Button {
   /* margin-right: 10vw; */
   width: 150px;
   height: 47px;
-outline: #1d241c;
+  outline: #1d241c;
 
 }
 
@@ -125,10 +136,11 @@ outline: #1d241c;
 }
 
 .navbar {
-  /* position: fixed; */
-  /* z-index: 1000px; */
-  /* top: 1px; */
-  background-color: rgb(255, 255, 255);
+  /* position: fixed;
+  
+  z-index: 1000px;
+  top: 1px; */
+  background-color: rgb(252, 252, 252);
 }
 
 .servicenavcard {
@@ -143,14 +155,20 @@ outline: #1d241c;
 
 .howedocard {
   background-color: #fdfdfd;
-
-  /* padding: 25px; */
   margin-top: 15px;
   align-items: center;
   justify-content: center;
   padding: 10px;
 
 }
+
+@media screen and (max-width : 450px) {
+  .howedocard1 {
+    width: 100% !important;
+  }
+}
+
+
 
 .navcardtext {
   margin-left: 15px;
@@ -165,7 +183,10 @@ li {
   height: 25px;
   width: 25px;
 }
-
+.connection-logo-linkedin{
+  height: 32px;
+  width: 32px;
+}
 .navserviceimg {
   width: 250px;
   height: 180px;
@@ -208,6 +229,7 @@ li {
   padding: 10px;
   flex-direction: column;
   display: flex;
+  box-sizing: border-box;
   /* background: linear-gradient(180deg, rgba(67, 98, 170, 0.7) 0%, rgba(243, 246, 253, 0) 86.26%); */
 }
 
@@ -222,7 +244,7 @@ li {
   color: aliceblue;
 }
 
-.ourmodeltext { 
+.ourmodeltext {
   color: #1351d8;
   letter-spacing: 2px;
 }
@@ -246,6 +268,7 @@ li {
   font-weight: 500;
   line-height: 56px;
   letter-spacing: -1px;
+  margin-top: 10px;
 }
 
 .delinglogheading {
@@ -260,12 +283,7 @@ li {
 }
 
 .services5 {
-  /* height: auto; */
-  /* max-width: 100%; */
-  /* border: none; */
-  /* border-radius: 0; */
-  /* box-shadow: none; */
-  /* object-fit: contain; */
+
   height: 35px;
   width: 35px;
   margin-top: 45px;
@@ -273,16 +291,39 @@ li {
 }
 
 .professionalservicescard {
+  width: 240px;
   padding: 31px;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 450px) {
+  .professionalservicescard {
+    width: 100%;
+  }
+}
+
+
+
+.professionalservicesrow {
+
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: space-around; */
+  align-items: center;
+
 }
 
 .professionalservicescontainer {
   margin-top: 70px;
   padding-bottom: 150px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+
+  width: 100%;
+  /* align-items: center; */
+  gap: 0px;
+  /* grid-area: ; */
 }
 
 .footer {
@@ -302,10 +343,11 @@ li {
 
 .footerinput {
   background-color: black;
-  border: 2px solid white;
+  border: 1px solid rgb(136, 136, 136);
   width: 100%;
   height: 40px;
   /* margin-top: 5px; */
+  border-radius: 5px;
 }
 
 .footercomlogo {
@@ -370,10 +412,11 @@ li {
   /* border-color: rgb(228, 228, 228); */
 }
 
-.textarea{
+.textarea {
   width: 100%;
   border: 1px solid #cfcfcf;
 }
+
 .emailtextaria {
   /* width: 28vw; */
   /* margin-left: 12px; */
@@ -386,7 +429,7 @@ li {
 
 .formsubmit {
   margin-top: 30px;
-  
+
   /* width: 550px; */
   background-color: #44547e;
   max-width: 100%;
@@ -419,6 +462,7 @@ li {
   width: 35px;
   margin-bottom: 25px;
 }
+
 /* .home1{
   background-image: url("https://images.pexels.com/photos/3184613/pexels-photo-3184613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 } */
@@ -437,16 +481,16 @@ li {
   align-items: center;
   padding: 20px;
   text-align: left;
-                                                                                                                                                                              
+
 }
 
 .productivity {
   background-color: #000000;
   /* padding: 70px; */
-  margin-top: 25px;
+  margin-top: 33px;
   width: 100%;
   margin-left: 1px;
-  color: rgb(197, 95, 95);
+  color: rgb(12, 12, 12);
   padding-top: 50px;
 }
 
@@ -469,7 +513,7 @@ li {
 .sliderimage {
   box-sizing: border-box;
   height: 128px;
-  width: 290px;
+  width: 100%;
   display: flex;
   align-items: center;
   border-radius: 15px;
@@ -483,6 +527,9 @@ li {
 
 }
 
+input::placeholder {
+  padding-left: 10px;
+}
 .articlecard {
   margin-top: 50px;
   background-color: #000000;
@@ -530,14 +577,19 @@ img {
 
 .productcard {
   display: flex;
-  gap: 30px;
+  /* gap: 30px; */
+  box-sizing: border-box;
+  margin-top: 10px;
+  justify-content: space-between;
 }
 
 .showcasework {
   background-color: #dae2f5;
   /* padding: 15%; */
 }
-
+.showcasetitle{
+  --bs-gutter-x: 0rem; 
+}
 .col1 {
   padding: 8%;
 }
@@ -547,8 +599,13 @@ img {
   color: rgb(28 28 28 / 80%);
 }
 
+a{
+  color: #ffffff;
+  text-decoration: none;
+}
 .col2 {
   margin-top: 60px;
+  /* font-size: 15px; */
 }
 
 .saas {
@@ -557,6 +614,9 @@ img {
   height: 60vh;
   color: #000000;
   background-position: center;
+  border-radius: 15px;
+  width:  320px;
+  float: left;
   display: block;
   background-image: url("https://wpriverthemes.com/synck/wp-content/uploads/2023/11/project-3.png");
 }
@@ -567,6 +627,8 @@ img {
   height: 60vh;
   color: #000000;
   background-position: center;
+  border-radius: 15px;
+  width:  320px;
   display: block;
   background-image: url("https://wpriverthemes.com/synck/wp-content/uploads/2023/11/project-2.png");
 }
@@ -574,6 +636,9 @@ img {
 .ecom {
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 15px;
+  /* font-size: 15px; */
+  width:  320px;
   height: 60vh;
   color: #fdfdfd;
   background-position: center;

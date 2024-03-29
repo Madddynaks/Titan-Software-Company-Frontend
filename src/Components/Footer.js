@@ -23,7 +23,7 @@ function Footer() {
 
                             <Row style={{ marginTop: '20px', display: 'flex', gap: '15px' }} >
                                 <Col md='5' style={{ display: 'flex' }} >
-                                    <input type="text" className='footerinput' placeholder='Name'></input>
+                                    <input type="text" className='footerinput' placeholder='Enter Your Email'></input>
                                 </Col>
                                 <Col md='5'>
                                     <Button className='contactusbtnfoot'>Contact Us</Button>
@@ -31,11 +31,23 @@ function Footer() {
                                 </Col>
                             </Row>
                             <Row>
-                                <Col style={{ display: 'flex', marginTop: '50px' , gap : '30px' }} >
-                                    <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/03/youtube.svg" alt="" className='footercomlogo1' />
-                                    <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/03/webflow.svg" alt="" className='footercomlogo' />
-                                    <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/03/upwork.svg" alt="" className='footercomlogo' />
-                                    <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/03/shopify.svg" alt="" className='footercomlogo' />
+                                <Col style={{ display: 'flex', marginTop: '50px', gap: '30px' }} >
+                                    <Row>
+                                        <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/03/youtube.svg" alt="" className='footercomlogo1' />
+
+                                    </Row>
+                                    <Row>
+                                        <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/03/webflow.svg" alt="" className='footercomlogo' />
+
+                                    </Row>
+                                    <Row>
+                                        <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/03/upwork.svg" alt="" className='footercomlogo' />
+
+                                    </Row>
+                                    <Row>
+                                        <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/03/shopify.svg" alt="" className='footercomlogo' />
+
+                                    </Row>
                                 </Col>
                             </Row>
                         </Col>
@@ -55,40 +67,45 @@ function Footer() {
                         <Col md='9' >
                             <Row className='footerdivider' >
                                 <Col md='3' className='footitem' >
-                                    <h5>Services</h5>
-                                    <li>IT Support</li>
-                                    <li>Web Design</li>
-                                    <li>Development</li>
-                                    <li>Cloud Things</li>
-                                    <li>E-Commerce</li>
-                                    <li>CRM Solutions</li>
+                                    <a href="/"><h5>Services</h5></a>
+                                    <a href="/"><li>IT Support</li></a>
+                                    <a href="/"><li>Web Design</li></a>
+                                    <a href="/"><li>Development</li></a>
+                                    <a href="/"><li>Cloud Things</li></a>
+                                    <a href="/"><li>E-Commerce</li></a>
+                                    <a href="/"><li>CRM Solutions</li></a>
                                 </Col>
                                 <Col md='3' className='footitem' >
-                                    <h5>Services</h5>
-                                    <li>IT Support</li>
-                                    <li>Web Design</li>
-                                    <li>Development</li>
-                                    <li>Cloud Things</li>
-                                    <li>E-Commerce</li>
-                                    <li>CRM Solutions</li>
+                                    <a href="/"><h5>Services</h5></a>
+                                    <a href="/"><li>IT Support</li></a>
+                                    <a href="/"><li>Web Design</li></a>
+                                    <a href="/"><li>Development</li></a>
+                                    <a href="/"><li>Cloud Things</li></a>
+                                    <a href="/"><li>E-Commerce</li></a>
+                                    <a href="/"><li>CRM Solutions</li></a>
                                 </Col>
                                 <Col md='3' className='footitem' >
-                                    <h5>Services</h5>
-                                    <li>IT Support</li>
-                                    <li>Web Design</li>
-                                    <li>Development</li>
-                                    <li>Cloud Things</li>
-                                    <li>E-Commerce</li>
-                                    <li>CRM Solutions</li>
+                                    <a href="/"><h5>Services</h5></a>
+                                    <a href="/"><li>IT Support</li></a>
+                                    <a href="/"><li>Web Design</li></a>
+                                    <a href="/"><li>Development</li></a>
+                                    <a href="/"><li>Cloud Things</li></a>
+                                    <a href="/"><li>E-Commerce</li></a>
+                                    <a href="/"><li>CRM Solutions</li></a>
                                 </Col>
                                 <Col md='3' className='footitem' >
-                                    <h5>Services</h5>
-                                    <li>IT Support</li>
-                                    <li>Web Design</li>
-                                    <li>Development</li>
-                                    <li>Cloud Things</li>
-                                    <li>E-Commerce</li>
-                                    <li>CRM Solutions</li>
+                                    <a href="/"><h5>Services</h5></a>
+                                    <a href="/"><li>IT Support</li></a>
+                                    <a href="/"><li>Web Design</li></a>
+                                    <a href="/"><li>Development</li></a>
+                                    <a href="/"><li>Cloud Things</li></a>
+                                    <a href="/"><li>E-Commerce</li></a>
+                                    <a href="/"><li>CRM Solutions</li></a>
+
+
+
+
+
                                 </Col>
 
                             </Row>
@@ -97,13 +114,13 @@ function Footer() {
 
                         <Col md='3' className='footcontact'  >
 
+                            <a href="/"><h6>Phone</h6></a>
+                            <a href="/"><p>8409624333</p></a>
+                            <a href="/"><p>8409624333</p></a>
+                            <a href="/"><h6>Email</h6></a>
+                            <a href="/"><p>bluebase@mail.com</p></a>
+                            <a href="/"> <p>mandrodio@mail.com</p></a>
 
-                            <h6>Phone</h6>
-                            <p>8409624333</p>
-                            <p>8409624333</p>
-                            <h6>Email</h6>
-                            <p>bluebase@mail.com</p>
-                            <p>mandrodio@mail.com</p>
 
 
 
@@ -111,23 +128,19 @@ function Footer() {
                         </Col>
                     </Row>
                 </Container>
-                <Container style={{marginTop : '35px'}} >
-
-                    <Row style={{display : 'flex' , flexDirection : 'row' , gap : '15px'}} >
-                        <Col md='4' style={{display : 'flex' , gap : '28px'}} >
+                <Container style={{ marginTop: '35px' }} >
+                    <Row style={{ display: 'flex', flexDirection: 'row', gap: '15px' }} >
+                        <Col md='4' style={{ display: 'flex', gap: '28px' }} >
                             <a href="https://www.facebook.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="" className="connection-logo" /></a>
                             <a href="https://www.instagram.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
-                            <a href="https://twitter.com/ChadhaJaslin"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-square-color-icon.png" alt="" className="connection-logo" /></a>
+                            <a href="https://twitter.com/ChadhaJaslin"><img src="https://ik.imagekit.io/2q7cgnqzi/icon/icons8-linkedin.svg?updatedAt=1710492054727" alt="" className="connection-logo-linkedin" /></a>
                             <a href="https://www.youtube.com/@jeevshaktifoundation"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
-
                         </Col>
                         <Col md='5' >
-                        <p style={{ color: 'green' }} >© Copyright 2023, Panacea Software Solutions</p>
-
-
+                            <p style={{ color: 'white' }} >© Copyright 2023, Panacea Software Solutions</p>
                         </Col>
                     </Row>
-                   
+
 
 
 

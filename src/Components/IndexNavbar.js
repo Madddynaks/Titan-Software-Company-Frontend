@@ -11,10 +11,10 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
-    NavbarText,
+
     Button,
     Container
-    , Card,
+    ,
     Col, Row
 } from 'reactstrap';
 
@@ -38,7 +38,7 @@ function IndexNavbar() {
                             <NavLink href="/">Home</NavLink>
                         </NavItem>
                         <NavItem className='navitem'>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">
+                            <NavLink href="/home">
                                 About Us
                             </NavLink>
                         </NavItem>
@@ -63,7 +63,7 @@ function IndexNavbar() {
                                                             </div>
                                                             <div className='navcardtext'>
                                                                 <h6>E-commerce</h6>
-                                                                <p>we undertook a 
+                                                                <p>we undertook a
                                                                     <br /> project to migrate <br /> their existing.</p>
                                                             </div>
                                                         </div>
@@ -73,7 +73,7 @@ function IndexNavbar() {
                                                             </div>
                                                             <div className='portfolionavcardtext'>
                                                                 <h6>SAAS Integration</h6>
-                                                                <p>we undertook a 
+                                                                <p>we undertook a
                                                                     <br /> project to migrate <br /> their existing.</p>
                                                             </div>
                                                         </div>
@@ -85,7 +85,7 @@ function IndexNavbar() {
                                                             </div>
                                                             <div className='navcardtext'>
                                                                 <h6>App Development</h6>
-                                                                <p>we undertook a 
+                                                                <p>we undertook a
                                                                     <br /> project to migrate <br /> their existing.</p>
                                                             </div>
                                                         </div>
@@ -95,7 +95,7 @@ function IndexNavbar() {
                                                             </div>
                                                             <div className='portfolionavcardtext'>
                                                                 <h6>Virtual Reality</h6>
-                                                                <p>we undertook a 
+                                                                <p>we undertook a
                                                                     <br /> project to migrate <br /> their existing.</p>
                                                             </div>
                                                         </div>
@@ -247,16 +247,11 @@ function IndexNavbar() {
                                                         <h6>Our product hits</h6>
                                                         <p>Develop IT solutions based on the <br />
                                                             analysis phase.</p>
-                                                        <a href="">View more</a>
+                                                        <a href="/">View more</a>
                                                     </div>
 
                                                 </Row>
-                                            </Col>
-
-                                            <Row>
-
-                                            </Row>
-
+                                            </Col>                                        
                                             <hr />
                                         </Row>
                                         <br />
