@@ -7,8 +7,8 @@
   font-family: DM;
 
 
- 
- 
+
+
 }
 
 body {
@@ -25,8 +25,10 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  html, body {
-      overflow-x: hidden;
+
+  html,
+  body {
+    overflow-x: hidden;
   }
 }
 
@@ -168,6 +170,13 @@ Button {
   }
 }
 
+.aboutheader1 {
+  font-size: 88px;
+  text-align: center;
+  /* font-family: 'Courier New', Courier, monospace; */
+  line-height: 82px;
+  font-weight: 500;
+}
 
 
 .navcardtext {
@@ -183,10 +192,12 @@ li {
   height: 25px;
   width: 25px;
 }
-.connection-logo-linkedin{
+
+.connection-logo-linkedin {
   height: 32px;
   width: 32px;
 }
+
 .navserviceimg {
   width: 250px;
   height: 180px;
@@ -530,6 +541,7 @@ li {
 input::placeholder {
   padding-left: 10px;
 }
+
 .articlecard {
   margin-top: 50px;
   background-color: #000000;
@@ -587,9 +599,11 @@ img {
   background-color: #dae2f5;
   /* padding: 15%; */
 }
-.showcasetitle{
-  --bs-gutter-x: 0rem; 
+
+.showcasetitle {
+  --bs-gutter-x: 0rem;
 }
+
 .col1 {
   padding: 8%;
 }
@@ -599,10 +613,11 @@ img {
   color: rgb(28 28 28 / 80%);
 }
 
-a{
+a {
   color: #ffffff;
   text-decoration: none;
 }
+
 .col2 {
   margin-top: 60px;
   /* font-size: 15px; */
@@ -615,7 +630,7 @@ a{
   color: #000000;
   background-position: center;
   border-radius: 15px;
-  width:  320px;
+  width: 320px;
   float: left;
   display: block;
   background-image: url("https://wpriverthemes.com/synck/wp-content/uploads/2023/11/project-3.png");
@@ -628,7 +643,7 @@ a{
   color: #000000;
   background-position: center;
   border-radius: 15px;
-  width:  320px;
+  width: 320px;
   display: block;
   background-image: url("https://wpriverthemes.com/synck/wp-content/uploads/2023/11/project-2.png");
 }
@@ -638,10 +653,36 @@ a{
   background-repeat: no-repeat;
   border-radius: 15px;
   /* font-size: 15px; */
-  width:  320px;
+  width: 320px;
   height: 60vh;
   color: #fdfdfd;
   background-position: center;
   display: block;
   background-image: url("https://wpriverthemes.com/synck/wp-content/uploads/2023/11/project-1.png");
+}
+
+
+.aboutheader2 {
+  line-height: 28px;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.aboutcard {
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.aboutcardindex {
+
+
+  margin-top: 80px;
+}
+
+.OURCOMPANY {
+
+  padding: 50px;
+  background-color: #cddbff;
+  border-radius: 15px;
 }

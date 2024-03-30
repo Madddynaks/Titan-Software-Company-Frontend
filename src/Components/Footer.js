@@ -101,11 +101,6 @@ function Footer() {
                                     <a href="/"><li>Cloud Things</li></a>
                                     <a href="/"><li>E-Commerce</li></a>
                                     <a href="/"><li>CRM Solutions</li></a>
-
-
-
-
-
                                 </Col>
 
                             </Row>
