@@ -1,17 +1,16 @@
 import React from 'react'
-import IndexNavbar from '../Components/IndexNavbar'
+
 import { Container, Row, Col, Button, Card } from 'reactstrap'
 import 'swiper/css';
 
-import Footer from '../Components/Footer';
+
 import Slider from '../Components/Slider';
 import Getintouch from '../Components/Getintouch';
 
 function Home() {
     return (
         <>
-            <IndexNavbar />
-            <Container style={{ marginTop: "85px" }} className='home1' >
+            <div style={{}} className='home1'>
                 <Row>
                     <Col md='6'>
                         <p style={{ color: '#1351d8', letterSpacing: '5px' }} >EMPOWERMENT</p>
@@ -29,11 +28,22 @@ function Home() {
                         <img src="https://images.pexels.com/photos/3184613/pexels-photo-3184613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style={{ marginTop: '20px', borderRadius: '20px' }} />
                     </Col>
                 </Row>
+                <br /><br /><br />
                 <br /><br />
 
                 <hr /><br />
+            </div>
+            <Container >
+
+
+
 
             </Container>
+
+
+
+
+
 
             <Slider />
 
@@ -434,12 +444,12 @@ function Home() {
                 </Row>
             </div>
 
-           <Getintouch/>
+            <Getintouch />
 
 
 
 
-            <Footer />
+
         </>
     )
 }

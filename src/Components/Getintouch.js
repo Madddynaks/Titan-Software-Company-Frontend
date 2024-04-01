@@ -1,16 +1,16 @@
 import React from 'react'
-import { Card , Container , Row , Col , Button} from 'reactstrap';
+import { Card, Container, Row, Col, Button } from 'reactstrap';
 function Getintouch() {
-  return (
-   <>
-    <Container className='getintouch' >
+    return (
+        <>
+            <Container className='getintouch' >
                 <Row>
                     <Col md='6' className='getintouch1'>
                         <p style={{ color: '#1351d8', letterSpacing: '5px' }} >CONTACT</p>
                         <h1>Lets get in touch</h1>
-                        <h6 style={{ marginTop: "30px" }} >You can reach us anytime via
-                            <a href="/"> bluebase@mail.com</a>
-                        </h6>
+                        <h5 style={{ marginTop: "30px" }} >You can reach us anytime via
+                            <a style={{ color: 'blue' }} to="/"> infopanacee@gmail.com</a>
+                        </h5>
                         <Row className='touchform'>
                             <Col  >
                                 <Row style={{ marginTop: "30px", display: 'flex' }} >
@@ -42,7 +42,7 @@ function Getintouch() {
                                 </Row>
                                 <Row style={{ marginTop: '30px' }} >
                                     <h6>Message</h6>
-                                    <textarea className='textarea' name="" id="" cols="25" rows="10" style={{ marginLeft: '10px' }} ></textarea>
+                                    <textarea className='textarea' style={{ marginLeft: '10px', width: '96%', height: '17vh' }} ></textarea>
                                 </Row>
                                 <Button className='formsubmit' >Submit</Button>
                             </Col>
@@ -158,8 +158,8 @@ function Getintouch() {
                     </Col>
                 </Row>
             </Container>
-   </>
-  )
+        </>
+    )
 }
 
 export default Getintouch

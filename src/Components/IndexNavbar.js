@@ -17,7 +17,7 @@ import {
     ,
     Col, Row
 } from 'reactstrap';
-
+import { Link } from 'react-router-dom';
 function IndexNavbar() {
 
 
@@ -30,26 +30,26 @@ function IndexNavbar() {
     return (
         <div>
             <Navbar className='navbar' light expand="md"   >
-                <NavbarBrand href="/"><img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/Panacee%20logo.png?updatedAt=1710924589184" alt="" className='navlogo' /> </NavbarBrand>
+                <NavbarBrand to="/"><img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/Panacee%20logo.png?updatedAt=1710924589184" alt="" className='navlogo' /> </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="me-auto" navbar>
                         <NavItem className='navitem'>
-                            <NavLink href="/">Home</NavLink>
+                            <Link className='link' to="/">Home</Link>
                         </NavItem>
-                        <NavItem className='navitem'>
-                            <NavLink href="/home">
+                        <NavItem >
+                            <Link className='navitem' to="/about">
                                 About Us
-                            </NavLink>
+                            </Link>
                         </NavItem>
-
 
 
 
                         <UncontrolledDropdown nav inNavbar className='navitem' style={{ position: "static" }} >
-                            <DropdownToggle nav caret className='navitem'>
+                            <Link><DropdownToggle nav caret className='navitem'>
                                 Portfolio
-                            </DropdownToggle>
+                            </DropdownToggle></Link>
+
                             <DropdownMenu >
                                 <DropdownItem style={{ width: '100vw', position: 'static', height: '500px', marginTop: '20px' }} >
                                     <Container className='portfolionavcon' >
@@ -109,7 +109,7 @@ function IndexNavbar() {
                                                         <h6>Our product hits</h6>
                                                         <p>Develop IT solutions based on the <br />
                                                             analysis phase.</p>
-                                                        <a href="/">View more</a>
+                                                        <a to="/">View more</a>
                                                     </div>
                                                 </Row>
                                             </Col>
@@ -117,10 +117,10 @@ function IndexNavbar() {
                                         <br />
                                         <div style={{ display: 'flex' }} >
                                             <div style={{ width: '180px', justifyContent: 'space-between', padding: '15px', display: 'flex' }}>
-                                                <a href="https://www.facebook.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="" className="connection-logo" /></a>
-                                                <a href="https://www.instagram.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
-                                                <a href="https://twitter.com/ChadhaJaslin"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-square-color-icon.png" alt="" className="connection-logo" /></a>
-                                                <a href="https://www.youtube.com/@jeevshaktifoundation"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
+                                                <a to="https://www.facebook.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="" className="connection-logo" /></a>
+                                                <a to="https://www.instagram.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
+                                                <a to="https://twitter.com/ChadhaJaslin"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-square-color-icon.png" alt="" className="connection-logo" /></a>
+                                                <a to="https://www.youtube.com/@jeevshaktifoundation"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
                                             </div>
                                             <p style={{ marginLeft: '410px', marginTop: '9px' }} >Looking for new career ? <strong>We're hiring</strong> </p>
                                         </div>
@@ -160,9 +160,10 @@ function IndexNavbar() {
                                                                     <div>
                                                                         <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/brain-svgrepo-com.svg?updatedAt=1710937497361" alt="" height={50} width={50} />
                                                                     </div>
-                                                                    <div className='navcardtext' >
-                                                                        <h6>Brainstroming </h6>
-                                                                        <p>Ideas</p>
+                                                                    <div className='navcardtext'>
+                                                                        <Link to='/how-we-do' ><h6>Brainstroming </h6>
+                                                                            <p>Ideas</p></Link>
+
                                                                     </div>
                                                                 </div>
                                                             </Col>
@@ -172,8 +173,11 @@ function IndexNavbar() {
                                                                         <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519" alt="" height={50} width={50} />
                                                                     </div>
                                                                     <div className='navcardtext'>
-                                                                        <h6>SEO</h6>
-                                                                        <p>Optimization</p>
+                                                                        <Link to='/how-we-do' >
+                                                                            <h6>SEO</h6>
+                                                                            <p>Optimization</p>
+                                                                        </Link>
+
                                                                     </div>
                                                                 </div>
                                                             </Col>
@@ -185,8 +189,10 @@ function IndexNavbar() {
                                                                         <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/graphic-design.png?updatedAt=1711008512725" alt="" height={50} width={50} />
                                                                     </div>
                                                                     <div className='navcardtext'>
-                                                                        <h6>Web</h6>
-                                                                        <p>Design</p>
+                                                                        <Link to='/how-we-do'>
+                                                                            <h6>Web</h6>
+                                                                            <p>Design</p>
+                                                                        </Link>
                                                                     </div>
                                                                 </div>
                                                             </Col>
@@ -196,8 +202,10 @@ function IndexNavbar() {
                                                                         <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-upload-to-cloud-50.png?updatedAt=1711008806034" alt="" height={50} width={50} />
                                                                     </div>
                                                                     <div className='navcardtext'>
-                                                                        <h6>Frontend </h6>
-                                                                        <p>Development</p>
+                                                                        <Link to='/how-we-do'>
+                                                                            <h6>Frontend </h6>
+                                                                            <p>Development</p>
+                                                                        </Link>
                                                                     </div>
                                                                 </div>
                                                             </Col>
@@ -210,24 +218,26 @@ function IndexNavbar() {
                                                             <Col md='6' >
                                                                 <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'left', alignItems: 'self-start', padding: 'auto', paddingLeft: '50px', marginTop: '17px' }} >
                                                                     <h6 style={{ textAlign: 'center' }} >Services</h6>
-                                                                    <li>Development</li>
-                                                                    <li>Web Design</li>
-                                                                    <li>IT Support</li>
-                                                                    <li>E-Cpmmerce</li>
-                                                                    <li>CRM Solutions</li>
+                                                                    <a href="/"><li>Development</li></a>
+                                                                    <a href="/"><li>Web Design</li></a>
+                                                                    <a href="/"><li>IT Support</li></a>
+
+                                                                    <a href="/"><li>E-Cpmmerce</li></a>
+                                                                    <a href="/"><li>CRM Solutions</li></a>
+
                                                                 </div>
                                                             </Col>
                                                             <Col md='6' >
                                                                 <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center', alignItems: 'self-start', paddingLeft: '19px', marginTop: '17px' }} >
                                                                     <h6 style={{ textAlign: 'center' }}>Our Fildes</h6>
+                                                                    <a href="/"><li>Healthcare</li></a>
+                                                                    <a href="/"><li>Travel</li></a>
+                                                                    <a href="/"><li>Supermarket</li></a>
+                                                                    <a href="/"><li>Industries</li></a>
+                                                                    <a href="/"><li>Hotels</li></a>
 
-                                                                    <li>Healthcare</li>
-                                                                    <li>Travel</li>
-                                                                    <li>Supermarket</li>
-                                                                    <li>Industries</li>
+                                                                    <Link><li>NGOS</li></Link>
 
-                                                                    <li>Hotels</li>
-                                                                    <li>NGOS</li>
                                                                 </div>
                                                             </Col>
                                                         </Row>
@@ -247,21 +257,21 @@ function IndexNavbar() {
                                                         <h6>Our product hits</h6>
                                                         <p>Develop IT solutions based on the <br />
                                                             analysis phase.</p>
-                                                        <a href="/">View more</a>
+                                                        <a to="/">View more</a>
                                                     </div>
 
                                                 </Row>
-                                            </Col>                                        
+                                            </Col>
                                             <hr />
                                         </Row>
                                         <br />
 
                                         <div style={{ display: 'flex' }} >
                                             <div style={{ width: '180px', justifyContent: 'space-between', padding: '15px', display: 'flex' }}>
-                                                <a href="https://www.facebook.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="" className="connection-logo" /></a>
-                                                <a href="https://www.instagram.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
-                                                <a href="https://twitter.com/ChadhaJaslin"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-square-color-icon.png" alt="" className="connection-logo" /></a>
-                                                <a href="https://www.youtube.com/@jeevshaktifoundation"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
+                                                <a to="https://www.facebook.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="" className="connection-logo" /></a>
+                                                <a to="https://www.instagram.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
+                                                <a to="https://twitter.com/ChadhaJaslin"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-square-color-icon.png" alt="" className="connection-logo" /></a>
+                                                <a to="https://www.youtube.com/@jeevshaktifoundation"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
                                             </div>
 
                                             <p style={{ marginLeft: '410px', marginTop: '9px' }} >Looking for new career ? <strong>We're hiring</strong> </p>
@@ -285,7 +295,7 @@ function IndexNavbar() {
                     </div>
 
                     <hr />
-                    <Button className='contactusbtn'>Contact Us</Button>
+                    <Link to='/contactus'><Button className='contactusbtn'>Contact Us</Button></Link>
 
                 </Collapse>
             </Navbar>

@@ -67,7 +67,7 @@ function Footer() {
                         <Col md='9' >
                             <Row className='footerdivider' >
                                 <Col md='3' className='footitem' >
-                                    <a href="/"><h5>Services</h5></a>
+                                    <h5>Services</h5>
                                     <a href="/"><li>IT Support</li></a>
                                     <a href="/"><li>Web Design</li></a>
                                     <a href="/"><li>Development</li></a>
@@ -76,7 +76,7 @@ function Footer() {
                                     <a href="/"><li>CRM Solutions</li></a>
                                 </Col>
                                 <Col md='3' className='footitem' >
-                                    <a href="/"><h5>Services</h5></a>
+                                    <h5>Services</h5>
                                     <a href="/"><li>IT Support</li></a>
                                     <a href="/"><li>Web Design</li></a>
                                     <a href="/"><li>Development</li></a>
@@ -85,7 +85,7 @@ function Footer() {
                                     <a href="/"><li>CRM Solutions</li></a>
                                 </Col>
                                 <Col md='3' className='footitem' >
-                                    <a href="/"><h5>Services</h5></a>
+                                    <h5>Services</h5>
                                     <a href="/"><li>IT Support</li></a>
                                     <a href="/"><li>Web Design</li></a>
                                     <a href="/"><li>Development</li></a>
@@ -94,7 +94,7 @@ function Footer() {
                                     <a href="/"><li>CRM Solutions</li></a>
                                 </Col>
                                 <Col md='3' className='footitem' >
-                                    <a href="/"><h5>Services</h5></a>
+                                    <h5>Services</h5>
                                     <a href="/"><li>IT Support</li></a>
                                     <a href="/"><li>Web Design</li></a>
                                     <a href="/"><li>Development</li></a>
@@ -109,15 +109,12 @@ function Footer() {
 
                         <Col md='3' className='footcontact'  >
 
-                            <a href="/"><h6>Phone</h6></a>
+                            <h6>Phone</h6>
                             <a href="/"><p>8409624333</p></a>
                             <a href="/"><p>8409624333</p></a>
-                            <a href="/"><h6>Email</h6></a>
+                            <h6>Email</h6>
                             <a href="/"><p>bluebase@mail.com</p></a>
                             <a href="/"> <p>mandrodio@mail.com</p></a>
-
-
-
 
 
                         </Col>
@@ -126,18 +123,16 @@ function Footer() {
                 <Container style={{ marginTop: '35px' }} >
                     <Row style={{ display: 'flex', flexDirection: 'row', gap: '15px' }} >
                         <Col md='4' style={{ display: 'flex', gap: '28px' }} >
-                            <a href="https://www.facebook.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="" className="connection-logo" /></a>
-                            <a href="https://www.instagram.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
-                            <a href="https://twitter.com/ChadhaJaslin"><img src="https://ik.imagekit.io/2q7cgnqzi/icon/icons8-linkedin.svg?updatedAt=1710492054727" alt="" className="connection-logo-linkedin" /></a>
-                            <a href="https://www.youtube.com/@jeevshaktifoundation"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
+                            <a href="/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="" className="connection-logo" /></a>
+                            <a href="/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
+                            <a href="/"><img src="https://ik.imagekit.io/2q7cgnqzi/icon/icons8-linkedin.svg?updatedAt=1710492054727" alt="" className="connection-logo-linkedin" /></a>
+                            <a href="/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
                         </Col>
                         <Col md='5' >
-                            <p style={{ color: 'white' }} >© Copyright 2023, Panacea Software Solutions</p>
+                            <a href=""><p style={{ color: 'white' }} >© Copyright 2023, Panacea Software Solutions</p></a>
+                            
                         </Col>
                     </Row>
-
-
-
 
 
                 </Container>

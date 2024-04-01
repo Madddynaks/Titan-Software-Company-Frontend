@@ -44,6 +44,12 @@ body {
   padding-left: 35px;
   font-size: 18px;
   font-weight: 500;
+  color: #000000;
+ 
+}
+.navitem a {
+  color: #000000;
+
 }
 
 Button {
@@ -396,9 +402,10 @@ li {
 }
 
 .getintouch {
-  padding: 40px;
-  /* background-color: #b7bed1; */
+
   box-sizing: border-box;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .getintouch1 {
@@ -474,9 +481,11 @@ li {
   margin-bottom: 25px;
 }
 
-/* .home1{
-  background-image: url("https://images.pexels.com/photos/3184613/pexels-photo-3184613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-} */
+.home1{
+margin: 150px;
+margin-top: 80px;
+
+}
 .contactcard {
   padding: 70px;
   background-color: #f3f6fd;
@@ -492,6 +501,7 @@ li {
   align-items: center;
   padding: 20px;
   text-align: left;
+  margin-top: 40px;
 
 }
 
@@ -664,7 +674,7 @@ a {
 
 .aboutheader2 {
   line-height: 28px;
-  font-size: 18px;
+  font-size: 21px;
   text-align: center;
   margin-top: 30px;
 }
@@ -673,7 +683,23 @@ a {
   padding: 50px;
   border-radius: 10px;
 }
+.hwd{
+margin-top: 0px !important ;
+}
+.link {
+  margin-top: 30px;
+}
 
+.hwd1{
+  background-color: #1d241c;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
 .aboutcardindex {
 
 
@@ -681,8 +707,164 @@ a {
 }
 
 .OURCOMPANY {
-
+margin-top: 40px;
   padding: 50px;
   background-color: #cddbff;
   border-radius: 15px;
+}
+.assitance{
+  background-color: #000000;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  color: white;
+  padding: 100px;
+  border-radius: 15px;
+  margin-top: 80px;
+}
+.assistanceimg{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+}
+.assitanttext{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  margin-top: 25px;
+  gap: 10px;
+
+}
+.bookappoinmentnow{
+  background-color: blue;
+  height: 55px;
+  width: 350px;
+  border-radius: 8px;
+}
+.whybetter{
+  border-radius: 15px;
+  background-color: #1d241c;
+  color: white;
+  box-sizing: content-box;
+  padding: 90px;
+  margin-top: 40px;
+}
+.whybetterimg{
+  border-radius: 15px;
+}
+
+.whybettertext{
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bookappwexp{
+  background-color: #1351D8;
+  border-radius: 10px;
+  padding: 12px;
+
+
+}
+.ourexpert{
+  background-color: #e5e6e7;
+  padding: 50px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.ourexpert1{
+  box-sizing: border-box;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e6e7;
+  padding: 70px;
+  border-radius: 15px;
+}
+.ourexpertimg{
+  object-fit: contain;
+  height:  130px;
+  width: 130px;
+}
+
+.contactlogo{
+  height: 30px;
+  width: 30px;
+}
+.contactlogocard{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  padding: 7px;
+  border-radius: 8px;
+  width: 140px;
+}
+.ourexpertrow{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.Introduction{
+  padding: 100px;
+  background-color: #e8efff;
+  border-radius: 18px;
+  gap:  12px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+}
+
+.Introduction p{
+   font-size: 20px;
+}
+
+.howwedobtn{
+    background-color: #1351D8;
+    width: 6vw;
+  
+}
+.abouta1{
+    background-color: #cddbff;
+    box-sizing: border-box;
+    color: #2d61e6;
+    border-radius: 25px;
+    text-align: center;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.hwd1btn{
+  background-color: #cddbff;
+  box-sizing: border-box;
+  color: #2d61e6;
+  border-radius: 25px;
+  text-align: center;
+  width: 140px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactpara1{
+  font-size: 75px;
+}
+.contactpara2{
+  font-size: 25px;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col, Button, Card } from 'reactstrap'
-import IndexNavbar from '../Components/IndexNavbar'
-import Footer from '../Components/Footer'
+
+
 import Slider from '../Components/Slider'
 import Getintouch from '../Components/Getintouch'
 
@@ -10,12 +10,13 @@ function About() {
 
     <>
 
-      <IndexNavbar />
+
 
       <Container>
         <Row >
-          <Col style={{ display: 'flex', justifyContent: 'center' }}>
-            <Button className='letstalkbtnhome'>Let's Talk </Button>
+          <Col style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
+
+            <span className='abouta1'>Company</span>
 
           </Col>
         </Row>
@@ -23,7 +24,8 @@ function About() {
         <br /><br />
         <Row style={{ marginTop: '10px' }} >
           <Col>
-            <p className='aboutheader1'>Our company provide a best <br /> horizon tech solutions</p>
+            <p className='aboutheader1'>Our company provide a best </p>
+            <p className='aboutheader1'> horizon tech solutions</p>
 
             <p className='aboutheader2' >Experience the transformative power of innovation and seamless solutions with <br /> dynamics. Our journey doesn't end with the delivery of a solution.</p>
           </Col>
@@ -62,7 +64,9 @@ function About() {
           </Col>
         </Row>
       </Container>
-      <div style={{ marginTop: '50px' }}>
+
+
+      <div style={{ marginTop: '100px' }}>
         <Slider />
       </div>
 
@@ -86,7 +90,7 @@ function About() {
 
         <Row>
           <Col style={{ marginTop: '50px' }} >
-            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/hero-company-about.jpg" alt="" />
+            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/hero-company-about.jpg" alt="" style={{ borderRadius: '15px' }} />
             <p style={{ marginTop: '30px' }} >Our team is a collective force of top talents, pros, experts, and visionaries from diverse fields. With a passion for excellence, our professionals bring a wealth of experience and knowledge to every project. At Slack, we are committed to delivering nothing short of excellence. From concept to implementation, we maintain the highest standards of quality and craftsmanship, leaving no room for compromise.</p>
           </Col>
         </Row>
@@ -174,20 +178,21 @@ function About() {
         </Row>
       </Container>
 
-      <Container>
+
+
+
+      <Container className='ourexpert1' >
         <p className='delinglogheading'>WHAT WE’RE OFFERING</p>
         <Row>
-          <Col md='9' >
+          <Col md='8' >
             <h1>Our professional experts</h1>
             <p>Our team is a collective force of top talents, experts, and <br />
               visionaries from diverse fields.</p>
           </Col>
-          <Col md='3'>
-            <Button>Book an appointment with our expert now</Button>
-
+          <Col md='4'>
+            <Button className='bookappwexp' >Book an appointment with our expert now</Button>
           </Col>
         </Row>
-
       </Container>
 
 
@@ -195,8 +200,154 @@ function About() {
 
 
 
+      <Container>
+        <Row className='ourexpertrow' >
+          <Col className='ourexpert' >
+            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/team4.png" alt="" className='ourexpertimg' />
+            <h5>Jennifer Linda</h5>
+            <h6>Product Designer</h6>
+            <Card className='contactlogocard'>
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-linked-in.svg?updatedAt=1711952300908" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-facebook%20(1).svg?updatedAt=1711952309727" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-instagram.svg?updatedAt=1711952319421" alt="" className='contactlogo' />
+            </Card>
+          </Col>
+          <Col className='ourexpert' >
+            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/team4.png" alt="" className='ourexpertimg' />
+            <h5>Jennifer Linda</h5>
+            <h6>Product Designer</h6>
+            <Card className='contactlogocard'>
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-linked-in.svg?updatedAt=1711952300908" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-facebook%20(1).svg?updatedAt=1711952309727" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-instagram.svg?updatedAt=1711952319421" alt="" className='contactlogo' />
+            </Card>
+          </Col>
+          <Col className='ourexpert' >
+            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/team4.png" alt="" className='ourexpertimg' />
+            <h5>Jennifer Linda</h5>
+            <h6>Product Designer</h6>
+            <Card className='contactlogocard'>
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-linked-in.svg?updatedAt=1711952300908" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-facebook%20(1).svg?updatedAt=1711952309727" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-instagram.svg?updatedAt=1711952319421" alt="" className='contactlogo' />
+            </Card>
+          </Col>
+          <Col className='ourexpert' >
+            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/team4.png" alt="" className='ourexpertimg' />
+            <h5>Jennifer Linda</h5>
+            <h6>Product Designer</h6>
+            <Card className='contactlogocard'>
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-linked-in.svg?updatedAt=1711952300908" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-facebook%20(1).svg?updatedAt=1711952309727" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-instagram.svg?updatedAt=1711952319421" alt="" className='contactlogo' />
+            </Card>
+          </Col>
+        </Row>
+
+        <Row className='ourexpertrow' >
+          <Col className='ourexpert' >
+            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/team4.png" alt="" className='ourexpertimg' />
+            <h5>Jennifer Linda</h5>
+            <h6>Product Designer</h6>
+            <Card className='contactlogocard'>
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-linked-in.svg?updatedAt=1711952300908" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-facebook%20(1).svg?updatedAt=1711952309727" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-instagram.svg?updatedAt=1711952319421" alt="" className='contactlogo' />
+            </Card>
+          </Col>
+          <Col className='ourexpert' >
+            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/team4.png" alt="" className='ourexpertimg' />
+            <h5>Jennifer Linda</h5>
+            <h6>Product Designer</h6>
+            <Card className='contactlogocard'>
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-linked-in.svg?updatedAt=1711952300908" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-facebook%20(1).svg?updatedAt=1711952309727" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-instagram.svg?updatedAt=1711952319421" alt="" className='contactlogo' />
+            </Card>
+          </Col>
+          <Col className='ourexpert' >
+            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/team4.png" alt="" className='ourexpertimg' />
+            <h5>Jennifer Linda</h5>
+            <h6>Product Designer</h6>
+            <Card className='contactlogocard'>
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-linked-in.svg?updatedAt=1711952300908" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-facebook%20(1).svg?updatedAt=1711952309727" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-instagram.svg?updatedAt=1711952319421" alt="" className='contactlogo' />
+            </Card>
+          </Col>
+          <Col className='ourexpert' >
+            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/team4.png" alt="" className='ourexpertimg' />
+            <h5>Jennifer Linda</h5>
+            <h6>Product Designer</h6>
+            <Card className='contactlogocard'>
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-linked-in.svg?updatedAt=1711952300908" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-facebook%20(1).svg?updatedAt=1711952309727" alt="" className='contactlogo' />
+              <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-instagram.svg?updatedAt=1711952319421" alt="" className='contactlogo' />
+            </Card>
+          </Col>
+        </Row>
+
+
+      </Container>
+
+
+      <div className='whybetter' >
+
+        <Container>
+          <Row>
+            <Col md='6' className='whybetterimg' >
+              <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/about-service-3.png" alt="" style={{ borderRadius: '10px' }} />
+            </Col>
+
+            <Col md='6' className='whybettertext' >
+
+              <h1>Why our services are
+                better than others?</h1>
+              <h5>We don't believe in a one-size-fit-all approach. Our services are carefully customized to suit your specific need, ensuring you to achieve your goals.</h5>
+              <h5>We believe in delivering value that extends your beyond the immediate project. Our services are designed to provide a long-term benefits.</h5>
+
+              <Row>
+                <Col style={{ display: 'flex', gap: '65px' }} >
+                  <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
+                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                    <h5>PPD Development </h5>
+                  </Row>
+                  <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
+                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                    <h5>PPD Development </h5>
+                  </Row>
+
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
+
+      </div>
+
+      <Container className='assitance' >
+        <Row>
+          <Col className='assistanceimg'>
+            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/12/small-img-4.png" alt="" />
+            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/12/small-img-3.png" alt="" />
+            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/12/small-img-2.png" alt="" />
+            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/12/small-img-1.png" alt="" />
+          </Col>
+        </Row>
+        <Row>
+          <Col className='assitanttext' >
+            <h1>Need any further assitance?</h1>
+            <h3>Feel free to reach out for any inquiries or assistance.</h3>
+            <Button className='bookappoinmentnow'  > Book an appointment now</Button>
+          </Col>
+        </Row>
+      </Container>
+
+
+
+
       <Getintouch />
-      <Footer />
+
     </>
 
   )
