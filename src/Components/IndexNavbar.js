@@ -34,8 +34,8 @@ function IndexNavbar() {
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="me-auto" navbar>
-                        <NavItem className='navitem'>
-                            <Link className='link' to="/">Home</Link>
+                        <NavItem className='navitem' style={{ paddingTop : '7px'}}>
+                            <Link className='link'  to="/">Home</Link>
                         </NavItem>
                         <NavItem >
                             <Link className='navitem' to="/about">
@@ -137,7 +137,7 @@ function IndexNavbar() {
 
 
                         <UncontrolledDropdown nav inNavbar className='navitem' style={{ position: "static" }}>
-                            <DropdownToggle nav caret>
+                            <DropdownToggle nav caret className='navitem'>
                                 Services
                             </DropdownToggle>
                             <DropdownMenu  >
@@ -199,7 +199,7 @@ function IndexNavbar() {
                                                             <Col md='6' >
                                                                 <div className='servicenavcard' style={{ display: 'flex' }} >
                                                                     <div>
-                                                                        <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-upload-to-cloud-50.png?updatedAt=1711008806034" alt="" height={50} width={50} />
+                                                                        <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-upload-to-cloud-50.png?updatedAt=1711008806034" alt="" height={50} width={50} style={{objectFit : 'contain'}} />
                                                                     </div>
                                                                     <div className='navcardtext'>
                                                                         <Link to='/how-we-do'>
@@ -218,25 +218,24 @@ function IndexNavbar() {
                                                             <Col md='6' >
                                                                 <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'left', alignItems: 'self-start', padding: 'auto', paddingLeft: '50px', marginTop: '17px' }} >
                                                                     <h6 style={{ textAlign: 'center' }} >Services</h6>
-                                                                    <a href="/"><li>Development</li></a>
-                                                                    <a href="/"><li>Web Design</li></a>
-                                                                    <a href="/"><li>IT Support</li></a>
+                                                                    <Link to="/ourservices"><li>Development</li></Link>
+                                                                    <Link to="/ourservices"><li>Web Design</li></Link>
+                                                                    <Link to="/ourservices"><li>IT Support</li></Link>
 
-                                                                    <a href="/"><li>E-Cpmmerce</li></a>
-                                                                    <a href="/"><li>CRM Solutions</li></a>
+                                                                    <Link to="/ourservices"><li>E-Cpmmerce</li></Link>
+                                                                    <Link to="/ourservices"><li>CRM Solutions</li></Link>
 
                                                                 </div>
                                                             </Col>
                                                             <Col md='6' >
                                                                 <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center', alignItems: 'self-start', paddingLeft: '19px', marginTop: '17px' }} >
                                                                     <h6 style={{ textAlign: 'center' }}>Our Fildes</h6>
-                                                                    <a href="/"><li>Healthcare</li></a>
-                                                                    <a href="/"><li>Travel</li></a>
-                                                                    <a href="/"><li>Supermarket</li></a>
-                                                                    <a href="/"><li>Industries</li></a>
-                                                                    <a href="/"><li>Hotels</li></a>
+                                                                    <Link to="/"><li>Healthcare</li></Link>
+                                                                    <Link to="/"><li>Travel</li></Link>
+                                                                    <Link to="/"><li>Supermarket</li></Link>
+                                                                    <Link to="/"><li>Industries</li></Link>
+                                                                    <Link to="/"><li>Hotels</li></Link>
 
-                                                                    <Link><li>NGOS</li></Link>
 
                                                                 </div>
                                                             </Col>
@@ -289,7 +288,7 @@ function IndexNavbar() {
                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/iconmonstr-arrow-right-thin.svg?updatedAt=1710998562574" alt="" className='calluslogo' />
                         </div>
                         <div>
-                            <p className='navnum' >8409624333</p>
+                            <p className='navnum' >9568235684</p>
 
                         </div>
                     </div>

@@ -96,19 +96,22 @@ function Getintouch() {
                     <Col md='3' >
                         <div className="contactcard">
                             <Row>
-                                <Col>
+                                <Col style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} >
                                     <Row style={{ marginTop: '10px' }} >
                                         <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/support-icon.svg" alt="" className='thirdcolicon' style={{ width: 78 }} />
                                     </Row>
                                     <h4>
                                         Contact info
                                     </h4>
-
-                                    <Row style={{ marginLeft: '5px' }} >
+                                    <p style={{ marginBottom: '4px' }} >
                                         809624333
+                                    </p>
+
+                                    <p style={{ margin: '0px' }} >
                                         panacee@gmail.com
-                                    </Row>
-                                    <Row style={{ marginTop: '30px' }} >
+                                    </p>
+
+                                    <Row style={{ marginTop: '30px' }} > <br />
                                         <hr />
                                     </Row>
 
@@ -128,7 +131,7 @@ function Getintouch() {
                                     </Row>
 
 
-                                    <Row style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '30px' }} >
+                                    <Row style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '39px' }} >
                                         <Col style={{ display: 'flex', marginLeft: '2px' }}>
                                             <img src="https://www.svgrepo.com/show/77510/football.svg" alt="" style={{ width: 20, height: 25, objectFit: 'contain' }} />
                                             <p style={{ marginLeft: '10px' }} >Dubblin</p>

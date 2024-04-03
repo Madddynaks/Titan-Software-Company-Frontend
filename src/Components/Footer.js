@@ -68,39 +68,39 @@ function Footer() {
                             <Row className='footerdivider' >
                                 <Col md='3' className='footitem' >
                                     <h5>Services</h5>
-                                    <a href="/"><li>IT Support</li></a>
-                                    <a href="/"><li>Web Design</li></a>
-                                    <a href="/"><li>Development</li></a>
-                                    <a href="/"><li>Cloud Things</li></a>
-                                    <a href="/"><li>E-Commerce</li></a>
-                                    <a href="/"><li>CRM Solutions</li></a>
+                                    <a href="/ourservices"><li>IT Support</li></a>
+                                    <a href="/ourservices"><li>Web Design</li></a>
+                                    <a href="/ourservices"><li>Development</li></a>
+                                    <a href="/ourservices"><li>Cloud Things</li></a>
+                                    <a href="/ourservices"><li>E-Commerce</li></a>
+                                    <a href="/ourservices"><li>CRM Solutions</li></a>
+                                </Col>
+                                <Col md='3' className='footitem' >
+                                    <h5>Company</h5>
+                                    <a href="/"><li>Blog</li></a>
+                                    <a href="/"><li>About Us</li></a>
+                                    <a href="/"><li>Partners</li></a>
+                                    <a href="/"><li>Careers </li></a>
+                                    <a href="/"><li>Events</li></a>
+                                    <a href="/"><li>Team</li></a>
+                                </Col>
+                                <Col md='3' className='footitem' >
+                                    <h5>Product</h5>
+                                    <a href="/"><li>Case Studies</li></a>
+                                    <a href="/"><li>Our Pricing</li></a>
+                                    <a href="/"><li>Features</li></a>
+                                    <a href="/"><li>Overview</li></a>
+                                    <a href="/"><li>New Releases</li></a>
+                                    <a href="/"><li>Solutions</li></a>
                                 </Col>
                                 <Col md='3' className='footitem' >
                                     <h5>Services</h5>
-                                    <a href="/"><li>IT Support</li></a>
-                                    <a href="/"><li>Web Design</li></a>
-                                    <a href="/"><li>Development</li></a>
-                                    <a href="/"><li>Cloud Things</li></a>
-                                    <a href="/"><li>E-Commerce</li></a>
-                                    <a href="/"><li>CRM Solutions</li></a>
-                                </Col>
-                                <Col md='3' className='footitem' >
-                                    <h5>Services</h5>
-                                    <a href="/"><li>IT Support</li></a>
-                                    <a href="/"><li>Web Design</li></a>
-                                    <a href="/"><li>Development</li></a>
-                                    <a href="/"><li>Cloud Things</li></a>
-                                    <a href="/"><li>E-Commerce</li></a>
-                                    <a href="/"><li>CRM Solutions</li></a>
-                                </Col>
-                                <Col md='3' className='footitem' >
-                                    <h5>Services</h5>
-                                    <a href="/"><li>IT Support</li></a>
-                                    <a href="/"><li>Web Design</li></a>
-                                    <a href="/"><li>Development</li></a>
-                                    <a href="/"><li>Cloud Things</li></a>
-                                    <a href="/"><li>E-Commerce</li></a>
-                                    <a href="/"><li>CRM Solutions</li></a>
+                                    <a href="/ourservices"><li>IT Support</li></a>
+                                    <a href="/ourservices"><li>Web Design</li></a>
+                                    <a href="/ourservices"><li>Development</li></a>
+                                    <a href="/ourservices"><li>Cloud Things</li></a>
+                                    <a href="/ourservices"><li>E-Commerce</li></a>
+                                    <a href="/ourservices"><li>CRM Solutions</li></a>
                                 </Col>
 
                             </Row>
@@ -110,11 +110,11 @@ function Footer() {
                         <Col md='3' className='footcontact'  >
 
                             <h6>Phone</h6>
-                            <a href="/"><p>8409624333</p></a>
-                            <a href="/"><p>8409624333</p></a>
+                            <a href="/"><p>9568235684</p></a>
+                          
                             <h6>Email</h6>
-                            <a href="/"><p>bluebase@mail.com</p></a>
-                            <a href="/"> <p>mandrodio@mail.com</p></a>
+                            <a href="/"><p>infopanacee@gmail.com</p></a>
+                     
 
 
                         </Col>
@@ -130,7 +130,7 @@ function Footer() {
                         </Col>
                         <Col md='5' >
                             <a href=""><p style={{ color: 'white' }} >© Copyright 2023, Panacea Software Solutions</p></a>
-                            
+
                         </Col>
                     </Row>
 

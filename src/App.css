@@ -32,6 +32,8 @@ body {
   }
 }
 
+
+
 .navlogo {
   /* width: 3vw;
     height: 6vh; */
@@ -44,9 +46,36 @@ body {
   padding-left: 35px;
   font-size: 18px;
   font-weight: 500;
-  color: #000000;
- 
+  color: #000000 !important;
+  margin: 0px !important;
+
 }
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #1e2125;
+  background-color: #ffffff !important;
+}
+
+.contypecard {
+  border-radius: 15px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.contypecard a {
+  /* background-color: #000000; */
+  color: #000000;
+}
+
+.contypecard h5 {
+  /* background-color: #000000; */
+  color: #000000;
+}
+
 .navitem a {
   color: #000000;
 
@@ -173,7 +202,62 @@ Button {
 @media screen and (max-width : 450px) {
   .howedocard1 {
     width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+
   }
+}
+
+.howedocard1 {
+  width: 250px;
+}
+
+@media screen and (max-width : 450px) {
+  .last {
+    width: 300px !important;
+    /* background-color: #1351d8; */
+    margin: 0px !important;
+    height: auto;
+  }
+}
+
+@media screen and (max-width : 450px) {
+  .last11 {
+    width: 300px !important;
+
+    margin: 0px !important;
+    height: auto;
+  }
+}
+
+@media screen and (max-width : 450px) {
+  .hwdcon2 {
+    padding-top: 0px !important;
+  }
+}
+
+
+.hwdcon2 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 15px;
+
+}
+
+.hwdcon {
+  display: flex;
+  padding: 20px;
+  gap: 15px;
+  justify-content: space-around;
+}
+
+.last11 {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 }
 
 .aboutheader1 {
@@ -421,6 +505,13 @@ li {
   box-sizing: border-box;
 }
 
+.boostcon {
+  background-color: #e0e0e0;
+  padding: 80px;
+  border-radius: 15px;
+  margin-top: 50px;
+}
+
 .inputarea {
   width: 100%;
   outline: #575757;
@@ -481,11 +572,20 @@ li {
   margin-bottom: 25px;
 }
 
-.home1{
-margin: 150px;
-margin-top: 80px;
-
+.home1 {
+  /* margin: 150px; */
+  margin-top: 80px;
+  padding: 150px;
+  padding-top: 0%;
+  box-sizing: border-box;
 }
+
+@media screen and (max-width: 768px) {
+  .home1 {
+    padding: 10px;
+  }
+}
+
 .contactcard {
   padding: 70px;
   background-color: #f3f6fd;
@@ -683,14 +783,18 @@ a {
   padding: 50px;
   border-radius: 10px;
 }
-.hwd{
-margin-top: 0px !important ;
+
+.hwd {
+  margin-top: 0px !important;
+  margin-right: 0px !important;
+  box-sizing: border-box;
 }
+
 .link {
   margin-top: 30px;
 }
 
-.hwd1{
+.hwd1 {
   background-color: #1d241c;
   color: white;
   padding: 50px;
@@ -700,6 +804,7 @@ margin-top: 0px !important ;
   align-items: center;
   gap: 15px;
 }
+
 .aboutcardindex {
 
 
@@ -707,12 +812,13 @@ margin-top: 0px !important ;
 }
 
 .OURCOMPANY {
-margin-top: 40px;
+  margin-top: 40px;
   padding: 50px;
   background-color: #cddbff;
   border-radius: 15px;
 }
-.assitance{
+
+.assitance {
   background-color: #000000;
   box-sizing: border-box;
   height: 100%;
@@ -722,53 +828,78 @@ margin-top: 40px;
   border-radius: 15px;
   margin-top: 80px;
 }
-.assistanceimg{
+
+.assistanceimg {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
 
 }
-.assitanttext{
+
+.assitanttext {
   display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   margin-top: 25px;
   gap: 10px;
 
 }
-.bookappoinmentnow{
+
+.bookappoinmentnow {
   background-color: blue;
   height: 55px;
   width: 350px;
   border-radius: 8px;
 }
-.whybetter{
+
+@media screen and (max-width : 450px) {
+  .whybetter {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width : 450px) {
+  .whybettertext {
+    padding: 25px !important;
+  }
+}
+
+.whybetter {
+
+  padding: 10px;
+
+}
+
+.whybetter {
   border-radius: 15px;
   background-color: #1d241c;
   color: white;
   box-sizing: content-box;
-  padding: 90px;
+  padding: 50px;
   margin-top: 40px;
 }
-.whybetterimg{
+
+.whybetterimg {
   border-radius: 15px;
 }
 
-.whybettertext{
+.whybettertext {
   padding: 70px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.bookappwexp{
+
+.bookappwexp {
   background-color: #1351D8;
   border-radius: 10px;
   padding: 12px;
 
 
 }
-.ourexpert{
+
+.ourexpert {
   background-color: #e5e6e7;
   padding: 50px;
   border-radius: 15px;
@@ -780,7 +911,8 @@ margin-top: 40px;
   justify-content: center;
   align-items: center;
 }
-.ourexpert1{
+
+.ourexpert1 {
   box-sizing: border-box;
   margin-top: 40px;
   justify-content: center;
@@ -789,17 +921,19 @@ margin-top: 40px;
   padding: 70px;
   border-radius: 15px;
 }
-.ourexpertimg{
+
+.ourexpertimg {
   object-fit: contain;
-  height:  130px;
+  height: 130px;
   width: 130px;
 }
 
-.contactlogo{
+.contactlogo {
   height: 30px;
   width: 30px;
 }
-.contactlogocard{
+
+.contactlogocard {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -809,47 +943,49 @@ margin-top: 40px;
   border-radius: 8px;
   width: 140px;
 }
-.ourexpertrow{
+
+.ourexpertrow {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
 
-.Introduction{
+.Introduction {
   padding: 100px;
   background-color: #e8efff;
   border-radius: 18px;
-  gap:  12px;
+  gap: 12px;
   display: flex;
   flex-direction: column;
   margin-top: 45px;
 }
 
-.Introduction p{
-   font-size: 20px;
+.Introduction p {
+  font-size: 20px;
 }
 
-.howwedobtn{
-    background-color: #1351D8;
-    width: 6vw;
-  
-}
-.abouta1{
-    background-color: #cddbff;
-    box-sizing: border-box;
-    color: #2d61e6;
-    border-radius: 25px;
-    text-align: center;
-    width: 130px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.howwedobtn {
+  background-color: #1351D8;
+  width: 6vw;
+
 }
 
+.abouta1 {
+  background-color: #cddbff;
+  box-sizing: border-box;
+  color: #2d61e6;
+  border-radius: 25px;
+  text-align: center;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
-.hwd1btn{
+
+.hwd1btn {
   background-color: #cddbff;
   box-sizing: border-box;
   color: #2d61e6;
@@ -862,9 +998,10 @@ margin-top: 40px;
   align-items: center;
 }
 
-.contactpara1{
+.contactpara1 {
   font-size: 75px;
 }
-.contactpara2{
+
+.contactpara2 {
   font-size: 25px;
 }

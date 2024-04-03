@@ -14,7 +14,7 @@ function Home() {
                 <Row>
                     <Col md='6'>
                         <p style={{ color: '#1351d8', letterSpacing: '5px' }} >EMPOWERMENT</p>
-                        <h1 style={{ fontSize: '65px' }} >Seamless IT for your  business, boosting your growth.</h1>
+                        <h1 style={{ fontSize: '70px' }} >Seamless IT for your  business, boosting your growth.</h1>
                         <p style={{ marginTop: '35px', fontSize: '22px' }} >We provide the expertise and support to propel your business forward in the digital landscape.</p>
                         <Row style={{ marginTop: '35px' }}>
                             <Col style={{ display: 'flex', gap: '5px' }} >
@@ -25,25 +25,17 @@ function Home() {
                         </Row>
                     </Col>
                     <Col md='6'>
-                        <img src="https://images.pexels.com/photos/3184613/pexels-photo-3184613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style={{ marginTop: '20px', borderRadius: '20px' }} />
+                        <img src="https://images.pexels.com/photos/3184613/pexels-photo-3184613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style={{ marginTop: '20px', borderRadius: '20px' , objectFit : 'contain' }} />
                     </Col>
                 </Row>
-                <br /><br /><br />
+                <br /><br /><br />  
                 <br /><br />
 
                 <hr /><br />
             </div>
             <Container >
 
-
-
-
             </Container>
-
-
-
-
-
 
             <Slider />
 
@@ -61,9 +53,9 @@ function Home() {
 
                     <Col md='9' >
 
-                        <Row style={{ display: 'flex', padding: '20px', gap: '15px', justifyContent: 'space-around' }} >
+                        <Row className='hwdcon'  >
                             <Col md="3" style={{ padding: '0px' }}>
-                                <Card className='howedocard1' style={{ width: '250px', height: '300' }} >
+                                <Card className='howedocard1'  >
                                     <div className='howedocard' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/brain-svgrepo-com.svg?updatedAt=1710937497361" alt="" height={50} width={50} />
@@ -77,7 +69,7 @@ function Home() {
 
                             </Col>
                             <Col md="3" style={{ padding: '0px' }}>
-                                <Card className='howedocard1' style={{ width: '250px', height: '300' }} >
+                                <Card className='howedocard1'  >
                                     <div className='howedocard' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519" alt="" height={50} width={50} />
@@ -91,7 +83,7 @@ function Home() {
 
                             </Col>
                             <Col md="3" style={{ padding: '0px' }}>
-                                <Card className='howedocard1' style={{ width: '250px', height: '300' }} >
+                                <Card className='howedocard1' >
                                     <div className='howedocard' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/graphic-design.png?updatedAt=1711008512725" alt="" height={50} width={50} />
@@ -107,9 +99,9 @@ function Home() {
 
 
 
-                        <Row style={{ display: 'flex', justifyContent: 'center', padding: '20px', gap: '15px' }} >
+                        <Row className='hwdcon2'>
                             <Col md="4" style={{ padding: '0px' }} >
-                                <Card className='howedocard1' style={{ width: '250px', height: '300' }} >
+                                <Card className='howedocard1'  >
                                     <div className='howedocard' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519" alt="" height={50} width={50} />
@@ -123,12 +115,12 @@ function Home() {
                             </Col>
 
                             <Col md="4" style={{ padding: '0px' }}>
-                                <Card className='howedocard1' style={{ width: '250px', height: '300' }} >
+                                <Card className='howedocard1 '  >
                                     <div className='howedocard' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519" alt="" height={50} width={50} />
                                         </div>
-                                        <div className='navcardtext'>
+                                        <div className='navcardtext '>
                                             <h6>Back-End</h6>
                                             <p>Development</p>
                                         </div>
@@ -140,9 +132,9 @@ function Home() {
 
 
                         <Row>
-                            <Col style={{ display: 'flex', justifyContent: 'center', marginTop: '15px' }} >
-                                <Card className='howedocard1' style={{ width: '250px' }} >
-                                    <div className='howedocard' style={{ display: 'flex' }} >
+                            <Col className='last11'>
+                                <Card className='howedocard1 last'  >
+                                    <div className='howedocard ' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519" alt="" height={50} width={50} />
                                         </div>
