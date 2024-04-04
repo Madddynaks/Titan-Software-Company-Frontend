@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button, Card } from 'reactstrap'
 import 'swiper/css';
 
@@ -18,17 +18,18 @@ function Home() {
                         <p style={{ marginTop: '35px', fontSize: '22px' }} >We provide the expertise and support to propel your business forward in the digital landscape.</p>
                         <Row style={{ marginTop: '35px' }}>
                             <Col style={{ display: 'flex', gap: '5px' }} >
-                                <Button className='contactusbtnhome'>Contact Us</Button>
-                                <Button className='letstalkbtnhome'>Let's Talk </Button>
+                                <Link to='/contactus' ><Button className='contactusbtnhome'>Contact Us</Button></Link>
+                                <Link to='/contactus' ><Button className='letstalkbtnhome'>Let's Talk </Button></Link>
+                                
                             </Col>
 
                         </Row>
                     </Col>
                     <Col md='6'>
-                        <img src="https://images.pexels.com/photos/3184613/pexels-photo-3184613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style={{ marginTop: '20px', borderRadius: '20px' , objectFit : 'contain' }} />
+                        <img src="https://images.pexels.com/photos/3184613/pexels-photo-3184613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" style={{ marginTop: '20px', borderRadius: '20px', objectFit: 'contain' }} />
                     </Col>
                 </Row>
-                <br /><br /><br />  
+                <br /><br /><br />
                 <br /><br />
 
                 <hr /><br />
@@ -47,7 +48,8 @@ function Home() {
                         <h6 className='ourmodeltext' >OUR MODEL</h6>
                         <h1 className='howedotext' >How we do</h1>
                         <h5 className='savetimetext' >Save time and money with our powerful method.</h5>
-                        <Button className='contactusbtncard' >Contact Us</Button>
+                        <Link to='/contactus'><Button className='contactusbtncard' >Contact Us</Button></Link>
+                        
                     </Col>
 
 
@@ -423,11 +425,14 @@ function Home() {
 
                         <Row style={{ display: 'flex', gap: '10px', marginTop: '40px' }} >
                             <Col md='3'>
-                                <Button className='productivitybtn' >Get  Started Now!</Button>
+                                <Link to='/contactus' ></Link> <Button className='productivitybtn' >Get  Started Now!</Button>
+
+
 
                             </Col>
                             <Col >
-                                <Button className='productivitybtn' >Learn More</Button>
+                                <Link to='/contactus' ><Button className='productivitybtn' >Learn More</Button></Link>
+
 
                             </Col>
                         </Row>

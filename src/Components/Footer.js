@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Col, Button, Container } from 'reactstrap'
+import { Link } from 'react-router-dom'
 function Footer() {
     return (
         <>
@@ -26,7 +27,8 @@ function Footer() {
                                     <input type="text" className='footerinput' placeholder='Enter Your Email'></input>
                                 </Col>
                                 <Col md='5'>
-                                    <Button className='contactusbtnfoot'>Contact Us</Button>
+                                    <Link to='/contactus'><Button className='contactusbtnfoot'>Contact Us</Button></Link>
+                                    
 
                                 </Col>
                             </Row>
@@ -56,7 +58,7 @@ function Footer() {
                             <h2>Let’s get started on something great</h2>
                             <h6 style={{ marginTop: '20px' }} >Our team of IT experts looks forward to meeting with you <br />
                                 and providing valuable insights tailored to your business.</h6>
-                            <Button className='apontmentbtn'>Get an appointment now</Button>
+                            <Link to='/contactus' ><Button className='apontmentbtn'>Get an appointment now</Button></Link>
 
                         </Col>
                     </Row>
@@ -75,7 +77,7 @@ function Footer() {
                                     <a href="/ourservices"><li>E-Commerce</li></a>
                                     <a href="/ourservices"><li>CRM Solutions</li></a>
                                 </Col>
-                                <Col md='3' className='footitem' >
+                                <Col md='3' className='footitem'>  
                                     <h5>Company</h5>
                                     <a href="/"><li>Blog</li></a>
                                     <a href="/"><li>About Us</li></a>
@@ -111,10 +113,10 @@ function Footer() {
 
                             <h6>Phone</h6>
                             <a href="/"><p>9568235684</p></a>
-                          
+
                             <h6>Email</h6>
                             <a href="/"><p>infopanacee@gmail.com</p></a>
-                     
+
 
 
                         </Col>
@@ -123,13 +125,14 @@ function Footer() {
                 <Container style={{ marginTop: '35px' }} >
                     <Row style={{ display: 'flex', flexDirection: 'row', gap: '15px' }} >
                         <Col md='4' style={{ display: 'flex', gap: '28px' }} >
-                            <a href="/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="" className="connection-logo" /></a>
+                            <a href=""><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="" className="connection-logo" /></a>
                             <a href="/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
-                            <a href="/"><img src="https://ik.imagekit.io/2q7cgnqzi/icon/icons8-linkedin.svg?updatedAt=1710492054727" alt="" className="connection-logo-linkedin" /></a>
+                            <a href="https://www.linkedin.com/company/panacee-software-solutions/"><img src="https://ik.imagekit.io/2q7cgnqzi/icon/icons8-linkedin.svg?updatedAt=1710492054727" alt="" className="connection-logo-linkedin" /></a>
                             <a href="/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
                         </Col>
                         <Col md='5' >
-                            <a href=""><p style={{ color: 'white' }} >© Copyright 2023, Panacea Software Solutions</p></a>
+                            <Link to='/contactus' ><p style={{ color: 'white' }} >© Copyright 2023, Panacea Software Solutions</p></Link>
+                        
 
                         </Col>
                     </Row>

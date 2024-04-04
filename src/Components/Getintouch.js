@@ -104,12 +104,11 @@ function Getintouch() {
                                         Contact info
                                     </h4>
                                     <p style={{ marginBottom: '4px' }} >
-                                        809624333
+                                        9650900190
                                     </p>
 
                                     <p style={{ margin: '0px' }} >
-                                        panacee@gmail.com
-                                    </p>
+                                        info@panaceainfosolutions.com</p>
 
                                     <Row style={{ marginTop: '30px' }} > <br />
                                         <hr />
@@ -122,8 +121,8 @@ function Getintouch() {
                                         Visit our office
                                     </h4>
                                     <Row style={{ marginLeft: '3px' }} >
-                                        16/9, Down Street Edinburgh, Scotland United Kingdom
-                                    </Row>
+                                        246, Block-C4F,
+                                        Janakpuri, Delhi-110058.                                    </Row>
 
                                     <Row style={{ marginTop: '50px' }} >
 

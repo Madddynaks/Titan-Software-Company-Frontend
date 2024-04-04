@@ -26,17 +26,16 @@ function Slider() {
                     disableOnInteraction: false,
                 }}
             >
-                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo3-1.svg" alt="" /></Card></SwiperSlide>
-                <SwiperSlide> <Card className='sliderimage'  ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo5-1.svg" alt="" /></Card></SwiperSlide>
-                <SwiperSlide> <Card className='sliderimage'  ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo4-1.svg" alt="" /></Card></SwiperSlide>
-                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo1-1.svg" alt="" /></Card></SwiperSlide>
-                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://ik.imagekit.io/2q7cgnqzi/icon/google-ar21.svg?updatedAt=1711448191760" alt="" /></Card></SwiperSlide>
-                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo2-1.svg" alt="" /></Card></SwiperSlide>
-                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo3-1.svg" alt="" /></Card></SwiperSlide>
-                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo5-1.svg" alt="" /></Card></SwiperSlide>
-                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo4-1.svg" alt="" /></Card></SwiperSlide>
-                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo1-1.svg" alt="" /></Card></SwiperSlide>
-                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/client-logo1-1.svg" alt="" /></Card> </SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://kartooncafe.com/wp-content/uploads/2023/05/cropped-Kartoon-Cafe-Final-Logo-Copy.png" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage'  ><img className="home-slider-img" src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/GI-Logo%20(1).png?updatedAt=1711628849372" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage'  ><img className="home-slider-img" src="https://ik.imagekit.io/2q7cgnqzi/monogram.png?updatedAt=1710738468690" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://kartooncafe.com/wp-content/uploads/2023/05/cropped-Kartoon-Cafe-Final-Logo-Copy.png" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage'  ><img className="home-slider-img" src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/GI-Logo%20(1).png?updatedAt=1711628849372" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage'  ><img className="home-slider-img" src="https://ik.imagekit.io/2q7cgnqzi/monogram.png?updatedAt=1710738468690" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage' ><img className="home-slider-img" src="https://kartooncafe.com/wp-content/uploads/2023/05/cropped-Kartoon-Cafe-Final-Logo-Copy.png" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage'  ><img className="home-slider-img" src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/GI-Logo%20(1).png?updatedAt=1711628849372" alt="" /></Card></SwiperSlide>
+                <SwiperSlide> <Card className='sliderimage'  ><img className="home-slider-img" src="https://ik.imagekit.io/2q7cgnqzi/monogram.png?updatedAt=1710738468690" alt="" /></Card></SwiperSlide>
+               
             </Swiper>
 
         </>

@@ -29,8 +29,9 @@ function IndexNavbar() {
 
     return (
         <div>
-            <Navbar className='navbar' light expand="md"   >
-                <NavbarBrand to="/"><img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/Panacee%20logo.png?updatedAt=1710924589184" alt="" className='navlogo' /> </NavbarBrand>
+            <Navbar className='navbar' light expand="md">
+                
+                <NavbarBrand><Link to='/'><img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/Panacee%20logo.png?updatedAt=1710924589184" alt="" className='navlogo' /></Link></NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="me-auto" navbar>
@@ -288,7 +289,7 @@ function IndexNavbar() {
                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/iconmonstr-arrow-right-thin.svg?updatedAt=1710998562574" alt="" className='calluslogo' />
                         </div>
                         <div>
-                            <p className='navnum' >9568235684</p>
+                            <p className='navnum' >9650900190</p>
 
                         </div>
                     </div>

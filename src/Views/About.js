@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col, Button, Card } from 'reactstrap'
-
+import { Link } from 'react-router-dom'
 
 import Slider from '../Components/Slider'
 import Getintouch from '../Components/Getintouch'
@@ -82,7 +82,8 @@ function About() {
             <h1 style={{ fontSize: '45px' }} >Why our company is too popular?</h1>
           </Col>
           <Col>
-            <Button className='contactusbtnhome'>Contact Us</Button>
+          <Link to = '/contactus' > <Button className='contactusbtnhome'>Contact Us</Button></Link>
+            
           </Col>
         </Row>
 
@@ -190,7 +191,8 @@ function About() {
               visionaries from diverse fields.</p>
           </Col>
           <Col md='4'>
-            <Button className='bookappwexp' >Book an appointment with our expert now</Button>
+            <Link to='/contactus' ><Button className='bookappwexp' >Book an appointment with our expert now</Button></Link>
+            
           </Col>
         </Row>
       </Container>
@@ -338,7 +340,8 @@ function About() {
           <Col className='assitanttext' >
             <h1>Need any further assitance?</h1>
             <h3>Feel free to reach out for any inquiries or assistance.</h3>
-            <Button className='bookappoinmentnow'  > Book an appointment now</Button>
+            <Link to= '/contactus'><Button className='bookappoinmentnow'  > Book an appointment now</Button></Link>
+            
           </Col>
         </Row>
       </Container>
