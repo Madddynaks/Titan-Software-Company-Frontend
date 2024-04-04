@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     Collapse,
     Navbar,
@@ -30,13 +30,13 @@ function IndexNavbar() {
     return (
         <div>
             <Navbar className='navbar' light expand="md">
-                
+
                 <NavbarBrand><Link to='/'><img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/Panacee%20logo.png?updatedAt=1710924589184" alt="" className='navlogo' /></Link></NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="me-auto" navbar>
-                        <NavItem className='navitem' style={{ paddingTop : '7px'}}>
-                            <Link className='link'  to="/">Home</Link>
+                        <NavItem className='navitem' style={{ paddingTop: '7px' }}>
+                            <Link className='link' to="/">Home</Link>
                         </NavItem>
                         <NavItem >
                             <Link className='navitem' to="/about">
@@ -58,16 +58,17 @@ function IndexNavbar() {
                                             <Col md='8' >
                                                 <Row>
                                                     <Col md='6' >
-                                                        <div className='portfolionavcard' style={{ display: 'flex' }} >
-                                                            <div>
-                                                                <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/02/portfolio-mega-menu-1.jpg" alt="" className='proffolionavimg' />
-                                                            </div>
-                                                            <div className='navcardtext'>
-                                                                <h6>E-commerce</h6>
-                                                                <p>we undertook a
-                                                                    <br /> project to migrate <br /> their existing.</p>
-                                                            </div>
-                                                        </div>
+                                                        <Link to='/impact'>
+                                                            <div className='portfolionavcard' style={{ display: 'flex' }} >
+                                                                <div>
+                                                                    <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/02/portfolio-mega-menu-1.jpg" alt="" className='proffolionavimg' />
+                                                                </div>
+                                                                <div className='navcardtext'>
+                                                                    <h6>E-commerce</h6>
+                                                                    <p>we undertook a
+                                                                        <br /> project to migrate <br /> their existing.</p>
+                                                                </div>
+                                                            </div></Link>
                                                         <div className='portfolionavcard' style={{ display: 'flex' }} >
                                                             <div>
                                                                 <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/02/portfolio-mega-menu-3.jpeg" alt="" className='proffolionavimg' />
@@ -118,10 +119,10 @@ function IndexNavbar() {
                                         <br />
                                         <div style={{ display: 'flex' }} >
                                             <div style={{ width: '180px', justifyContent: 'space-between', padding: '15px', display: 'flex' }}>
-                                                <a to="https://www.facebook.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="" className="connection-logo" /></a>
-                                                <a to="https://www.instagram.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
-                                                <a to="https://twitter.com/ChadhaJaslin"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-square-color-icon.png" alt="" className="connection-logo" /></a>
-                                                <a to="https://www.youtube.com/@jeevshaktifoundation"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
+                                                <a href="https://www.linkedin.com/company/panacee-software-solutions/"><img src="https://ik.imagekit.io/2q7cgnqzi/icon/icons8-linkedin.svg?updatedAt=1710492054727" alt="" className="connection-logo" /></a>
+                                                <a href="https://www.instagram.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
+                                                <a href="https://twitter.com/ChadhaJaslin"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-square-color-icon.png" alt="" className="connection-logo" /></a>
+                                                <a href="https://www.youtube.com/@jeevshaktifoundation"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
                                             </div>
                                             <p style={{ marginLeft: '410px', marginTop: '9px' }} >Looking for new career ? <strong>We're hiring</strong> </p>
                                         </div>
@@ -131,9 +132,6 @@ function IndexNavbar() {
 
                             </DropdownMenu>
                         </UncontrolledDropdown>
-
-
-
 
 
 
@@ -200,7 +198,7 @@ function IndexNavbar() {
                                                             <Col md='6' >
                                                                 <div className='servicenavcard' style={{ display: 'flex' }} >
                                                                     <div>
-                                                                        <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-upload-to-cloud-50.png?updatedAt=1711008806034" alt="" height={50} width={50} style={{objectFit : 'contain'}} />
+                                                                        <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-upload-to-cloud-50.png?updatedAt=1711008806034" alt="" height={50} width={50} style={{ objectFit: 'contain' }} />
                                                                     </div>
                                                                     <div className='navcardtext'>
                                                                         <Link to='/how-we-do'>
@@ -230,7 +228,7 @@ function IndexNavbar() {
                                                             </Col>
                                                             <Col md='6' >
                                                                 <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center', alignItems: 'self-start', paddingLeft: '19px', marginTop: '17px' }} >
-                                                                    <h6 style={{ textAlign: 'center' }}>Our Fildes</h6>
+                                                                    <h6 style={{ textAlign: 'center' }}>Our Fields </h6>
                                                                     <Link to="/"><li>Healthcare</li></Link>
                                                                     <Link to="/"><li>Travel</li></Link>
                                                                     <Link to="/"><li>Supermarket</li></Link>
@@ -268,10 +266,10 @@ function IndexNavbar() {
 
                                         <div style={{ display: 'flex' }} >
                                             <div style={{ width: '180px', justifyContent: 'space-between', padding: '15px', display: 'flex' }}>
-                                                <a to="https://www.facebook.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="" className="connection-logo" /></a>
-                                                <a to="https://www.instagram.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
-                                                <a to="https://twitter.com/ChadhaJaslin"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-square-color-icon.png" alt="" className="connection-logo" /></a>
-                                                <a to="https://www.youtube.com/@jeevshaktifoundation"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
+                                                <a href="https://www.linkedin.com/company/panacee-software-solutions/"><img src="https://ik.imagekit.io/2q7cgnqzi/icon/icons8-linkedin.svg?updatedAt=1710492054727" alt="" className="connection-logo" /></a>
+                                                <a href="https://www.instagram.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
+                                                <a href="https://twitter.com/ChadhaJaslin"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-square-color-icon.png" alt="" className="connection-logo" /></a>
+                                                <a href="https://www.youtube.com/@jeevshaktifoundation"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
                                             </div>
 
                                             <p style={{ marginLeft: '410px', marginTop: '9px' }} >Looking for new career ? <strong>We're hiring</strong> </p>

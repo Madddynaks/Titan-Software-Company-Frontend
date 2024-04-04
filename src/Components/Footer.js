@@ -112,7 +112,7 @@ function Footer() {
                         <Col md='3' className='footcontact'  >
 
                             <h6>Phone</h6>
-                            <a href="/"><p>9568235684</p></a>
+                            <a href="/"><p>9650900190</p></a>
 
                             <h6>Email</h6>
                             <a href="/"><p>infopanacee@gmail.com</p></a>

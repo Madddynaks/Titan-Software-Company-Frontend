@@ -31,7 +31,7 @@ function Contactus() {
                             <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-phone-50.png?updatedAt=1712129594658" alt="" style={{ height: '60px', width: '60px' }} />
                             <h1>Phone</h1>
                             <h5>Mon-Fri from 9am to 6pm.</h5>
-                            <a href=""><h6>95682 35684</h6></a>
+                            <a href=""><h6>9650900190</h6></a>
                         </Card>
                     </Col>
                 </Row>

@@ -1,7 +1,11 @@
-import React from 'react'
+import { React, useEffect } from 'react'
 import Getintouch from './Getintouch'
 import { Container, Row, Col, Button, Card } from 'reactstrap'
 function Hwd() {
+    useEffect(() => {
+
+        window.scrollTo(0, 0);
+    }, [])
     return (
         <>
 
@@ -9,12 +13,9 @@ function Hwd() {
                 <Container >
                     <Row >
                         <Col style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
-
                             <span className='hwd1btn'>Brainstroming</span>
-
                         </Col>
                     </Row>
-
                     <br /><br />
                     <Row style={{ marginTop: '10px' }} >
                         <Col>

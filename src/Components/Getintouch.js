@@ -104,11 +104,11 @@ function Getintouch() {
                                         Contact info
                                     </h4>
                                     <p style={{ marginBottom: '4px' }} >
-                                        9650900190
+                                        96509 00190
                                     </p>
 
                                     <p style={{ margin: '0px' }} >
-                                        info@panaceainfosolutions.com</p>
+                                        infopanacee@gmail.com</p>
 
                                     <Row style={{ marginTop: '30px' }} > <br />
                                         <hr />

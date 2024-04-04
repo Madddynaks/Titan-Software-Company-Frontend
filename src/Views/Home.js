@@ -1,4 +1,4 @@
-import React from 'react'
+import {React , useEffect} from 'react'
 import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button, Card } from 'reactstrap'
 import 'swiper/css';
@@ -8,6 +8,12 @@ import Slider from '../Components/Slider';
 import Getintouch from '../Components/Getintouch';
 
 function Home() {
+    
+useEffect(() => {
+  
+    window.scrollTo(0, 0);  
+}, [])
+
     return (
         <>
             <div style={{}} className='home1'>
@@ -19,10 +25,8 @@ function Home() {
                         <Row style={{ marginTop: '35px' }}>
                             <Col style={{ display: 'flex', gap: '5px' }} >
                                 <Link to='/contactus' ><Button className='contactusbtnhome'>Contact Us</Button></Link>
-                                <Link to='/contactus' ><Button className='letstalkbtnhome'>Let's Talk </Button></Link>
-                                
+                                <Link to='/contactus' ><Button className='letstalkbtnhome'>Let's Talk </Button></Link>  
                             </Col>
-
                         </Row>
                     </Col>
                     <Col md='6'>
@@ -315,22 +319,22 @@ function Home() {
                             <Col md='6' >
                                 <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
                                     <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
-                                    <h5>Easy to Use </h5>
+                                    <h5>Collaboration Tools </h5>
                                 </Row>
                                 <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
                                     <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
-                                    <h5>Easy to Use </h5>
+                                    <h5>Smart Reminders </h5>
                                 </Row>
 
                             </Col>
                             <Col md='6' >
                                 <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
                                     <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
-                                    <h5>Easy to Use </h5>
+                                    <h5>Requirement </h5>
                                 </Row>
                                 <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
                                     <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
-                                    <h5>Easy to Use </h5>
+                                    <h5>Task Management </h5>
                                 </Row>
 
                             </Col>
@@ -350,25 +354,25 @@ function Home() {
 
                         <hr />
                         <Row>
-                            <Col md='6' >
+                        <Col md='6' >
                                 <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
                                     <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
-                                    <h5>Easy to Use </h5>
+                                    <h5>Collaboration Tools </h5>
                                 </Row>
                                 <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
                                     <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
-                                    <h5>Easy to Use </h5>
+                                    <h5>Smart Reminders </h5>
                                 </Row>
 
                             </Col>
                             <Col md='6' >
                                 <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
                                     <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
-                                    <h5>Easy to Use </h5>
+                                    <h5>Requirement </h5>
                                 </Row>
                                 <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
                                     <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
-                                    <h5>Easy to Use </h5>
+                                    <h5>Task Management </h5>
                                 </Row>
 
                             </Col>
