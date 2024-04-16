@@ -42,24 +42,28 @@ function Impact() {
 
 
 
-        <Row style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'row', alignItems: 'center' }} >
+        <Row className='ourteamcheck'  >
           <Col>
-            <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
-              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+            <Row className='tasksign' >
+              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
               <h5>Managed Services and Products </h5>
             </Row>
+
           </Col>
           <Col style={{ display: 'flex', }} >
-            <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
-              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+            <Row className='tasksign' >
+              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
               <h5>Flexibility and Adaptability </h5>
             </Row>
+
           </Col>
           <Col style={{ display: 'flex', }} >
-            <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
-              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+            <Row className='tasksign' >
+              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
               <h5>Competitive Advantage </h5>
             </Row>
+
+
           </Col>
         </Row>
       </Container>
@@ -179,29 +183,26 @@ function Impact() {
               <Row>
                 <Col style={{ display: 'flex', gap: '65px' }} >
 
-                  <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
-                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                  <Row className='tasksign' >
+                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
                     <h5>Collaboration Tools </h5>
                   </Row>
-                  <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
-                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                  <Row className='tasksign' >
+                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
                     <h5>Smart Reminders
                     </h5>
                   </Row>
                 </Col>
                 <Col style={{ display: 'flex', gap: '65px' }} >
-                  <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
-                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                  <Row className='tasksign' >
+                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
                     <h5>Task Management </h5>
                   </Row>
-                  <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
-                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                  <Row className='tasksign' >
+                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
                     <h5>Requirement</h5>
                   </Row>
-
-
                 </Col>
-
               </Row>
             </Col>
             <Col md='6' className='whybetterimg' >
@@ -213,11 +214,11 @@ function Impact() {
       </div>
 
 
-      <Container style={{ marginTop: '70px' }} >
+      <Container className='leadingmemberbox' >
         <p className='delinglogheading'>LEADERSHIP</p>
         <Row>
           <Col md='10' >
-            <h1 style={{ fontSize: '45px' }} >Our Company Leading Members</h1>
+            <h1 className='membername'>Our Company Leading Members</h1>
           </Col>
 
         </Row>

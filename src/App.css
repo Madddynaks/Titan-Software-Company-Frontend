@@ -41,6 +41,11 @@ body {
   height: 50px;
   margin-left: 10vw;
 }
+.buttonwidth{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
 
 .navitem {
   padding-left: 35px;
@@ -48,8 +53,45 @@ body {
   font-weight: 500;
   color: #000000 !important;
   margin: 0px !important;
+  
+}
+.articletypeimage{
+  width: 600;
+  border-radius: 15px;
+  object-fit: cover;
+  max-width: 100%;
 
 }
+.fetureproducthead{
+  padding: 40px;
+  color: white;
+}
+.fetureproducthead{
+  color: white;
+  font-size: 50px;
+  margin-top: 25px;
+}
+.fetureproductabout{
+  margin-top: 20px;
+  color: #cfcfcf;
+}
+.spacingunique{
+  margin-top: 25px;
+  color: blue;
+  letter-spacing: 2px;
+}
+.ourmodelimg{
+  margin-top: 20px;
+  border-radius: 20px;
+  object-fit: contain;
+}
+
+.interestingimg{
+  border-radius: 15px;
+  object-fit: cover;
+  max-width: 100%;
+}
+
 
 .dropdown-item:focus,
 .dropdown-item:hover {
@@ -196,7 +238,16 @@ Button {
   align-items: center;
   justify-content: center;
   padding: 10px;
+  display: flex;
+}
 
+.col1 p {
+  color: blue;
+  letter-spacing: 5px;
+}
+
+.whatweoffering {
+  margin-top: 120px;
 }
 
 @media screen and (max-width : 450px) {
@@ -413,6 +464,12 @@ li {
   align-items: center;
 
 }
+.ourteamcheck{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
 
 .professionalservicescontainer {
   margin-top: 70px;
@@ -425,6 +482,7 @@ li {
   /* align-items: center; */
   gap: 0px;
   /* grid-area: ; */
+  padding-bottom: 50px;
 }
 
 .footer {
@@ -551,7 +609,12 @@ li {
   border-radius: 15px;
   padding-top: 50px;
 }
-
+.grateofferbox{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
 .expeince1con {
   padding: 38px;
   border-bottom: 1px solid rgb(122, 116, 113);
@@ -561,10 +624,42 @@ li {
   font-size: 30px;
   font-weight: 600;
 }
+.membername{
+  font-size: 45px;
+}
+.leadingmemberbox{
+  margin-top: 70px;
+}
 
 .inhow {
   color: #1351d8;
   letter-spacing: 2px;
+}
+.righticonimagesize{
+  width: 50px;
+  height: 28;
+  object-fit: contain;
+}
+
+.inhow h1{
+color: white;
+font-size: 50px;
+margin-top: 25px;
+}
+.product h6{
+  margin-top: 25px;
+  color: blue;
+  letter-spacing: 2px;
+}
+
+.inhow h4{
+color: white;
+font-size: 50px;
+margin-top: 25px;
+}
+
+.productivitycardtype{
+  position: relative;
 }
 
 .thirdcolicon {
@@ -683,6 +778,11 @@ img {
 
 }
 
+.product p {
+ margin-top: 23px;
+
+}
+
 .endbtn {
   /* float: right; */
   /* clear: both; */
@@ -771,12 +871,129 @@ a {
   background-image: url("https://wpriverthemes.com/synck/wp-content/uploads/2023/11/project-1.png");
 }
 
+.ecom h2 {
+  margin-top: 30px;
+  padding: 20x;
+}
+.saas h2 {
+  margin-top: 30px;
+  padding: 20x;
+}
+.app h2 {
+  margin-top: 30px;
+  padding: 20x;
+}
+.articlebox{
+  margin-top: 70px;
+}
+.articleboxabout{
+  color: blue;
+  letter-spacing: 5px;
+}
+.articleboxabouthead{
+  font-size: 50px;
+}
+.articlecardimg{
+  padding: 25px;
+  box-sizing: border-box;
+}
 
+.articlecardhead{
+  margin-top: 20px;
+  color: black;
+}
 .aboutheader2 {
   line-height: 28px;
   font-size: 21px;
   text-align: center;
   margin-top: 30px;
+}
+.productivitybutton{
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+.rightsign{
+  display: flex;
+  flex-flow: row;
+  margin-top: 35px;
+}
+.product img{
+  border-radius: 15px;
+  max-width: 100%;
+}
+.product h6{
+  margin-top: 25px;
+  color: blue;
+  letter-spacing: 2px;
+
+}
+
+.firstbtnsec{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.contactushead{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 90px;
+}
+
+.whatweofferingbig{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.productivitycard1{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: space-evenly;
+}
+
+.productivitycardtext{
+  position: relative;
+  bottom: 470px;
+  margin-left: 30px;
+}
+.tasksign{
+  display: flex;
+  flex-flow: row;
+  margin-top: 35px;
+}
+.ourpopulaityimage{
+  border-radius: 15px;
+}
+.whatweareoffering{
+  margin-top: 120px;
+}
+.bettertanother{
+  border-radius: 10px;
+}
+.sliderdiv{
+  margin-top: 100px;
+}
+
+.tasksignimg{
+  width: 50;
+  height: 28px;
+}
+
+.articletextbox{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.articletextbox p{
+  /* color: #1351D8; */
 }
 
 .aboutcard {
@@ -922,11 +1139,34 @@ a {
   border-radius: 15px;
 }
 
+.home1para {
+  color: #1351d8;
+  letter-spacing: 5px;
+}
+
 .ourexpertimg {
   object-fit: contain;
   height: 130px;
   width: 130px;
   border-radius: 100%;
+}
+
+.homepara2 {
+  font-size: 70px;
+}
+
+.homepara3 {
+  margin-top: 35px;
+  font-size: 22px;
+}
+
+.btnsectionrow {
+  margin-top: 35px;
+}
+
+.btnsection {
+  display: flex;
+  gap: 5px;
 }
 
 .contactlogo {

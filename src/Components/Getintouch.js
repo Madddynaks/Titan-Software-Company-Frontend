@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Container, Row, Col, Button } from 'reactstrap';
+import {  Container, Row, Col, Button } from 'reactstrap';
 function Getintouch() {
     return (
         <>
@@ -9,7 +9,7 @@ function Getintouch() {
                         <p style={{ color: '#1351d8', letterSpacing: '5px' }} >CONTACT</p>
                         <h1>Lets get in touch</h1>
                         <h5 style={{ marginTop: "30px" }} >You can reach us anytime via
-                            <a style={{ color: 'blue' }} to="/"> infopanacee@gmail.com</a>
+                            <a style={{ color: 'blue' }} href="/"> infopanacee@gmail.com</a>
                         </h5>
                         <Row className='touchform'>
                             <Col  >

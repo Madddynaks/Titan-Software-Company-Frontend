@@ -29,7 +29,6 @@ function Footer() {
                                 <Col md='5'>
                                     <Link to='/contactus'><Button className='contactusbtnfoot'>Contact Us</Button></Link>
                                     
-
                                 </Col>
                             </Row>
                             <Row>
@@ -48,7 +47,6 @@ function Footer() {
                                     </Row>
                                     <Row>
                                         <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/03/shopify.svg" alt="" className='footercomlogo' />
-
                                     </Row>
                                 </Col>
                             </Row>
@@ -82,7 +80,7 @@ function Footer() {
                                     <a href="/"><li>Blog</li></a>
                                     <a href="/"><li>About Us</li></a>
                                     <a href="/"><li>Partners</li></a>
-                                    <a href="/"><li>Careers </li></a>
+                                    <a href="/career"><li>Careers </li></a>
                                     <a href="/"><li>Events</li></a>
                                     <a href="/"><li>Team</li></a>
                                 </Col>
@@ -125,7 +123,7 @@ function Footer() {
                 <Container style={{ marginTop: '35px' }} >
                     <Row style={{ display: 'flex', flexDirection: 'row', gap: '15px' }} >
                         <Col md='4' style={{ display: 'flex', gap: '28px' }} >
-                            <a href=""><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="" className="connection-logo" /></a>
+                            <a href="/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="" className="connection-logo" /></a>
                             <a href="/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
                             <a href="https://www.linkedin.com/company/panacee-software-solutions/"><img src="https://ik.imagekit.io/2q7cgnqzi/icon/icons8-linkedin.svg?updatedAt=1710492054727" alt="" className="connection-logo-linkedin" /></a>
                             <a href="/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>

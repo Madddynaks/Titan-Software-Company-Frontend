@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useEffect } from 'react'
 import { Container, Row, Col, Button, Card } from 'reactstrap'
 import { Link } from 'react-router-dom'
 
@@ -6,6 +6,10 @@ import Slider from '../Components/Slider'
 import Getintouch from '../Components/Getintouch'
 
 function About() {
+  useEffect(() => {
+
+    window.scrollTo(0, 0);
+  }, [])
   return (
 
     <>
@@ -14,7 +18,7 @@ function About() {
 
       <Container>
         <Row >
-          <Col style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
+          <Col className='firstbtnsec'>
 
             <span className='abouta1'>Company</span>
 
@@ -66,7 +70,7 @@ function About() {
       </Container>
 
 
-      <div style={{ marginTop: '100px' }}>
+      <div className='sliderdiv' >
         <Slider />
       </div>
 
@@ -82,8 +86,8 @@ function About() {
             <h1 style={{ fontSize: '45px' }} >Why our company is too popular?</h1>
           </Col>
           <Col>
-          <Link to = '/contactus' > <Button className='contactusbtnhome'>Contact Us</Button></Link>
-            
+            <Link to='/contactus' > <Button className='contactusbtnhome'>Contact Us</Button></Link>
+
           </Col>
         </Row>
 
@@ -91,42 +95,37 @@ function About() {
 
         <Row>
           <Col style={{ marginTop: '50px' }} >
-            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/hero-company-about.jpg" alt="" style={{ borderRadius: '15px' }} />
+            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/hero-company-about.jpg" alt="" className='ourpopulaityimage' />
             <p style={{ marginTop: '30px' }} >Our team is a collective force of top talents, pros, experts, and visionaries from diverse fields. With a passion for excellence, our professionals bring a wealth of experience and knowledge to every project. At Slack, we are committed to delivering nothing short of excellence. From concept to implementation, we maintain the highest standards of quality and craftsmanship, leaving no room for compromise.</p>
           </Col>
         </Row>
-
-
         <br />
-        <Row style={{ display: 'flex', justifyContent: 'space-between', flexDirection: 'row', alignItems: 'center' }} >
+        <Row className='whatweofferingbig' >
           <Col>
-            <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
-              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+            <Row className='tasksign' >
+              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
               <h5>Managed Services and Products </h5>
-            </Row>                      
+            </Row>
           </Col>
-          <Col style={{ display: 'flex', }} >
-            <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
-              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+          <Col>
+            <Row className='tasksign' >
+              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
               <h5>Flexibility and Adaptability </h5>
             </Row>
-          </Col>                      
-          <Col style={{ display: 'flex', }} >
-            <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
-              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+          </Col>
+          <Col>
+            <Row className='tasksign' >
+              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
               <h5>Competitive Advantage </h5>
             </Row>
           </Col>
         </Row>
-
-
-
       </Container>
 
 
 
 
-      <Container style={{ marginTop: '120px' }} >
+      <Container className='whatweareoffering'>
         <Row>
           <Col md='6' >
             <p className='delinglogheading'>WHAT WE’RE OFFERING</p>
@@ -192,7 +191,7 @@ function About() {
           </Col>
           <Col md='4'>
             <Link to='/contactus' ><Button className='bookappwexp' >Book an appointment with our expert now</Button></Link>
-            
+
           </Col>
         </Row>
       </Container>
@@ -203,7 +202,7 @@ function About() {
 
 
       <Container>
-      <Row className='ourexpertrow' >
+        <Row className='ourexpertrow' >
           <Col className='ourexpert' >
             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/1710233260227.jpg?updatedAt=1712234410396" alt="" className='ourexpertimg' />
             <h5>Priyanka Tiwari</h5>
@@ -214,6 +213,7 @@ function About() {
               <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-instagram.svg?updatedAt=1711952319421" alt="" className='contactlogo' />
             </Card>
           </Col>
+
           <Col className='ourexpert' >
             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/Screenshot%202024-04-04%20180748.png?updatedAt=1712234288002" alt="" className='ourexpertimg' />
             <h5>Amit Tiwari</h5>
@@ -224,6 +224,7 @@ function About() {
               <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-instagram.svg?updatedAt=1711952319421" alt="" className='contactlogo' />
             </Card>
           </Col>
+
           <Col className='ourexpert' >
             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/Screenshot%202024-04-04%20180334.png?updatedAt=1712234050478" alt="" className='ourexpertimg' />
             <h5>Vidhu Sekhar</h5>
@@ -234,6 +235,7 @@ function About() {
               <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-instagram.svg?updatedAt=1711952319421" alt="" className='contactlogo' />
             </Card>
           </Col>
+
           <Col className='ourexpert' >
             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/1708491155284.jpg?updatedAt=1712234171080" alt="" className='ourexpertimg' />
             <h5>Gaurav Jha </h5>
@@ -244,21 +246,18 @@ function About() {
               <img src="https://ik.imagekit.io/2q7cgnqzi/Contact%20icon/icons8-instagram.svg?updatedAt=1711952319421" alt="" className='contactlogo' />
             </Card>
           </Col>
-        </Row>
 
+        </Row>
       </Container>
 
 
       <div className='whybetter' >
-
         <Container>
           <Row>
             <Col md='6' className='whybetterimg' >
-              <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/about-service-3.png" alt="" style={{ borderRadius: '10px' }} />
+              <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/about-service-3.png" alt="" className='bettertanother' />
             </Col>
-
             <Col md='6' className='whybettertext' >
-
               <h1>Why our services are
                 better than others?</h1>
               <h5>We don't believe in a one-size-fit-all approach. Our services are carefully customized to suit your specific need, ensuring you to achieve your goals.</h5>
@@ -266,24 +265,25 @@ function About() {
 
               <Row>
                 <Col style={{ display: 'flex', gap: '65px' }} >
-                  <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
-                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                  <Row className='tasksign' >
+                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
                     <h5>PPD Development </h5>
                   </Row>
-                  <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
-                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+
+
+                  <Row className='tasksign' >
+                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
                     <h5>Quick Response </h5>
                   </Row>
-
                 </Col>
               </Row>
             </Col>
           </Row>
         </Container>
-
       </div>
 
-      <Container className='assitance' >
+      <Container className='assitance'>
+
         <Row>
           <Col className='assistanceimg'>
             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/12/small-img-4.png" alt="" />
@@ -292,21 +292,18 @@ function About() {
             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/12/small-img-1.png" alt="" />
           </Col>
         </Row>
+
         <Row>
-          <Col className='assitanttext' >
+          <Col className='assitanttext'>
             <h1>Need any further assitance?</h1>
             <h3>Feel free to reach out for any inquiries or assistance.</h3>
-            <Link to= '/contactus'><Button className='bookappoinmentnow'  > Book an appointment now</Button></Link>
-            
+            <Link to='/contactus'><Button className='bookappoinmentnow'> Book an appointment now</Button></Link>
           </Col>
         </Row>
+
       </Container>
 
-
-
-
       <Getintouch />
-
     </>
 
   )

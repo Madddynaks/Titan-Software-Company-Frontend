@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
     Collapse,
     Navbar,
@@ -6,7 +6,7 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink,
+
     UncontrolledDropdown,
     DropdownToggle,
     DropdownMenu,
@@ -68,39 +68,50 @@ function IndexNavbar() {
                                                                     <p>we undertook a
                                                                         <br /> project to migrate <br /> their existing.</p>
                                                                 </div>
-                                                            </div></Link>
-                                                        <div className='portfolionavcard' style={{ display: 'flex' }} >
-                                                            <div>
-                                                                <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/02/portfolio-mega-menu-3.jpeg" alt="" className='proffolionavimg' />
                                                             </div>
-                                                            <div className='portfolionavcardtext'>
-                                                                <h6>SAAS Integration</h6>
-                                                                <p>we undertook a
-                                                                    <br /> project to migrate <br /> their existing.</p>
+                                                        </Link>
+                                                        <Link to='/impact'>
+                                                            <div className='portfolionavcard' style={{ display: 'flex' }} >
+                                                                <div>
+                                                                    <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/02/portfolio-mega-menu-3.jpeg" alt="" className='proffolionavimg' />
+                                                                </div>
+                                                                <div className='portfolionavcardtext'>
+                                                                    <h6>SAAS Integration</h6>
+                                                                    <p>we undertook a
+                                                                        <br /> project to migrate <br /> their existing.</p>
+                                                                </div>
                                                             </div>
-                                                        </div>
+                                                        </Link>
+
                                                     </Col>
+
                                                     <Col md='6' >
-                                                        <div className='portfolionavcard' style={{ display: 'flex' }} >
-                                                            <div>
-                                                                <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/02/portfolio-mega-menu-2.jpg" alt="" className='proffolionavimg' />
+                                                        <Link to='/impact' >
+                                                            <div className='portfolionavcard' style={{ display: 'flex' }} >
+                                                                <div>
+                                                                    <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/02/portfolio-mega-menu-2.jpg" alt="" className='proffolionavimg' />
+                                                                </div>
+                                                                <div className='navcardtext'>
+                                                                    <h6>App Development</h6>
+                                                                    <p>we undertook a
+                                                                        <br /> project to migrate <br /> their existing.</p>
+                                                                </div>
                                                             </div>
-                                                            <div className='navcardtext'>
-                                                                <h6>App Development</h6>
-                                                                <p>we undertook a
-                                                                    <br /> project to migrate <br /> their existing.</p>
+                                                        </Link>
+                                                        <Link to='/impact' >
+                                                            <div className='portfolionavcard' style={{ display: 'flex' }} >
+                                                                <div>
+                                                                    <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/02/portfolio-mega-menu-4.jpeg" alt="" className='proffolionavimg' />
+                                                                </div>
+                                                                <div className='portfolionavcardtext'>
+                                                                    <h6>Virtual Reality</h6>
+                                                                    <p>we undertook a
+                                                                        <br /> project to migrate <br /> their existing.</p>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div className='portfolionavcard' style={{ display: 'flex' }} >
-                                                            <div>
-                                                                <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/02/portfolio-mega-menu-4.jpeg" alt="" className='proffolionavimg' />
-                                                            </div>
-                                                            <div className='portfolionavcardtext'>
-                                                                <h6>Virtual Reality</h6>
-                                                                <p>we undertook a
-                                                                    <br /> project to migrate <br /> their existing.</p>
-                                                            </div>
-                                                        </div>
+                                                        </Link>
+
+
                                                     </Col>
                                                 </Row>
                                             </Col>
@@ -111,7 +122,7 @@ function IndexNavbar() {
                                                         <h6>Our product hits</h6>
                                                         <p>Develop IT solutions based on the <br />
                                                             analysis phase.</p>
-                                                        <a to="/">View more</a>
+                                                        <a href="/">View more</a>
                                                     </div>
                                                 </Row>
                                             </Col>
@@ -155,58 +166,69 @@ function IndexNavbar() {
                                                     <Col md="6">
                                                         <Row>
                                                             <Col md='6' >
-                                                                <div className='servicenavcard' style={{ display: 'flex' }} >
-                                                                    <div>
-                                                                        <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/brain-svgrepo-com.svg?updatedAt=1710937497361" alt="" height={50} width={50} />
-                                                                    </div>
-                                                                    <div className='navcardtext'>
-                                                                        <Link to='/how-we-do' ><h6>Brainstroming </h6>
-                                                                            <p>Ideas</p></Link>
+                                                                <Link to='/how-we-do' >
+                                                                    <div className='servicenavcard' style={{ display: 'flex' }} >
+                                                                        <div>
+                                                                            <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/brain-svgrepo-com.svg?updatedAt=1710937497361" alt="" height={50} width={50} />
+                                                                        </div>
+                                                                        <div className='navcardtext'>
 
+                                                                            <h6>Brainstroming </h6>
+                                                                            <p>Ideas</p>
+
+
+                                                                        </div>
                                                                     </div>
-                                                                </div>
+                                                                </Link>
                                                             </Col>
                                                             <Col md='6' >
-                                                                <div className='servicenavcard' style={{ display: 'flex' }} >
-                                                                    <div>
-                                                                        <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519" alt="" height={50} width={50} />
-                                                                    </div>
-                                                                    <div className='navcardtext'>
-                                                                        <Link to='/how-we-do' >
+                                                                <Link to='/how-we-do' >
+                                                                    <div className='servicenavcard' style={{ display: 'flex' }} >
+                                                                        <div>
+                                                                            <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519" alt="" height={50} width={50} />
+                                                                        </div>
+                                                                        <div className='navcardtext'>
+
                                                                             <h6>SEO</h6>
                                                                             <p>Optimization</p>
-                                                                        </Link>
 
+
+                                                                        </div>
                                                                     </div>
-                                                                </div>
+                                                                </Link>
                                                             </Col>
                                                         </Row>
                                                         <Row>
                                                             <Col md='6' >
-                                                                <div className='servicenavcard' style={{ display: 'flex' }} >
-                                                                    <div>
-                                                                        <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/graphic-design.png?updatedAt=1711008512725" alt="" height={50} width={50} />
-                                                                    </div>
-                                                                    <div className='navcardtext'>
-                                                                        <Link to='/how-we-do'>
+                                                                <Link to='/how-we-do'>
+                                                                    <div className='servicenavcard' style={{ display: 'flex' }} >
+                                                                        <div>
+                                                                            <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/graphic-design.png?updatedAt=1711008512725" alt="" height={50} width={50} />
+                                                                        </div>
+                                                                        <div className='navcardtext'>
+
                                                                             <h6>Web</h6>
                                                                             <p>Design</p>
-                                                                        </Link>
+
+                                                                        </div>
                                                                     </div>
-                                                                </div>
+                                                                </Link>
                                                             </Col>
                                                             <Col md='6' >
-                                                                <div className='servicenavcard' style={{ display: 'flex' }} >
-                                                                    <div>
-                                                                        <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-upload-to-cloud-50.png?updatedAt=1711008806034" alt="" height={50} width={50} style={{ objectFit: 'contain' }} />
-                                                                    </div>
-                                                                    <div className='navcardtext'>
-                                                                        <Link to='/how-we-do'>
+                                                                <Link to='/how-we-do'>
+                                                                    <div className='servicenavcard' style={{ display: 'flex' }} >
+                                                                        <div>
+                                                                            <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-upload-to-cloud-50.png?updatedAt=1711008806034" alt="" height={50} width={50} style={{ objectFit: 'contain' }} />
+                                                                        </div>
+                                                                        <div className='navcardtext'>
                                                                             <h6>Frontend </h6>
                                                                             <p>Development</p>
-                                                                        </Link>
+
+
+
+                                                                        </div>
                                                                     </div>
-                                                                </div>
+                                                                </Link>
                                                             </Col>
                                                         </Row>
 
@@ -255,7 +277,7 @@ function IndexNavbar() {
                                                         <h6>Our product hits</h6>
                                                         <p>Develop IT solutions based on the <br />
                                                             analysis phase.</p>
-                                                        <a to="/">View more</a>
+                                                        <a href="/">View more</a>
                                                     </div>
 
                                                 </Row>

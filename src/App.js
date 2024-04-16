@@ -8,6 +8,7 @@ import Footer from './Components/Footer';
 import Hwd from './Components/Hwd';
 import OurServices from './Views/OurServices'
 import Impact from './Views/Impact';
+import Career from './Views/Career';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/how-we-do' element = {<Hwd/>}/>
           <Route path='/ourservices' element = {<OurServices/>}/>
           <Route path='/impact' element = {<Impact/>}/>
+          <Route path='/career' element = {<Career/>}/>
 
 
           
