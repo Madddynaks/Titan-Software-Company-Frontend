@@ -40,29 +40,29 @@ function About() {
           <Col md='3' >
             <Card className='aboutcard' >
               <h1>300+</h1>
-              <h4>Projects</h4>
+              <h5>Projects</h5>
               <p>We are spread around the world.</p>
             </Card>
           </Col>
           <Col md='3' >
             <Card className='aboutcard' >
               <h1>100%</h1>
-              <h4>Client Satisfaction</h4>
+              <h5>Client Satisfaction</h5>
               <p>Our clients a happy with our service.</p>
             </Card>
           </Col>
           <Col md='3' >
             <Card className='aboutcard' >
-              <h1>300+</h1>
-              <h4>Legal Customers
-              </h4>
+              <h1 >300+</h1>
+              <h5>Legal Customers
+              </h5>
               <p>Our customers are from many countries.</p>
             </Card>
           </Col>
           <Col md='3' >
             <Card className='aboutcard' >
-              <h1>1995</h1>
-              <h4>We Established On</h4>
+              <h1>2020</h1>
+              <h5>We Established On</h5>
               <p>Our company have a great history.</p>
             </Card>
           </Col>

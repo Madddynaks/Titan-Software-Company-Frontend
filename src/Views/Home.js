@@ -6,6 +6,7 @@ import 'swiper/css';
 
 import Slider from '../Components/Slider';
 import Getintouch from '../Components/Getintouch';
+import MultipleTab from '../Components/MultipleTab';
 
 function Home() {
 
@@ -30,7 +31,7 @@ function Home() {
                         </Row>
                     </Col>
                     <Col md='6'>
-                        <img src="https://images.pexels.com/photos/3184613/pexels-photo-3184613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className='ourmodelimg' />
+                        <img src="https://images.pexels.com/photos/3184613/pexels-photo-3184613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className='frontimg' />
                     </Col>
                 </Row>
                 <br /><br /><br />
@@ -54,9 +55,9 @@ function Home() {
 
                     <Col md='9'>
                         <Row className='hwdcon'>
-                            <Col md="3">
+                            <Col md="3" style={{ padding: '0px' }}>
                                 <Card className='howedocard1'  >
-                                    <div className='howedocard' >
+                                    <div className='howedocard' style={{ display: 'flex' }}>
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/brain-svgrepo-com.svg?updatedAt=1710937497361" alt="" className='ourmodelimg' />
                                         </div>
@@ -67,9 +68,9 @@ function Home() {
                                     </div>
                                 </Card>
                             </Col>
-                            <Col md="3" >
+                            <Col md="3" style={{ padding: '0px' }}>
                                 <Card className='howedocard1'  >
-                                    <div className='howedocard'  >
+                                    <div className='howedocard' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519" alt="" className='ourmodelimg' />
                                         </div>
@@ -80,9 +81,9 @@ function Home() {
                                     </div>
                                 </Card>
                             </Col>
-                            <Col md="3" >
+                            <Col md="3" style={{ padding: '0px' }} >
                                 <Card className='howedocard1' >
-                                    <div className='howedocard' >
+                                    <div className='howedocard' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/graphic-design.png?updatedAt=1711008512725" alt="" className='ourmodelimg' />
                                         </div>
@@ -95,10 +96,8 @@ function Home() {
                             </Col>
                         </Row>
 
-
-
                         <Row className='hwdcon2'>
-                            <Col md="4" >
+                            <Col md="4" style={{ padding: '0px' }} >
                                 <Card className='howedocard1'  >
                                     <div className='howedocard' >
                                         <div>
@@ -112,9 +111,9 @@ function Home() {
                                 </Card>
                             </Col>
 
-                            <Col md="4" >
+                            <Col md="4" style={{ padding: '0px' }}>
                                 <Card className='howedocard1 '  >
-                                    <div className='howedocard'  >
+                                    <div className='howedocard' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519" alt="" className='ourmodelimg' />
                                         </div>
@@ -132,7 +131,7 @@ function Home() {
                         <Row>
                             <Col className='last11'>
                                 <Card className='howedocard1 last'  >
-                                    <div className='howedocard ' >
+                                    <div className='howedocard ' style={{ display: 'flex' }} >
                                         <div>
                                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519" alt="" className='ourmodelimg' />
                                         </div>
@@ -169,35 +168,35 @@ function Home() {
                     <Col md='2' >
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg" alt="" className='services5' />
-                            <h4>Development</h4>
+                            <h5>Development</h5>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
                     <Col md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-2-2.svg" alt="" className='services5' />
-                            <h4>Woo Commerce</h4>
+                            <h5>Woo Commerce</h5>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
                     <Col md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-3-2.svg" alt="" className='services5' />
-                            <h4>CRM Solutions</h4>
+                            <h5>CRM Solutions</h5>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
                     <Col md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg" alt="" className='services5' />
-                            <h4>Web Design</h4>
+                            <h5>Web Design</h5>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
                     <Col md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-5-2.svg" alt="" className='services5' />
-                            <h4>IT Support</h4>
+                            <h5>IT Support</h5>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
@@ -206,12 +205,24 @@ function Home() {
 
 
 
+            <Container  >
+
+                <MultipleTab />
+
+
+            </Container>
+
+
+
+
+
+
 
 
             <div className='showcasework' >
                 <Row>
                     <Col className='col1' md='4' >
-                        <p>PROJECTS</p>
+                        <p className='delinglogheading'>PROJECTS</p>
                         <h1>Showcase of our <br /> recognized
                             work</h1> <br />
                         <p className='dim' >Our collaborative approach ensures that we truly understand our clients unique requirements and challenges.</p>
@@ -404,11 +415,11 @@ function Home() {
 
                         <Row className='tasksign'>
                             <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
-                            <h5>PPD Development </h5>
+                            <h5 style={{ color: 'white' }}>PPD Development </h5>
                         </Row>
                         <Row className='tasksign' >
                             <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
-                            <h5>Easy to use  </h5>
+                            <h5 style={{ color: 'white' }}>Easy to use  </h5>
                         </Row>
 
                         <Row className='productivitybutton'>

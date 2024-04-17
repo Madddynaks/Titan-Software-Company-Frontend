@@ -299,21 +299,18 @@ function IndexNavbar() {
 
                                     </Container>
                                 </DropdownItem>
-
                             </DropdownMenu>
                         </UncontrolledDropdown>
                     </Nav>
-                    <div style={{ display: 'flex', flexDirection: 'column', width: '120px' }} >
-                        <div style={{ display: 'flex' }} >
-                            <p className='navcallus' >Call Us</p>
+                    <div style={{ display: 'flex', flexDirection: 'column', width: '120px' }} className='navbtnslide' >
+                        <div className='callmenavsec' style={{ display: 'flex' }} >
+                            <p className='navcallus'>Call Us</p>
                             <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/iconmonstr-arrow-right-thin.svg?updatedAt=1710998562574" alt="" className='calluslogo' />
                         </div>
                         <div>
                             <p className='navnum' >9650900190</p>
-
                         </div>
                     </div>
-
                     <hr />
                     <Link to='/contactus'><Button className='contactusbtn'>Contact Us</Button></Link>
 

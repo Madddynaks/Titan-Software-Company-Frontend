@@ -38,7 +38,7 @@ function Pages() {
         </Container>
       </div>
 
-      <div style={{ margin: 'auto' , width : '80%' , marginTop : '45px'}} >
+      <div style={{ margin: 'auto', width: '80%', marginTop: '45px' }} >
 
         <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/service-details.jpg" alt="" />
 
@@ -92,13 +92,13 @@ function Pages() {
               <h1>The Role of Developers</h1>
               <p style={{ fontSize: '20px' }} >Software developers, often referred to as coders or programmers, are the creative minds behind the digital innovations we use daily.</p>
               <Row>
-                <Col style={{ display: 'flex', gap: '65px', flexDirection: 'column' }} >
-                  <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px' }} >
-                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                <Col style={{ display: 'flex', gap: '65px', flexDirection: 'column'}}>
+                  <Row style={{ display: 'flex', flexFlow: 'row', marginTop: '35px'}}>
+                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='ourmodelimg' />
                     <h5>PPD Development </h5>
                   </Row>
-                  <Row style={{ display: 'flex', flexFlow: 'row' }} >
-                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" style={{ width: 50, height: 28 }} />
+                  <Row style={{ display: 'flex', flexFlow: 'row'}} >
+                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='ourmodelimg' />
                     <h5>Easy to Use </h5>
                   </Row>
 

@@ -53,7 +53,7 @@ function Getintouch() {
                         <div className='exprience' >
                             <Row className='expeince1con' >
                                 <div style={{ display: 'flex' }} >
-                                    <span className='years22' >22+</span><span style={{ marginTop: '15px', marginLeft: '10px' }} >Years</span>
+                                    <span className='years22' >5+</span><span style={{ marginTop: '15px', marginLeft: '10px' }} >Years</span>
 
                                 </div>
                                 <p className='inhow' >filed exprience</p>
@@ -61,7 +61,7 @@ function Getintouch() {
 
                             <Row className='expeince1con' >
                                 <div style={{ display: 'flex' }} >
-                                    <span className='years22' >950+</span><span style={{ marginTop: '15px', marginLeft: '10px' }} >Projects</span>
+                                    <span className='years22' >100+</span><span style={{ marginTop: '15px', marginLeft: '10px' }} >Projects</span>
 
                                 </div>
                                 <p className='inhow'>Done Around World</p>
@@ -77,7 +77,7 @@ function Getintouch() {
 
                             <Row className='expeince1con' >
                                 <div style={{ display: 'flex' }} >
-                                    <span className='years22' >1995+</span><span style={{ marginTop: '15px', marginLeft: '10px' }}>Years </span>
+                                    <span className='years22' >2020</span><span style={{ marginTop: '15px', marginLeft: '10px' }}>Years </span>
 
                                 </div>
                                 <p className='inhow'>Established On</p>

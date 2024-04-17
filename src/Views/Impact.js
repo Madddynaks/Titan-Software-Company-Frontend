@@ -88,35 +88,35 @@ function Impact() {
           <Col md='2' >
             <Card className='professionalservicescard' >
               <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg" alt="" className='services5' />
-              <h4>Development</h4>
+              <h5>Development</h5>
               <p>Our development is pixel perfect in all ways.</p>
             </Card>
           </Col>
           <Col md='2'>
             <Card className='professionalservicescard' >
               <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-2-2.svg" alt="" className='services5' />
-              <h4>Woo Commerce</h4>
+              <h5>Woo Commerce</h5>
               <p>Our development is pixel perfect in all ways.</p>
             </Card>
           </Col>
           <Col md='2'>
             <Card className='professionalservicescard' >
               <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-3-2.svg" alt="" className='services5' />
-              <h4>CRM Solutions</h4>
+              <h5>CRM Solutions</h5>
               <p>Our development is pixel perfect in all ways.</p>
             </Card>
           </Col>
           <Col md='2'>
             <Card className='professionalservicescard' >
               <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg" alt="" className='services5' />
-              <h4>Web Design</h4>
+              <h5>Web Design</h5>
               <p>Our development is pixel perfect in all ways.</p>
             </Card>
           </Col>
           <Col md='2'>
             <Card className='professionalservicescard' >
               <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-5-2.svg" alt="" className='services5' />
-              <h4>IT Support</h4>
+              <h5>IT Support</h5>
               <p>Our development is pixel perfect in all ways.</p>
             </Card>
           </Col>
@@ -130,35 +130,35 @@ function Impact() {
           <Col md='2' >
             <Card className='professionalservicescard' >
               <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg" alt="" className='services5' />
-              <h4>Cloud Services</h4>
+              <h5>Cloud Services</h5>
               <p>we can provide all around the world.</p>
             </Card>
           </Col>
           <Col md='2'>
             <Card className='professionalservicescard' >
               <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-2-2.svg" alt="" className='services5' />
-              <h4>Network Security</h4>
+              <h5>Network Security</h5>
               <p>We have a best team for your shopping websites.</p>
             </Card>
           </Col>
           <Col md='2'>
             <Card className='professionalservicescard' >
               <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-3-2.svg" alt="" className='services5' />
-              <h4>Monitoring</h4>
+              <h5>Monitoring</h5>
               <p>We enhance customer experiences for success.</p>
             </Card>
           </Col>
           <Col md='2'>
             <Card className='professionalservicescard' >
               <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg" alt="" className='services5' />
-              <h4>Email Services</h4>
+              <h5>Email Services</h5>
               <p>We create vibrant, intuitive and minimalist web</p>
             </Card>
           </Col>
           <Col md='2'>
             <Card className='professionalservicescard' >
               <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-5-2.svg" alt="" className='services5' />
-              <h4>Hardware Services</h4>
+              <h5>Hardware Services</h5>
               <p>We offers expert assistance for your IT issues.</p>
             </Card>
           </Col>
@@ -181,9 +181,21 @@ function Impact() {
               <h5>Excellence is the hallmark of everything we do. From delivering cutting-edge technologies to providing unparalleled services,
                 we are relentless in our pursuit of perfection. Our commitment to excellence drives us.</h5>
               <Row>
+                   <Col md = {6}>
+                   
+                   </Col>
+                   <Col md = {6}>
+                   
+                   </Col>
+
+
+
+
+
                 <Col style={{ display: 'flex', gap: '65px' }} >
 
                   <Row className='tasksign' >
+
                     <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
                     <h5>Collaboration Tools </h5>
                   </Row>
@@ -198,13 +210,17 @@ function Impact() {
                     <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
                     <h5>Task Management </h5>
                   </Row>
-                  <Row className='tasksign' >
+                  <Row className='tasksign' style={{marginLeft : '1px'}} >
                     <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
                     <h5>Requirement</h5>
                   </Row>
                 </Col>
               </Row>
             </Col>
+
+
+
+
             <Col md='6' className='whybetterimg' >
               <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/about-service-6.jpg" alt="" style={{ borderRadius: '10px' }} />
             </Col>
