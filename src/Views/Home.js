@@ -19,11 +19,11 @@ function Home() {
         <>
             <div className='home1'>
                 <Row>
-                    <Col md='6'>
+                    <Col md='6' className="homepara2">
                         <p className='home1para'>EMPOWERMENT</p>
-                        <h1 className='homepara2'  >Seamless IT for your  business, boosting your growth.</h1>
-                        <p className='homepara3'  >We provide the expertise and support to propel your business forward in the digital landscape.</p>
-                        <Row className='btnsectionrow' style={{ marginTop: '35px' }}>
+                        <h1 >Seamless IT for your  business, boosting your growth.</h1>
+                        <p>We provide the expertise and support to propel your business forward in the digital landscape.</p>
+                        <Row className='btnsectionrow' style={{ marginTop: '15px' }}>
                             <Col className='btnsection'>
                                 <Link to='/contactus' ><Button className='contactusbtnhome'>Contact Us</Button></Link>
                                 <Link to='/contactus' ><Button className='letstalkbtnhome'>Let's Talk </Button></Link>
@@ -35,8 +35,6 @@ function Home() {
                     </Col>
                 </Row>
                 <br /><br /><br />
-                <br /><br />
-
                 <hr /><br />
             </div>
 
@@ -152,7 +150,7 @@ function Home() {
 
             <Container className='whatweoffering'  >
                 <Row>
-                    <Col md='6' >
+                    <Col md='6' className='homaepara2'>
                         <p className='delinglogheading'>WHAT WE’RE OFFERING</p>
                         <h1 className='delingheading' >Dealing in all professional <br />
                             IT services.</h1>
@@ -164,36 +162,36 @@ function Home() {
             </Container>
 
             <Container className='professionalservicescontainer' >
-                <Row className='professionalservicesrow' >
-                    <Col md='2' >
+                <Row className='professionalservicesrow gx-5' >
+                    <Col sm='1' md='2' >
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg" alt="" className='services5' />
                             <h5>Development</h5>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
-                    <Col md='2'>
+                    <Col sm='1' md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-2-2.svg" alt="" className='services5' />
                             <h5>Woo Commerce</h5>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
-                    <Col md='2'>
+                    <Col sm='1' md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-3-2.svg" alt="" className='services5' />
                             <h5>CRM Solutions</h5>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
-                    <Col md='2'>
+                    <Col sm='1' md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg" alt="" className='services5' />
                             <h5>Web Design</h5>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
-                    <Col md='2'>
+                    <Col sm='1' md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-5-2.svg" alt="" className='services5' />
                             <h5>IT Support</h5>
@@ -380,30 +378,25 @@ function Home() {
                     <Col md='6' className='productivitycard1'  >
 
                         <Col md='5' className='productivitycardtype' >
-                            <div>
-                                <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-1.png" alt="" />
+                            <div class="feature-img-card">
+                                <h3 style={{position:'absolute',paddingLeft:'20px',paddingTop:'20px'}}>Start your <br /> project from <br />your pocket.</h3>
+                                <img decoding="async" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-1.png" />
                             </div>
-                            <div className='productivitycardtext'  >
-                                <h1>Start your <br />
-                                    project from <br />
-                                    your pocket.</h1>
-                            </div>
+
                         </Col>
                         <Col md='5' className='productivitycardtype' >
-                            <div>
-                                <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-2.png" alt="" />
-                            </div>
-                            <div className='productivitycardtext'  >
-                                <h1>Available on <br />
+                        <div class="feature-img-card">
+                                <h3 style={{position:'absolute',paddingLeft:'20px',paddingTop:'20px'}}>Available on <br />
                                     all responsive <br />
-                                    devices.</h1>
-                            </div>
+                                    devices.</h3>
+                                <img decoding="async" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-2.png" />
+                            </div>                            
                         </Col>
                     </Col>
 
 
 
-                    <Col md='6' className='fetureproductbox'>
+                    <Col md='6' className='fetureproductbox section-title'>
                         <Row>
                             <Col>
                                 <h6 className='inhow' >FEATURED PRODUCT</h6>
@@ -422,7 +415,7 @@ function Home() {
                             <h5 style={{ color: 'white' }}>Easy to use  </h5>
                         </Row>
 
-                        <Row className='productivitybutton'>
+                        <Row className='productivitybutton mb-3'>
                             <Col md='3'>
                                 <Link to='/contactus' ></Link> <Button className='productivitybtn' >Get  Started Now!</Button>
                             </Col>
