@@ -26,7 +26,7 @@ function Home() {
                         <Row className='btnsectionrow' style={{ marginTop: '35px' }}>
                             <Col className='btnsection'>
                                 <Link to='/contactus' ><Button className='contactusbtnhome'>Contact Us</Button></Link>
-                                <Link to='/contactus' ><Button className='letstalkbtnhome'>Let's Talk <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/home%20arrow.svg?updatedAt=1713423053103" alt="" className='letstalkarrow'/> </Button></Link>
+                                <Link to='/contactus' ><Button className='letstalkbtnhome'>Let's Talk <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/home%20arrow.svg?updatedAt=1713423053103" alt="" className='letstalkarrow' /> </Button></Link>
                             </Col>
                         </Row>
                     </Col>
@@ -219,44 +219,42 @@ function Home() {
 
 
 
-            <div className='showcasework' >
+            <div className='showcasework'>
                 <Row>
-                    <Col className='col1' md='4' >
+                    <Col className='col1' md={4}>
                         <p className='delinglogheading'>PROJECTS</p>
                         <h1>Showcase of our <br /> recognized
                             work</h1> <br />
-                        <p className='dim' >Our collaborative approach ensures that we truly understand our clients unique requirements and challenges.</p>
+                        <p className='dim'>Our collaborative approach ensures that we truly understand our clients unique requirements and challenges.</p>
                         <hr />
-                        <Row className='rightsign' >
+                        <Row className='rightsign'>
                             <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
                             <h5>PPD Development </h5>
                         </Row>
 
-                        <Row className='rightsign'  >
+                        <Row className='rightsign'>
                             <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
                             <h5>Easy to Use </h5>
                         </Row>
                     </Col>
 
-                    <Col className='col2' md='7' >
-                        <Row style={{ display: 'flex', justifyContent: 'space-around' , gap : '15px' }} >
+                    <Col className='col2' md={8}>
+                        <Row style={{ display: 'flex', justifyContent: 'space-around', gap: '15px' }}>
 
-                            <Col md='3' className='ecom'>
-                                <h2  >E-commerce platform development </h2>
+                            <Col md='12' sm='6' className='ecom'>
+                                <h2>E-commerce platform development </h2>
                             </Col>
-                            <Col md='3' className='saas' >
-                                <h2  >Software as a service integration</h2>
+                            <Col md='12' sm='6' className='saas'>
+                                <h2>Software as a service integration</h2>
                             </Col>
-                            <Col md='3' className='app' >
-                                <h2  >Mobile platform Development</h2>
+                            <Col md='12' sm='6' className='app'>
+                                <h2>Mobile platform Development</h2>
                             </Col>
                         </Row>
-
-
                     </Col>
                 </Row>
-
             </div>
+
 
 
 
@@ -311,29 +309,35 @@ function Home() {
                         <h style={{ marginTop: '23px' }}>Small UK merchants, businesses, and other enterprises can now use Tap to Pay on service to replace
                             payment terminals at point of sale.</h>
 
-                        <hr />
-                        <Row>
-                            <Col md='6' >
-                                <Row className='tasksign' >
-                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
-                                    <h5>Collaboration Tools </h5>
-                                </Row>
-                                <Row className='tasksign' >
-                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
-                                    <h5>Smart Reminders </h5>
-                                </Row>
+                     
+                            <Row>
+                            <Col md='6' className='tasksign'>
+
+                                <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='' style={{width : '28px' , objectFit : 'contain'}} />
+                                <h5>Collaboration Tools </h5>
                             </Col>
-                            <Col md='6' >
-                                <Row className='tasksign' >
-                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
-                                    <h5>Requirement </h5>
-                                </Row>
-                                <Row className='tasksign' >
-                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
-                                    <h5>Task Management </h5>
-                                </Row>
+                            <Col md='6' className='tasksign'>
+
+                                <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='' style={{width : '28px' , objectFit : 'contain'}} />
+                                <h5>Smart Reminders </h5>
                             </Col>
+
                         </Row>
+                        <Row>
+                            <Col md='6' className='tasksign'>
+
+                                <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='' style={{width : '28px' , objectFit : 'contain'}} />
+                                <h5>Requirement </h5> 
+                            </Col>
+                            <Col md='6' className='tasksign'>
+
+                                <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='' style={{width : '28px' , objectFit : 'contain'}} />
+                                <h5>Task Management </h5>
+                            </Col>
+
+                        </Row>
+
+
                     </Col>
 
 
@@ -346,30 +350,41 @@ function Home() {
                         <p >Small UK merchants, businesses, and other enterprises can now use Tap to Pay on service to replace payment terminals at point of sale.</p>
 
                         <hr />
+
+
+
+
                         <Row>
-                            <Col md='6' >
-                                <Row className='tasksign' >
-                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
-                                    <h5>Collaboration Tools </h5>
-                                </Row>
-                                <Row className='tasksign'  >
-                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
-                                    <h5>Smart Reminders </h5>
-                                </Row>
+                            <Col md='6' className='tasksign'>
 
+                                <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='' style={{width : '28px' , objectFit : 'contain'}} />
+                                <h5>Collaboration Tools </h5>
                             </Col>
-                            <Col md='6' >
-                                <Row className='tasksign'  >
-                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
-                                    <h5>Requirement </h5>
-                                </Row>
-                                <Row className='tasksign'  >
-                                    <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
-                                    <h5>Task Management </h5>
-                                </Row>
+                            <Col md='6' className='tasksign'>
 
+                                <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='' style={{width : '28px' , objectFit : 'contain'}} />
+                                <h5>Smart Reminders </h5>
                             </Col>
+
                         </Row>
+                        <Row>
+                            <Col md='6' className='tasksign'>
+
+                                <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='' style={{width : '28px' , objectFit : 'contain'}} />
+                                <h5>Requirement </h5> 
+                            </Col>
+                            <Col md='6' className='tasksign'>
+
+                                <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='' style={{width : '28px' , objectFit : 'contain'}} />
+                                <h5>Task Management </h5>
+                            </Col>
+
+                        </Row>
+
+
+
+
+
                     </Col>
                 </Row>
             </Container>
@@ -377,8 +392,7 @@ function Home() {
 
             <div className='productivity'>
                 <Row>
-                    <Col md='6' className='productivitycard1'  >
-
+                    <Col md='7' className='productivitycard1'  >
                         <Col md='5' className='productivitycardtype' >
                             <div>
                                 <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-1.png" alt="" />
@@ -403,7 +417,7 @@ function Home() {
 
 
 
-                    <Col md='6' className='fetureproductbox'>
+                    <Col md='5' className='fetureproductbox'>
                         <Row>
                             <Col >
                                 <h6 className='inhow' >FEATURED PRODUCT</h6>
@@ -433,6 +447,9 @@ function Home() {
                     </Col>
                 </Row>
             </div>
+
+
+
             <Getintouch />
         </>
     )

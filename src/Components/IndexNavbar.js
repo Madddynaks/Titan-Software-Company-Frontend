@@ -52,10 +52,10 @@ function IndexNavbar() {
                             </DropdownToggle></Link>
 
                             <DropdownMenu >
-                                <DropdownItem style={{ width: '100vw', position: 'static', height: '50vh', marginTop: '20px' }} >
+                                <DropdownItem style={{ width: '100vw', position: 'static', height: '55vh' }} >
                                     <Container className='portfolionavcon' >
                                         <Row>
-                                            <Col md='8' >
+                                            <Col md={8} >
                                                 <Row>
                                                     <Col md='6' >
                                                         <Link to='/impact'>
@@ -110,32 +110,27 @@ function IndexNavbar() {
                                                                 </div>
                                                             </div>
                                                         </Link>
-
-
                                                     </Col>
                                                 </Row>
                                             </Col>
-                                            <Col md="4" >
+                                            <Col md={4} >
                                                 <Row className='navourproduct' >
-                                                    <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/02/macbook.jpg" alt="" className='navserviceimg' />
-                                                    <div style={{ marginLeft: '60px', marginTop: '35px' }} >
+                                                    <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/02/ipad.jpg" alt="" className='navserviceimg' />
+                                                    <div style={{ marginLeft: '60px', marginTop: "35px" }} >
                                                         <h6>Our product hits</h6>
                                                         <p>Develop IT solutions based on the <br />
                                                             analysis phase.</p>
                                                         <a href="/">View more</a>
                                                     </div>
+
                                                 </Row>
                                             </Col>
+                                            <hr />
                                         </Row>
-                                        <br />
-                                        <div style={{ display: 'flex' }} >
-                                            <div style={{ width: '180px', justifyContent: 'space-between', padding: '15px', display: 'flex' }}>
-                                                <a href="https://www.linkedin.com/company/panacee-software-solutions/"><img src="https://ik.imagekit.io/2q7cgnqzi/icon/icons8-linkedin.svg?updatedAt=1710492054727" alt="" className="connection-logo" /></a>
-                                                <a href="https://www.instagram.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
-                                                <a href="https://twitter.com/ChadhaJaslin"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-square-color-icon.png" alt="" className="connection-logo" /></a>
-                                                <a href="https://www.youtube.com/@jeevshaktifoundation"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
-                                            </div>
-                                            <p style={{ marginLeft: '410px', marginTop: '9px' }} >Looking for new career ? <strong>We're hiring</strong> </p>
+                                        <div style={{ display: 'flex', justifyContent: 'center' }} >
+
+
+                                            <p style={{ marginTop: '9px' }} >Looking for new career ? <strong>We're hiring</strong> </p>
                                         </div>
                                     </Container>
 
@@ -152,116 +147,102 @@ function IndexNavbar() {
                             </DropdownToggle>
                             <DropdownMenu  >
                                 {/* <DropdownItem>Option 1</DropdownItem> */}
-                                <DropdownItem style={{ width: '100vw', position: 'static', height: '500px', marginTop: '20px' }} >
+                                <DropdownItem style={{ width: '100vw', position: 'static', height: '55vh', }} >
 
 
 
 
-                                    <Container style={{ marginTop: '50px' }} >
+                                    <Container style={{}} >
                                         <Row>
 
-                                            <Col md='8' >
-
+                                            <Col md={8}>
                                                 <Row>
-                                                    <Col md="6">
-                                                        <Row>
-                                                            <Col md='6' >
-                                                                <Link to='/how-we-do' >
-                                                                    <div className='servicenavcard' style={{ display: 'flex' }} >
-                                                                        <div>
-                                                                            <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/brain-svgrepo-com.svg?updatedAt=1710937497361" alt="" height={50} width={50} />
-                                                                        </div>
-                                                                        <div className='navcardtext'>
-
-                                                                            <h6>Brainstroming </h6>
-                                                                            <p>Ideas</p>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                </Link>
+                                                    <Col md={7}>
+                                                        <Row className='gap-3' >
+                                                            <Col md={5}>
+                                                                <Row className='navservicecard'  >
+                                                                    <Col  className='navportcardin'>
+                                                                        <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/hwd-icon-1.svg?updatedAt=1713440854392" alt=""  />
+                                                                    </Col>
+                                                                    <Col >
+                                                                        <h6>Brainstroming </h6>
+                                                                        <p>Ideas</p>
+                                                                    </Col>
+                                                                </Row>
                                                             </Col>
-                                                            <Col md='6' >
-                                                                <Link to='/how-we-do' >
-                                                                    <div className='servicenavcard' style={{ display: 'flex' }} >
-                                                                        <div>
-                                                                            <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519" alt="" height={50} width={50} />
-                                                                        </div>
-                                                                        <div className='navcardtext'>
-
-                                                                            <h6>SEO</h6>
-                                                                            <p>Optimization</p>
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                </Link>
-                                                            </Col>
-                                                        </Row>
-                                                        <Row>
-                                                            <Col md='6' >
-                                                                <Link to='/how-we-do'>
-                                                                    <div className='servicenavcard' style={{ display: 'flex' }} >
-                                                                        <div>
-                                                                            <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/graphic-design.png?updatedAt=1711008512725" alt="" height={50} width={50} />
-                                                                        </div>
-                                                                        <div className='navcardtext'>
-
-                                                                            <h6>Web</h6>
-                                                                            <p>Design</p>
-
-                                                                        </div>
-                                                                    </div>
-                                                                </Link>
-                                                            </Col>
-                                                            <Col md='6' >
-                                                                <Link to='/how-we-do'>
-                                                                    <div className='servicenavcard' style={{ display: 'flex' }} >
-                                                                        <div>
-                                                                            <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-upload-to-cloud-50.png?updatedAt=1711008806034" alt="" height={50} width={50} style={{ objectFit: 'contain' }} />
-                                                                        </div>
-                                                                        <div className='navcardtext'>
-                                                                            <h6>Frontend </h6>
-                                                                            <p>Development</p>
-
-
-
-                                                                        </div>
-                                                                    </div>
-                                                                </Link>
+                                                            <Col md={5}>
+                                                                <Row className='navservicecard' >
+                                                                    <Col className='navportcardin'>
+                                                                        <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/hwd-icon-3.svg?updatedAt=1713440667501" alt="" height={50} width={50} />
+                                                                    </Col>
+                                                                    <Col>
+                                                                        <h6>SEO</h6>
+                                                                        <p>Optimization</p>
+                                                                    </Col>
+                                                                </Row>
                                                             </Col>
                                                         </Row>
 
+                                                        <Row className='gap-3 mt-3'  >
+                                                            <Col md={5}>
+                                                                <Row className='navservicecard' >
+                                                                    <Col className='navportcardin' style={{width : '10px'}}>
+                                                                        <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/hwd-icon-2%20(1).svg?updatedAt=1713441749519" alt="" height={50} width={50} style={{ objectFit: 'contain' }}  />
+                                                                    </Col>
+                                                                    <Col>
+                                                                        <h6>App</h6>
+                                                                        <p>Development</p>
+                                                                    </Col>
+                                                                </Row>
+                                                            </Col>
+                                                            <Col md={5}>
+                                                                <Row className='navservicecard' >
+                                                                    <Col className='navportcardin'>
+                                                                        <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/hwd-icon-4.svg?updatedAt=1713441484235" alt="" height={50} width={50} style={{ objectFit: 'contain' }} />
+                                                                    </Col>
+                                                                    <Col>
+                                                                        <h6>Frontend </h6>
+                                                                        <p>Development</p>
+                                                                    </Col>
+                                                                </Row>
+                                                            </Col>
+                                                        </Row>
                                                     </Col>
-                                                    <Col md='6' >
+
+
+
+                                                    <Col md={5}>
 
                                                         <Row>
-                                                            <Col md='6' >
-                                                                <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'left', alignItems: 'self-start', padding: 'auto', paddingLeft: '50px', marginTop: '17px' }} >
-                                                                    <h6 style={{ textAlign: 'center' }} >Services</h6>
-                                                                    <Link to="/ourservices"><li>Development</li></Link>
-                                                                    <Link to="/ourservices"><li>Web Design</li></Link>
-                                                                    <Link to="/ourservices"><li>IT Support</li></Link>
-
-                                                                    <Link to="/ourservices"><li>E-Cpmmerce</li></Link>
-                                                                    <Link to="/ourservices"><li>CRM Solutions</li></Link>
-
-                                                                </div>
+                                                            <Col md={6} className='navserviceslink'>
+                                                                <h6  >Services</h6>
+                                                                <Link to="/ourservices"><li>Development</li></Link>
+                                                                <Link to="/ourservices"><li>Web Design</li></Link>
+                                                                <Link to="/ourservices"><li>IT Support</li></Link>
+                                                                <Link to="/ourservices"><li>E-Cpmmerce</li></Link>
+                                                                <Link to="/ourservices"><li>CRM Solutions</li></Link>
                                                             </Col>
-                                                            <Col md='6' >
-                                                                <div style={{ display: 'flex', flexDirection: 'column', textAlign: 'center', alignItems: 'self-start', paddingLeft: '19px', marginTop: '17px' }} >
-                                                                    <h6 style={{ textAlign: 'center' }}>Our Fields </h6>
-                                                                    <Link to="/"><li>Healthcare</li></Link>
-                                                                    <Link to="/"><li>Travel</li></Link>
-                                                                    <Link to="/"><li>Supermarket</li></Link>
-                                                                    <Link to="/"><li>Industries</li></Link>
-                                                                    <Link to="/"><li>Hotels</li></Link>
-
-
-                                                                </div>
+                                                            <Col md={6} className='navserviceslink'>
+                                                                <h6 >Our Fields </h6>
+                                                                <Link to="/"><li>Healthcare</li></Link>
+                                                                <Link to="/"><li>Travel</li></Link>
+                                                                <Link to="/"><li>Supermarket</li></Link>
+                                                                <Link to="/"><li>Industries</li></Link>
+                                                                <Link to="/"><li>Hotels</li></Link>
                                                             </Col>
                                                         </Row>
 
+
+
+
+                                                        {/* <div className='navserviceslink'>
+                                                            <h6  >Services</h6>
+                                                            <Link to="/ourservices"><li>Development</li></Link>
+                                                            <Link to="/ourservices"><li>Web Design</li></Link>
+                                                            <Link to="/ourservices"><li>IT Support</li></Link>
+                                                            <Link to="/ourservices"><li>E-Cpmmerce</li></Link>
+                                                            <Link to="/ourservices"><li>CRM Solutions</li></Link>
+                                                        </div> */}
 
                                                     </Col>
                                                 </Row>
@@ -269,9 +250,10 @@ function IndexNavbar() {
 
 
 
+
                                             <Col md='4'>
 
-                                                <Row style={{ display: 'flex', flexDirection: 'column', padding: '10px' }} >
+                                                <Row className='navourproduct' >
                                                     <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/02/ipad.jpg" alt="" className='navserviceimg' />
                                                     <div style={{ marginLeft: '60px', marginTop: "35px" }} >
                                                         <h6>Our product hits</h6>
@@ -284,17 +266,12 @@ function IndexNavbar() {
                                             </Col>
                                             <hr />
                                         </Row>
-                                        <br />
 
-                                        <div style={{ display: 'flex' }} >
-                                            <div style={{ width: '180px', justifyContent: 'space-between', padding: '15px', display: 'flex' }}>
-                                                <a href="https://www.linkedin.com/company/panacee-software-solutions/"><img src="https://ik.imagekit.io/2q7cgnqzi/icon/icons8-linkedin.svg?updatedAt=1710492054727" alt="" className="connection-logo" /></a>
-                                                <a href="https://www.instagram.com/jeevshaktifoundation/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
-                                                <a href="https://twitter.com/ChadhaJaslin"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-square-color-icon.png" alt="" className="connection-logo" /></a>
-                                                <a href="https://www.youtube.com/@jeevshaktifoundation"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
-                                            </div>
 
-                                            <p style={{ marginLeft: '410px', marginTop: '9px' }} >Looking for new career ? <strong>We're hiring</strong> </p>
+                                        <div style={{ display: 'flex', justifyContent: 'center' }} >
+
+
+                                            <p style={{ marginTop: '9px' }} >Looking for new career ? <strong>We're hiring</strong> </p>
                                         </div>
 
                                     </Container>
@@ -302,17 +279,33 @@ function IndexNavbar() {
                             </DropdownMenu>
                         </UncontrolledDropdown>
                     </Nav>
-                    <div style={{ display: 'flex', flexDirection: 'column', width: '120px' }} className='navbtnslide' >
-                        <div className='callmenavsec' style={{ display: 'flex' }} >
-                            <p className='navcallus'>Call Us</p>
-                            <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/home%20arrow.svg?updatedAt=1713423053103" alt="" style={{width : '15px' , height :'20px', marginTop :'12px'}}/>
-                        </div>
-                        <div>
-                            <p className='navnum' >9650900190</p>
-                        </div>
-                    </div>
-                    <hr />
-                    <Link to='/contactus'><Button className='contactusbtn'>Contact Us</Button></Link>
+
+
+
+
+                    <Row className='navcontacyinfo'>
+                        <Col>
+                            <Row className='mt-2' >
+                                <Col className='callmenavsec' style={{ display: 'flex' }}>
+                                    <p className='navcallus'>Call Us</p>
+                                    <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/home%20arrow.svg?updatedAt=1713423053103" alt="" style={{ width: '15px', height: '20px', marginTop: '12px' }} />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <p className='navnum' >9650900190</p>
+                                </Col>
+                            </Row>
+
+                        </Col>
+                        <Col className='navbtnbox' style={{ marginTop: '15px' }}>
+                            <Link to='/contactus'>
+                                <Button className='contactusbtn'>Contact Us</Button>
+                            </Link>
+                        </Col>
+                    </Row>
+
+
 
                 </Collapse>
             </Navbar>
