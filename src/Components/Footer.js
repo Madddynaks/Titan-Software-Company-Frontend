@@ -52,8 +52,8 @@ function Footer() {
                             </Row>
                         </Col>
 
-                        <Col md='6' style={{ padding: '30px' }} >
-                            <h2>Let’s get started on something great</h2>
+                        <Col md='6' style={{display : 'flex' , flexDirection : 'column' , alignItems : 'center' , justifyContent : 'center' }} >
+                            <h3>Let’s get started on something great</h3>
                             <h6 style={{ marginTop: '20px' }} >Our team of IT experts looks forward to meeting with you <br />
                                 and providing valuable insights tailored to your business.</h6>
                             <Link to='/contactus' ><Button className='apontmentbtn'>Get an appointment now</Button></Link>
@@ -129,9 +129,8 @@ function Footer() {
                             <a href="/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
                         </Col>
                         <Col md='5' >
-                            <Link to='/contactus' ><p style={{ color: 'white' }} >© Copyright 2023, Panacea Software Solutions</p></Link>
-                        
-
+                            <Link to='/contactus' ><p style={{ color: 'white' }}>© Copyright 2023, Panacea Software Solutions</p></Link>
+             
                         </Col>
                     </Row>
 

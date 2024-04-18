@@ -28,7 +28,7 @@ function IndexNavbar() {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <div>
+        <div style={{}} >
             <Navbar className='navbar' light expand="md">
 
                 <NavbarBrand><Link to='/'><img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/Panacee%20logo.png?updatedAt=1710924589184" alt="" className='navlogo' /></Link></NavbarBrand>
@@ -52,7 +52,7 @@ function IndexNavbar() {
                             </DropdownToggle></Link>
 
                             <DropdownMenu >
-                                <DropdownItem style={{ width: '100vw', position: 'static', height: '500px', marginTop: '20px' }} >
+                                <DropdownItem style={{ width: '100vw', position: 'static', height: '50vh', marginTop: '20px' }} >
                                     <Container className='portfolionavcon' >
                                         <Row>
                                             <Col md='8' >
@@ -305,7 +305,7 @@ function IndexNavbar() {
                     <div style={{ display: 'flex', flexDirection: 'column', width: '120px' }} className='navbtnslide' >
                         <div className='callmenavsec' style={{ display: 'flex' }} >
                             <p className='navcallus'>Call Us</p>
-                            <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/iconmonstr-arrow-right-thin.svg?updatedAt=1710998562574" alt="" className='calluslogo' />
+                            <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/home%20arrow.svg?updatedAt=1713423053103" alt="" style={{width : '15px' , height :'20px', marginTop :'12px'}}/>
                         </div>
                         <div>
                             <p className='navnum' >9650900190</p>

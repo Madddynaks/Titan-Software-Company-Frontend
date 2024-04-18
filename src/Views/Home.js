@@ -26,7 +26,7 @@ function Home() {
                         <Row className='btnsectionrow' style={{ marginTop: '35px' }}>
                             <Col className='btnsection'>
                                 <Link to='/contactus' ><Button className='contactusbtnhome'>Contact Us</Button></Link>
-                                <Link to='/contactus' ><Button className='letstalkbtnhome'>Let's Talk </Button></Link>
+                                <Link to='/contactus' ><Button className='letstalkbtnhome'>Let's Talk <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/home%20arrow.svg?updatedAt=1713423053103" alt="" className='letstalkarrow'/> </Button></Link>
                             </Col>
                         </Row>
                     </Col>
@@ -239,7 +239,7 @@ function Home() {
                     </Col>
 
                     <Col className='col2' md='7' >
-                        <Row style={{ display: 'flex', justifyContent: 'space-around' }} >
+                        <Row style={{ display: 'flex', justifyContent: 'space-around' , gap : '15px' }} >
 
                             <Col md='3' className='ecom'>
                                 <h2  >E-commerce platform development </h2>
@@ -405,7 +405,7 @@ function Home() {
 
                     <Col md='6' className='fetureproductbox'>
                         <Row>
-                            <Col>
+                            <Col >
                                 <h6 className='inhow' >FEATURED PRODUCT</h6>
                                 <h1 className='fetureproducthead'>Seamless productivity <br /> with our new app</h1>
                                 <h4 className='fetureproductabout'  >Download Slack and experience a new era of organization <br /> and accomplishment.</h4>

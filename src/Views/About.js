@@ -16,7 +16,7 @@ function About() {
 
 
 
-      <Container>
+      <Container style={{marginTop : '150px'}}>
         <Row >
           <Col className='firstbtnsec'>
 
@@ -81,9 +81,10 @@ function About() {
       <Container className='OURCOMPANY' >
         <p className='delinglogheading'>WHAT WE’RE OFFERING</p>
 
-        <Row>
+        <Row style={{display : 'flex' , gap : '25px'}} >
           <Col md='10' >
             <h1 style={{ fontSize: '45px' }} >Why our company is too popular?</h1>
+            <h5 style={{marginTop : '20px'}} >Contact us today to begin your journey!</h5>
           </Col>
           <Col>
             <Link to='/contactus' > <Button className='contactusbtnhome'>Contact Us</Button></Link>
@@ -101,19 +102,19 @@ function About() {
         </Row>
         <br />
         <Row className='whatweofferingbig' >
-          <Col>
+          <Col md= {4} >
             <Row className='tasksign' >
               <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
               <h5>Managed Services and Products </h5>
             </Row>
           </Col>
-          <Col>
+          <Col md= {4}>
             <Row className='tasksign' >
               <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
               <h5>Flexibility and Adaptability </h5>
             </Row>
           </Col>
-          <Col>
+          <Col md= {4}>
             <Row className='tasksign' >
               <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
               <h5>Competitive Advantage </h5>
@@ -182,16 +183,16 @@ function About() {
 
 
       <Container className='ourexpert1' >
-        <p className='delinglogheading'>WHAT WE’RE OFFERING</p>
+     
         <Row>
           <Col md='8' >
+          <p className='delinglogheading'>WHAT WE’RE OFFERING</p>
             <h1>Our professional experts</h1>
             <p>Our team is a collective force of top talents, experts, and <br />
               visionaries from diverse fields.</p>
           </Col>
           <Col md='4'>
             <Link to='/contactus' ><Button className='bookappwexp' >Book an appointment with our expert now</Button></Link>
-
           </Col>
         </Row>
       </Container>
@@ -264,7 +265,7 @@ function About() {
               <h5>We believe in delivering value that extends your beyond the immediate project. Our services are designed to provide a long-term benefits.</h5>
 
               <Row>
-                <Col style={{ display: 'flex', gap: '65px' }} >
+                <Col style={{ display: 'flex' , flexWrap : 'wrap' , justifyContent : 'space-between' }} >
                   <Row className='tasksign' >
                     <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
                     <h5>PPD Development </h5>

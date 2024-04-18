@@ -43,21 +43,21 @@ function Impact() {
 
 
         <Row className='ourteamcheck'  >
-          <Col>
+          <Col md = {4}>
             <Row className='tasksign' >
               <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
               <h5>Managed Services and Products </h5>
             </Row>
 
           </Col>
-          <Col style={{ display: 'flex', }} >
+          <Col md = {4} style={{ display: 'flex', }} >
             <Row className='tasksign' >
               <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
               <h5>Flexibility and Adaptability </h5>
             </Row>
 
           </Col>
-          <Col style={{ display: 'flex', }} >
+          <Col  style={{ display: 'flex', }} >
             <Row className='tasksign' >
               <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
               <h5>Competitive Advantage </h5>

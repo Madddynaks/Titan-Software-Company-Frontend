@@ -4,7 +4,7 @@ import Getintouch from './Getintouch'
 function Contactus() {
     return (
         <>
-            <Container>
+            <Container style={{marginTop : '90px'}} >
                 <Row>
                     <Col className='contactushead'>
                         <span className='hwd1btn'>Contact us</span>

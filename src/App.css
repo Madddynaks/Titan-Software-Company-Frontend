@@ -15,12 +15,12 @@ body {
   box-sizing: border-box;
   /* overflow: hidden; */
   overflow-x: hidden;
-  background-color: #fff;
+  /* background-color: #fff; */
   margin: 0px;
   padding: 0px;
   height: 100vh;
   width: 100%;
-  /* background: linear-gradient(180deg, rgba(243, 246, 253, 0.7) 0%, rgba(243, 246, 253, 0) 86.26%); */
+  background: linear-gradient(180deg, rgba(243, 246, 253, 0.7) 0%, rgba(243, 246, 253, 0) 86.26%) !important;
 
 }
 
@@ -31,6 +31,7 @@ p {
 
 }
 
+
 @media screen and (max-width: 768px) {
 
   html,
@@ -39,7 +40,48 @@ p {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .home1 {
+    padding: 10px !important;
+    margin-top: 95px !important;
+  }
+  .frontimg{
+    margin-top: 20px !important;
+    object-fit: contain;
+  }
 
+  .home1 h1 {
+    font-size: 36px !important;
+    line-height: 45px !important;
+  }
+
+  .articleboxabouthead {
+    font-size: 46px !important;
+    line-height: 50px !important;
+  }
+
+  .contactpara1 {
+    font-size: 35px !important;
+    line-height: 35px !important;
+    text-align: center !important;
+  }
+
+  .contactpara2 {
+    font-size: 25px !important;
+    line-height: 35px !important;
+    text-align: center !important;
+  }
+
+  .contactushead {
+    padding: 25px !important;
+  }
+
+}
+
+.fetureproductbox {
+  padding-left: 30px;
+  margin-top: 55px;
+}
 
 .navlogo {
   /* width: 3vw;
@@ -147,6 +189,13 @@ p {
   object-fit: cover;
   max-width: 100%;
 }
+.navservicecard{
+  background-color: #e6eaeb;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: nowrap;
+}
 
 .tabcard1 {
   /* height: 423px; */
@@ -157,7 +206,9 @@ p {
   color: #1e2125;
   background-color: #ffffff !important;
 }
-
+.dropdown-item{
+  padding: 0px !important;
+}
 .contypecard {
   border-radius: 15px;
   padding: 50px;
@@ -252,9 +303,16 @@ Button {
   color: #1351D8;
 }
 
-
-.navbtnslide{
-   
+.navbtnbox{
+  border-left: 1px solid rgb(168, 161, 161);
+}
+.navbtnslide {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+   /* border-left: 1px solid rgb(65, 60, 60); */
 }
 
 .navcallus {
@@ -266,6 +324,16 @@ Button {
   margin-right: 15px;
 }
 
+.navcontacyinfo{
+  width: 27vw;
+  height: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .calluslogo {
   height: 13px;
   fill: red;
@@ -273,38 +341,48 @@ Button {
   /* padding-bottom: 3px; */
   margin-top: 15px;
 }
-.frontimg{
+
+.frontimg {
   border-radius: 10px;
 }
-.callmenavsec{
 
+.callmenavsec {
+   /* border-left: 1px solid black; */
+
+}
+.dropdown-menu{
+  margin-top: 0px;
 }
 
 .navnum {
   margin-top: 0px;
 }
-.navbar>.container-fluid{
-  background-color: #e9e9e9;
- 
-}
-.navbar {
-  /* position: fixed;
 
-  z-index: 1000px;
-  top: 1px; */
-  /* background-color: rgb(255, 255, 255); */
-  /* background-color: white !important; */
-  padding-top: 0px;
+.navbar>.container-fluid {
+  background-color: #ffffff;
+
 }
+
+.navbar {
+
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+  z-index: 3;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 
 .servicenavcard {
   background-color: #d9dce4;
-
+  border-radius: 10px;
   padding: 20px;
-  margin-top: 15px;
-  align-items: center;
-  justify-content: center;
+  box-sizing: border-box;
+  padding: 25px;
 
+  width: 11vw;
+  gap: 3px;
 }
 
 .howedocard {
@@ -314,6 +392,13 @@ Button {
   justify-content: center;
   padding: 10px;
   display: flex;
+}
+
+.navserviceslink {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
 }
 
 .col1 p {
@@ -334,6 +419,7 @@ Button {
     justify-content: space-around;
 
   }
+
 }
 
 .howedocard1 {
@@ -363,6 +449,20 @@ Button {
   .hwdcon2 {
     padding-top: 0px !important;
   }
+
+
+  .contactpara2 {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+
+  .contactpara1 {
+    font-size: 15px;
+  }
+
+
+
+
 }
 
 
@@ -430,12 +530,16 @@ li {
   border-radius: 10px;
 }
 
+.dropdown-menu {
+  padding: 0px !important;
+}
+
 .portfolionavcard {
 
-  /* background-color: #fcfcfc; */
+
 
   padding: 20px;
-  margin-top: 15px;
+
   align-items: center;
   justify-content: center;
 
@@ -452,12 +556,13 @@ li {
 }
 
 .navourproduct {
-  margin-left: 40px;
+  /* margin-left: 40px;
   margin-top: 18px;
   padding: 10px;
+
   flex-direction: column;
   display: flex;
-  box-sizing: border-box;
+  box-sizing: border-box; */
   /* background: linear-gradient(180deg, rgba(67, 98, 170, 0.7) 0%, rgba(243, 246, 253, 0) 86.26%); */
 }
 
@@ -725,9 +830,9 @@ li {
 }
 
 .righticonimagesize {
-  width: 50px;
-  height: 28;
-  object-fit: contain;
+  width: 50px !important;
+  height: 28 !important;
+  object-fit: contain !important;
 }
 
 .inhow h1 {
@@ -757,20 +862,24 @@ li {
   margin-bottom: 25px;
 }
 
+.letstalkarrow {
+  width: 17px;
+  margin-left: 2px;
+  fill: green;
+}
+
 .home1 {
   /* margin: 150px; */
-  margin-top: 80px;
+  margin-top: 150px;
   padding: 150px;
   padding-top: 0%;
   box-sizing: border-box;
   padding-bottom: 40px;
+
+
 }
 
-@media screen and (max-width: 768px) {
-  .home1 {
-    padding: 10px;
-  }
-}
+
 
 .contactcard {
   padding: 70px;
@@ -796,6 +905,7 @@ li {
   text-align: left;
   margin-top: 40px;
   /* margin-left: 35px; */
+  padding-left: 50px;
 }
 
 .productivity {
@@ -805,7 +915,7 @@ li {
   width: 100%;
   margin-left: 1px;
   color: rgb(12, 12, 12);
-  padding-top: 50px;
+  padding: 30px;
 }
 
 .footitem {
@@ -917,7 +1027,7 @@ img {
   width: 190px;
   border-radius: 15px;
   left: 15px;
-  
+
 }
 
 
@@ -929,7 +1039,7 @@ img {
 .tabcardbtn1 p {
   margin-left: 15px;
   margin-top: 5px;
-} 
+}
 
 .productcard {
   display: flex;
@@ -1091,6 +1201,8 @@ a {
   justify-content: center;
   align-items: center;
   padding: 90px;
+  /* margin-top: 50px ; */
+
 }
 
 .whatweofferingbig {
@@ -1104,15 +1216,26 @@ a {
   display: flex;
   flex-wrap: wrap;
   padding: 10px;
-  justify-content: space-evenly;
+  margin-top: 50px;
+  justify-content: end;
+  gap: 5px;
 }
+.navportcardin{
+  background-color: #c7ccd6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 10px !important;
 
+}
 .productivitycardtext {
   position: relative;
   bottom: 470px;
   margin-left: 30px;
 }
-.aboutcard h1{
+
+.aboutcard h1 {
   color: #1351D8;
 }
 
@@ -1120,6 +1243,7 @@ a {
   display: flex;
   flex-flow: row;
   margin-top: 35px;
+  gap: 15px;
 }
 
 .ourpopulaityimage {
@@ -1159,8 +1283,9 @@ a {
   padding: 50px;
   border-radius: 10px;
 }
+
 .aboutcard p {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .hwd {
@@ -1182,6 +1307,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 15px;
+  margin-top: 90px;
 }
 
 .aboutcardindex {
@@ -1408,8 +1534,10 @@ a {
 
 .contactpara1 {
   font-size: 75px;
+  margin-top: 45px;
 }
 
 .contactpara2 {
   font-size: 25px;
+  margin-top: 35px;
 }

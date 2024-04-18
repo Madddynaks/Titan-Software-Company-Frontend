@@ -96,7 +96,7 @@ function Getintouch() {
                     <Col md='3' >
                         <div className="contactcard">
                             <Row>
-                                <Col style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }} >
+                                <Col style={{ display: 'flex', flexDirection: 'column', justifyContent: 'left'}} >
                                     <Row style={{ marginTop: '10px' }} >
                                         <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/support-icon.svg" alt="" className='thirdcolicon' style={{ width: 78 }} />
                                     </Row>
@@ -108,7 +108,7 @@ function Getintouch() {
                                     </p>
 
                                     <p style={{ margin: '0px' }} >
-                                        infopanacee@gmail.com</p>
+                                        infopanacee@gmail.com</p> <br />
 
                                     <Row style={{ marginTop: '30px' }} > <br />
                                         <hr />
@@ -130,7 +130,7 @@ function Getintouch() {
                                     </Row>
 
 
-                                    <Row style={{ display: 'flex', flexDirection: 'column', gap: '20px', marginTop: '39px' }} >
+                                    <Row style={{ display: 'flex', flexDirection: 'column', gap: '27px', marginTop: '39px' }} >
                                         <Col style={{ display: 'flex', marginLeft: '2px' }}>
                                             <img src="https://www.svgrepo.com/show/77510/football.svg" alt="" style={{ width: 20, height: 25, objectFit: 'contain' }} />
                                             <p style={{ marginLeft: '10px' }} >Dubblin</p>
@@ -147,7 +147,7 @@ function Getintouch() {
                                                 <p style={{ marginLeft: '10px' }} >Instagram</p>
                                             </Col>
                                         </Row>
-                                        <Row>
+                                        <Row>   
                                             <Col style={{ display: 'flex' }} >
                                                 <img src="https://ik.imagekit.io/2q7cgnqzi/icon/linkedin.svg?updatedAt=1711439762894" alt="" style={{ width: 18, height: 18 }} />
                                                 <p style={{ marginLeft: '10px' }} >Instagram</p>
