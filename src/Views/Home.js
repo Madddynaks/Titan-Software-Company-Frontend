@@ -152,7 +152,7 @@ function Home() {
 
             <Container className='whatweoffering'  >
                 <Row>
-                    <Col md='6' >
+                    <Col md='6' className='homaepara2'>
                         <p className='delinglogheading'>WHAT WE’RE OFFERING</p>
                         <h1 className='delingheading' >Dealing in all professional <br />
                             IT services.</h1>
@@ -164,36 +164,36 @@ function Home() {
             </Container>
 
             <Container className='professionalservicescontainer' >
-                <Row className='professionalservicesrow' >
-                    <Col md='2' >
+                <Row className='professionalservicesrow gx-5' >
+                    <Col  sm='1' md='2' >
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg" alt="" className='services5' />
                             <h5>Development</h5>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
-                    <Col md='2'>
+                    <Col sm='1' md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-2-2.svg" alt="" className='services5' />
                             <h5>Woo Commerce</h5>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
-                    <Col md='2'>
+                    <Col sm='1' md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-3-2.svg" alt="" className='services5' />
                             <h5>CRM Solutions</h5>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
-                    <Col md='2'>
+                    <Col sm='1' md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg" alt="" className='services5' />
                             <h5>Web Design</h5>
                             <p>Our development is pixel perfect in all ways.</p>
                         </Card>
                     </Col>
-                    <Col md='2'>
+                    <Col sm='1' md='2'>
                         <Card className='professionalservicescard' >
                             <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-5-2.svg" alt="" className='services5' />
                             <h5>IT Support</h5>
@@ -282,15 +282,7 @@ function Home() {
 
                         <h5 style={{ marginTop: '35px' }} >Small UK merchants, businesses, and other enterprises can now use Tap to Pay on service to replace payment terminals
                             at point of sale.</h5>
-                        {/* <Row className='tasksign' >
-                            <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
-                            <h5>Collaboration Tools </h5>
-                        </Row>
-                        <Row className='tasksign' >
-                            <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
-                            <h5>Smart Reminders </h5>
-                        </Row> */}
-
+                    
                     </Col>
                 </Row>
             </Container>
@@ -307,8 +299,8 @@ function Home() {
                         <h3 className='articlecardhead'  >Bluebase launches Tap to Pay on smartphone for international and domestic business</h3>
 
                         <h style={{ marginTop: '23px' }}>Small UK merchants, businesses, and other enterprises can now use Tap to Pay on service to replace
-                            payment terminals at point of sale.</h>
-
+                            payment terminals at point of sale.</h> <br />
+<hr />
                      
                             <Row>
                             <Col md='6' className='tasksign'>
@@ -352,8 +344,6 @@ function Home() {
                         <hr />
 
 
-
-
                         <Row>
                             <Col md='6' className='tasksign'>
 
@@ -394,30 +384,25 @@ function Home() {
                 <Row>
                     <Col md='7' className='productivitycard1'  >
                         <Col md='5' className='productivitycardtype' >
-                            <div>
-                                <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-1.png" alt="" />
+                        <div class="feature-img-card">
+                                <h3 style={{position:'absolute',paddingLeft:'20px',paddingTop:'20px'}}>Start your <br /> project from <br />your pocket.</h3>
+                                <img decoding="async" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-1.png" />
                             </div>
-                            <div className='productivitycardtext'  >
-                                <h1>Start your <br />
-                                    project from <br />
-                                    your pocket.</h1>
-                            </div>
+                     
                         </Col>
                         <Col md='5' className='productivitycardtype' >
-                            <div>
-                                <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-2.png" alt="" />
-                            </div>
-                            <div className='productivitycardtext'  >
-                                <h1>Available on <br />
+                        <div class="feature-img-card">
+                                <h3 style={{position:'absolute',paddingLeft:'20px',paddingTop:'20px'}}>Available on <br />
                                     all responsive <br />
-                                    devices.</h1>
+                                    devices.</h3>
+                                    <img decoding="async" src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-2.png" />
                             </div>
                         </Col>
                     </Col>
 
 
 
-                    <Col md='5' className='fetureproductbox'>
+                    <Col md='5' className='fetureproductbox section-title'>
                         <Row>
                             <Col >
                                 <h6 className='inhow' >FEATURED PRODUCT</h6>
