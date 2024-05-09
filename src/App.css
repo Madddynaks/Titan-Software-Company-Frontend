@@ -20,7 +20,6 @@ body {
   padding: 0px;
   height: 100vh;
   width: 100%;
-  background: linear-gradient(180deg, rgba(243, 246, 253, 0.7) 0%, rgba(243, 246, 253, 0) 86.26%) !important;
 
 }
 
@@ -280,11 +279,18 @@ Button {
   border-radius: 80px;
   background-color: var(--btncolor);
   /* margin-right: 10vw; */
-  width: 150px;
-  height: 47px;
-  outline: #1d241c;
-
+  padding: 15px;
+  width: 160px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.6s ease;
 }
+
+.contactusbtnhome:hover {
+  background-color: black;
+}
+
+
 
 .css-heg063-MuiTabs-flexContainer {
   color: #ffffff !important;
@@ -303,13 +309,17 @@ Button {
 
 .letstalkbtnhome {
   border-radius: 80px;
-  /* background-color: var(--btncolor); */
-  margin-right: 10vw;
-  width: 150px;
-  height: 47px;
-  margin-left: 20px;
-  background-color: #eef7ff;
+  padding: 15px;
+  width: 160px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #d2e8fb;
   color: #1351D8;
+  border: 0px solid black;
+  transition: background-color 0.6s ease;
+}
+.letstalkbtnhome:hover {
+  background-color: #1351D8;
 }
 
 .navbtnbox {
@@ -885,8 +895,8 @@ li {
   padding: 150px;
   padding-top: 0%;
   box-sizing: border-box;
-  padding-bottom: 40px;
-  height: 90vh !important;
+  /* padding-bottom: 40px; */
+  /* height: 90vh !important; */
 
 }
 
@@ -956,7 +966,8 @@ li {
   align-items: center;
   border-radius: 15px;
   justify-content: center;
-  border: 2px solid #f3f2f2;
+  border: 0px solid #f3f2f2;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.03);
 }
 
 .home-slider-img {
@@ -1469,7 +1480,6 @@ a {
 .homepara3 {
   margin-top: 35px;
   font-size: 22px;
-  font-family: DM sen;
   color: rgb(28 28 28 / 80%);
 
 }

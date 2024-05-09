@@ -8,6 +8,8 @@ import Slider from '../Components/Slider';
 import Getintouch from '../Components/Getintouch';
 import MultipleTab from '../Components/MultipleTab';
 
+
+
 function Home() {
 
     useEffect(() => {
@@ -34,14 +36,14 @@ function Home() {
                         <img src="https://images.pexels.com/photos/3184613/pexels-photo-3184613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className='frontimg' />
                     </Col>
                 </Row>
-                <br /><br /><br />
-                <br /><br />
 
-                <hr /><br />
             </div>
 
+            <hr style={{marginBottom:"100px"}}/>
 
-            <Slider />
+            <div>
+                <Slider />
+            </div>
 
 
             <Container className='howedo' >

@@ -28,6 +28,7 @@ function IndexNavbar() {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
+        <>
         <div style={{}} >
             <Navbar className='navbar' light expand="md">
 
@@ -310,6 +311,7 @@ function IndexNavbar() {
                 </Collapse>
             </Navbar>
         </div>
+        </>
     );
 }
 
