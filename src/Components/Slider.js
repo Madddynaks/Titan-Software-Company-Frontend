@@ -2,6 +2,7 @@ import React from 'react'
 import { Card } from 'reactstrap';
 import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 function Slider() {
     return (
         <>
@@ -9,7 +10,7 @@ function Slider() {
                 modules={[Navigation, Pagination, A11y, Autoplay]}
                 spaceBetween={20}
                 slidesPerView={6}
-                loop={true} // Make the slider continuous
+                loop={true}
                 breakpoints={{
                     300: {
                         slidesPerView: 1,
@@ -21,9 +22,11 @@ function Slider() {
                         slidesPerView: 6,
                     },
                 }}
+                speed={2500}
                 autoplay={{
-                    delay: 1000,
+                    delay: 0,
                     disableOnInteraction: false,
+                    waitForTransition: true,
                 }}
             >
                 <SwiperSlide > <Card className='sliderimage' ><img className="home-slider-img" src="https://kartooncafe.com/wp-content/uploads/2023/05/cropped-Kartoon-Cafe-Final-Logo-Copy.png" alt="" /></Card></SwiperSlide>
