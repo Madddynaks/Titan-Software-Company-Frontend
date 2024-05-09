@@ -7,6 +7,7 @@ import 'swiper/css';
 import Slider from '../Components/Slider';
 import Getintouch from '../Components/Getintouch';
 import MultipleTab from '../Components/MultipleTab';
+import Narrow from '../Components/Common/Narrow';
 
 
 
@@ -19,6 +20,7 @@ function Home() {
 
     return (
         <>
+        <Narrow>
             <div className='home1'>
                 <Row>
                     <Col md='6' className=''>
@@ -438,6 +440,7 @@ function Home() {
 
 
             <Getintouch />
+            </Narrow>
         </>
     )
 }

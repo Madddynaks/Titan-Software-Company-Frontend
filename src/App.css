@@ -268,7 +268,7 @@ Button {
   background-color: var(--btncolor);
   width: 140px;
   height: 47px;
-
+  margin-left: 2.1rem;
 }
 
 .contactusbtnhome {
@@ -386,7 +386,7 @@ Button {
 }
 
 .Narrow{
-  max-width: 1400px;
+  max-width: 1500px;
   margin: auto;
 }
 
