@@ -30,7 +30,7 @@ function IndexNavbar() {
 
     return (
         <>
-        <div style={{backgroundColor:"black"}}>
+        <div style={{backgroundColor:"black", padding:"0.5rem 0rem"}}>
         <Narrow>
         <div style={{height:"3rem",color:"white",display:"flex", alignItems:'center',justifyContent:"space-between"}}>
             <span>Panacee Software Company</span>
@@ -294,8 +294,8 @@ function IndexNavbar() {
 
 
 
-                    <Row className='navcontacyinfo' style={{display:"flex",justifyContent:"space-between",width:"35%"}}>
-                        <Col md="7">
+                    <Row className='navcontacyinfo' style={{display:"flex",width:"30%"}}>
+                        <Col md="6">
                             <Row className='mt-2' >
                                 <div  style={{ display: 'flex'}}>
                                     <p className='navcallus'>Call Us</p>
@@ -304,12 +304,12 @@ function IndexNavbar() {
                             </Row>
                             <Row>
                                 <Col>
-                                    <p className='navnum' >9650900190</p>
+                                    <p className='navnum' style={{fontSize:"1.5em"}} >9650900190</p>
                                 </Col>
                             </Row>
 
                         </Col>
-                        <Col md="5" className='navbtnbox' >
+                        <Col md="6" className='navbtnbox' >
                             <Link to='/contactus'>
                                 <Button className='contactusbtn' >Contact Us</Button>
                             </Link>
