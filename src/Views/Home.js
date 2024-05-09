@@ -21,7 +21,7 @@ function Home() {
         <>
             <div className='home1'>
                 <Row>
-                    <Col md='6'>
+                    <Col md='6' className=''>
                         <p className='home1para'>EMPOWERMENT</p>
                         <h1 className='homepara2'  >Seamless IT for your  business, boosting your growth.</h1>
                         <p className='homepara3'  >We provide the expertise and support to propel your business forward in the digital landscape.</p>

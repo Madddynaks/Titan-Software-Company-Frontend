@@ -18,6 +18,7 @@ import {
     Col, Row
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import Narrow from './Common/Narrow';
 function IndexNavbar() {
 
 
@@ -29,13 +30,22 @@ function IndexNavbar() {
 
     return (
         <>
-        <div style={{}} >
-            <Navbar className='navbar' light expand="md">
-
-                <NavbarBrand><Link to='/'><img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/Panacee%20logo.png?updatedAt=1710924589184" alt="" className='navlogo' /></Link></NavbarBrand>
+        <div style={{backgroundColor:"black"}}>
+        <Narrow>
+        <div style={{height:"3rem",color:"white",display:"flex", alignItems:'center',justifyContent:"space-between"}}>
+            <span>Panacee Software Company</span>
+            <span>Janakpuri South </span>
+        </div>
+        </Narrow>
+        </div>
+        <div class="navbarContainer">
+        <Narrow >
+        <div>
+            <Navbar className='navbar' light expand="md" style={{padding:"0px"}}>
+                <NavbarBrand><Link to='/'><img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/Panacee%20logo.png?updatedAt=1710924589184" alt="" className='navlogo' style={{margin:"0px"}}/></Link></NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav className="me-auto" navbar>
+                    <Nav className="me-auto" navbar style={{width:"90%"}}>
                         <NavItem className='navitem' style={{ paddingTop: '7px' }}>
                             <Link className='link' to="/">Home</Link>
                         </NavItem>
@@ -284,13 +294,13 @@ function IndexNavbar() {
 
 
 
-                    <Row className='navcontacyinfo'>
-                        <Col>
+                    <Row className='navcontacyinfo' style={{display:"flex",justifyContent:"space-between",width:"35%"}}>
+                        <Col md="7">
                             <Row className='mt-2' >
-                                <Col className='callmenavsec' style={{ display: 'flex' }}>
+                                <div  style={{ display: 'flex'}}>
                                     <p className='navcallus'>Call Us</p>
                                     <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/home%20arrow.svg?updatedAt=1713423053103" alt="" style={{ width: '15px', height: '20px', marginTop: '12px' }} />
-                                </Col>
+                                </div>
                             </Row>
                             <Row>
                                 <Col>
@@ -299,9 +309,9 @@ function IndexNavbar() {
                             </Row>
 
                         </Col>
-                        <Col className='navbtnbox' style={{ marginTop: '15px' }}>
+                        <Col md="5" className='navbtnbox' >
                             <Link to='/contactus'>
-                                <Button className='contactusbtn'>Contact Us</Button>
+                                <Button className='contactusbtn' >Contact Us</Button>
                             </Link>
                         </Col>
                     </Row>
@@ -310,6 +320,8 @@ function IndexNavbar() {
 
                 </Collapse>
             </Navbar>
+        </div>
+        </Narrow>
         </div>
         </>
     );

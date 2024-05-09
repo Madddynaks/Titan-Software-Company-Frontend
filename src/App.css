@@ -245,10 +245,8 @@ Button {
 .contactusbtncard {
   border-radius: 80px;
   background-color: var(--btncolor);
-  margin-right: 10vw;
   width: 140px;
   height: 47px;
-  margin-left: 20px;
   margin-top: 220px;
   border: 2px solid var(--btncolor);
   /* outline:1px solid rgb(55, 75, 252); */
@@ -268,10 +266,8 @@ Button {
 .contactusbtn {
   border-radius: 80px;
   background-color: var(--btncolor);
-  margin-right: 10vw;
   width: 140px;
   height: 47px;
-  margin-left: 20px;
 
 }
 
@@ -379,21 +375,20 @@ Button {
   margin-top: 0px;
 }
 
-.navbar>.container-fluid {
-  background-color: #e9e9e9;
-
+.navbarContainer{
+  position:sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
 }
-
 .navbar {
-
-  position: fixed;
-  width: 100vw;
-  top: 0px;
-  z-index: 3;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  width: 100%;
 }
 
+.Narrow{
+  max-width: 1400px;
+  margin: auto;
+}
 
 .servicenavcard {
   background-color: #d9dce4;
@@ -635,12 +630,11 @@ li {
   text-transform: uppercase;
   color: #1351d8;
 }
-
+/* 
 .tabcadlogo {
   height: 35px;
-  /* border-radius: ; */
   width: 35px;
-}
+} */
 
 .services5 {
 
@@ -890,18 +884,12 @@ li {
 }
 
 .home1 {
-  /* margin: 150px; */
-  margin-top: 150px;
-  padding: 150px;
-  padding-top: 0%;
+  padding: 3rem;
   box-sizing: border-box;
   /* padding-bottom: 40px; */
   /* height: 90vh !important; */
 
 }
-
-
-
 .contactcard {
   padding: 70px;
   background-color: #f3f6fd;
