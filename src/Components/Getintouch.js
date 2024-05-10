@@ -1,11 +1,13 @@
 import React from 'react'
 import {  Container, Row, Col, Button } from 'reactstrap';
+import Narrow from './Common/Narrow';
 function Getintouch() {
     return (
         <>
-            <Container className='getintouch' >
+            <Narrow>
+            <div className='getintouch' >
                 <Row>
-                    <Col md='6' className='getintouch1'>
+                    <Col md='6' style={{padding:"6rem"}} className='getintouch1'>
                         <p style={{ color: '#1351d8', letterSpacing: '5px' }} >CONTACT</p>
                         <h1>Lets get in touch</h1>
                         <h5 style={{ marginTop: "30px" }} >You can reach us anytime via
@@ -159,7 +161,8 @@ function Getintouch() {
                         </div>
                     </Col>
                 </Row>
-            </Container>
+            </div>
+            </Narrow>
         </>
     )
 }
