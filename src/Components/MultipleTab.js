@@ -230,7 +230,7 @@ export default function FullWidthTabs() {
                             </Col>
                             <Col md={4}>
                                 <Card className='tabcard' >
-                                    <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg" alt="" className='tabcadlogo' />
+                                    <img src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg" alt=""  className='tabcadlogo' />
                                     <h4>Web Designing</h4>
                                     <p className='tabcardtext' >Software development is a dynamic and rapidly evolving field that plays a pivotal role in
                                         shaping the digital landscape we live in today. It encompasses the processes, methodologies,

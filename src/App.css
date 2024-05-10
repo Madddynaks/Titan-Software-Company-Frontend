@@ -15,7 +15,7 @@ body {
   box-sizing: border-box;
   /* overflow: hidden; */
   overflow-x: hidden;
-  /* background-color: #fff; */
+  background-color: #f9faff;
   margin: 0px;
   padding: 0px;
   height: 100vh;
@@ -360,6 +360,7 @@ Button {
 
 .frontimg {
   border-radius: 10px;
+  height: 110%;
 }
 
 .callmenavsec {
@@ -423,7 +424,8 @@ Button {
 }
 
 .whatweoffering {
-  margin-top: 120px;
+  margin-top: 17vh;
+  margin-left: 3rem;
 }
 
 @media screen and (max-width : 450px) {
@@ -583,9 +585,10 @@ li {
 }
 
 .howedo {
-  background-color: black;
-  padding: 40px;
+  background-color: rgb(31, 31, 31);
+  padding: 70px;
   border-radius: 15px;
+  margin-top: 10vh;
 }
 
 .howedotext {
@@ -630,11 +633,11 @@ li {
   text-transform: uppercase;
   color: #1351d8;
 }
-/* 
+
 .tabcadlogo {
-  height: 35px;
-  width: 35px;
-} */
+  height: 50px;
+  width: 50px;
+}
 
 .services5 {
 
@@ -678,6 +681,7 @@ li {
 .professionalservicescontainer {
   margin-top: 70px;
   padding-bottom: 150px;
+  margin-left: 3rem;
   /* display: flex; */
   /* flex-wrap: wrap; */
   /* justify-content: space-around; */
@@ -686,7 +690,17 @@ li {
   /* align-items: center; */
   gap: 0px;
   /* grid-area: ; */
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
+}
+
+.casestudies{
+  background-color: #ebf5ff;
+  padding: 5rem;
+}
+
+.empowermentHeading{
+  font-size: 50px;
+  font-weight:700;
 }
 
 .footer {
@@ -886,6 +900,8 @@ li {
 .home1 {
   padding: 3rem;
   box-sizing: border-box;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
   /* padding-bottom: 40px; */
   /* height: 90vh !important; */
 
@@ -1465,11 +1481,20 @@ a {
   color: #212529;
 }
 
+.consultingcard:hover{
+  background-color: black;
+}
+
 .homepara3 {
   margin-top: 35px;
   font-size: 22px;
   color: rgb(28 28 28 / 80%);
 
+}
+
+.text{
+  font-size: 22px;
+  color: rgb(28 28 28 / 80%);
 }
 
 .btnsectionrow {
