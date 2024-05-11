@@ -17,7 +17,7 @@ function Home() {
   return (
     <>
       <Narrow>
-        <div className="home1">
+        <div className="home1 max-xl:mb-20">
           <Row>
             <Col md="6" className="">
               <p className="home1para">EMPOWERMENT</p>
@@ -34,7 +34,7 @@ function Home() {
                     <Button className="contactusbtnhome">Contact Us</Button>
                   </Link>
                   <Link to="/contactus">
-                    <Button className="letstalkbtnhome">
+                    <Button className="letstalkbtnhome flex gap-1 align-items-center justify-center">
                       Let's Talk{" "}
                       <img
                         src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/home%20arrow.svg?updatedAt=1713423053103"
@@ -55,16 +55,14 @@ function Home() {
             </Col>
           </Row>
         </div>
-
-        <hr style={{ marginBottom: "100px" }} />
       </Narrow>
 
-      <div>
+      <div className=" mt-28 max-xl:mt-0">
         <Slider />
       </div>
 
       <Narrow>
-        <Container style={{ marginLeft: "0rem" }} className="howedo">
+        <div className="howedo p-20 max-xl:p-5 max-xl:py-10 max-xl:rounded-none mt-36 max-xl:mt-20 mx-auto">
           <Row>
             <Col style={{ marginRight: "0vw" }} md="3">
               <h6 className="ourmodeltext">OUR MODEL</h6>
@@ -191,11 +189,11 @@ function Home() {
               </Row>
             </Col>
           </Row>
-        </Container>
+        </div>
       </Narrow>
 
       <Narrow>
-        <Container className="whatweoffering">
+        <div className="whatweoffering mt-36 max-xl:mt-10">
           <Row>
             <Col md="6" className="homaepara2">
               <p className="delinglogheading">WHAT WE’RE OFFERING</p>
@@ -212,20 +210,20 @@ function Home() {
               </h6>
             </Col>
           </Row>
-        </Container>
+        </div>
       </Narrow>
 
       <Narrow>
-        <Container className="professionalservicescontainer">
-          <Row className="professionalservicesrow ">
+        <div className="professionalservicescontainer">
+          <Row className="professionalservicesrow space-x-12">
             <Col sm="1" md="2">
-              <Card className="professionalservicescard">
+              <Card className="professionalservicescard ">
                 <img
                   src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg"
                   alt=""
                   className="services5"
                 />
-                <h5>Development</h5>
+                <div className="text-xl font-bold">Development</div>
                 <p>Our development is pixel perfect in all ways.</p>
               </Card>
             </Col>
@@ -236,7 +234,7 @@ function Home() {
                   alt=""
                   className="services5"
                 />
-                <h5>Woo Commerce</h5>
+                <div className="text-xl font-bold">Woo Commerce</div>
                 <p>Our development is pixel perfect in all ways.</p>
               </Card>
             </Col>
@@ -247,7 +245,7 @@ function Home() {
                   alt=""
                   className="services5"
                 />
-                <h5>CRM Solutions</h5>
+                <div className="text-xl font-bold">CRM Solutions</div>
                 <p>Our development is pixel perfect in all ways.</p>
               </Card>
             </Col>
@@ -258,7 +256,7 @@ function Home() {
                   alt=""
                   className="services5"
                 />
-                <h5>Web Design</h5>
+                <div className="text-xl font-bold">Web Design</div>
                 <p>Our development is pixel perfect in all ways.</p>
               </Card>
             </Col>
@@ -269,28 +267,26 @@ function Home() {
                   alt=""
                   className="services5"
                 />
-                <h5>IT Support</h5>
+                <div className="text-xl font-bold">IT Support</div>
                 <p>Our development is pixel perfect in all ways.</p>
               </Card>
             </Col>
           </Row>
-        </Container>
+        </div>
       </Narrow>
 
-      <div className="casestudies">
+      {/* <div className="background p-3">
         <Narrow>
           <MultipleTab />
         </Narrow>
-      </div>
+      </div> */}
 
-      <div style={{ padding: "3rem" }}>
+      <div>
         <Narrow>
-          <Row>
+          <Row className="p-3 mb-28 max-xl:mt-0 max-xl:mb-0">
             <Col md="4" style={{ marginTop: "10vh" }}>
               <p className="home1para">CONSULTING EXCELLENCE</p>
-              <h1 className="empowermentHeading">
-                Best pathway to our clients.
-              </h1>
+              <h1 className="delingheading">Best pathway to our clients.</h1>
               <p className="homepara3">
                 Our consulting process begins with a thorough assessment of your
                 current IT infrastructure, workflows, and pain points.
@@ -343,71 +339,67 @@ function Home() {
                 </div>
               </div>
             </Col>
-            <Col
-              md="8"
-              style={{
-                padding: "3rem",
-              }}
-            >
+            <Col md="8" style={{}}>
               <div
-                className="consultingcard"
+                className=" ml-auto max-xl:ml-0 max-xl:mt-5"
                 style={{
                   backgroundColor: "#ebf5ff",
                   padding: "2rem",
-                  width: "400px",
+                  width: "320px",
                   borderRadius: "15px",
-                  marginLeft: "auto",
                 }}
               >
-                <h3>Discovery and Analysis</h3>
-                <p className="text">
+                <div className="text-xl font-bold">Discovery and Analysis</div>
+                <div className=" text-lg text-gray-500 mt-2">
                   Perform an analysis of the client's existing IT systems.
-                </p>
+                </div>
               </div>
               <div
+                className=" ml-36 max-xl:ml-0"
                 style={{
                   backgroundColor: "#ebf5ff",
                   padding: "2rem",
-                  width: "400px",
+                  width: "320px",
                   borderRadius: "15px",
                   marginTop: "3vh",
                 }}
               >
-                <h3>Discovery and Analysis</h3>
-                <p className="text">
+                <div className="text-xl font-bold">Discovery and Analysis</div>
+                <div className=" text-lg text-gray-500 mt-2">
                   Perform an analysis of the client's existing IT systems.
-                </p>
+                </div>
               </div>
               <div
+                className=" ml-auto max-xl:ml-0"
                 style={{
                   backgroundColor: "#ebf5ff",
                   padding: "2rem",
-                  width: "400px",
+                  width: "320px",
                   borderRadius: "15px",
-                  marginLeft: "auto",
                   marginTop: "3vh",
                 }}
               >
-                <h3>Discovery and Analysis</h3>
-                <p className="text">
+                <div className="text-xl font-bold">Discovery and Analysis</div>
+                <div className="text-lg text-gray-500 mt-2">
                   Perform an analysis of the client's existing IT systems.
-                </p>
+                </div>
               </div>
             </Col>
           </Row>
         </Narrow>
       </div>
 
-      <div style={{ padding: "3rem" }}>
+      <div className="p-3 background">
         <Narrow>
           <Row>
-            <Col md="4" style={{ marginTop: "10vh" }}>
+            <Col md="4" className="mt-28 max-xl:mt-5">
               <p className="home1para">PROJECTS</p>
               <h1 className="empowermentHeading">
                 Showcase of our recognized work.
               </h1>
               <p className="homepara3">
-                Our collaborative approach ensures that we truly understand our clients unique requirements and challenges.
+                Our collaborative approach ensures that we truly understand our
+                clients unique requirements and challenges.
               </p>
               <div className=" mt-5">
                 <div
@@ -423,7 +415,9 @@ function Home() {
                       <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
                     </svg>
                   </p>
-                  <p style={{ fontSize: "20px" }}>Managed Services and Products</p>
+                  <p style={{ fontSize: "20px" }}>
+                    Managed Services and Products
+                  </p>
                 </div>
                 <div
                   style={{ display: "flex", gap: "1vw", alignItems: "center" }}
@@ -438,7 +432,9 @@ function Home() {
                       <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
                     </svg>
                   </p>
-                  <p style={{ fontSize: "20px" }}>Flexibility and Adaptability</p>
+                  <p style={{ fontSize: "20px" }}>
+                    Flexibility and Adaptability
+                  </p>
                 </div>
                 <div
                   style={{ display: "flex", gap: "1vw", alignItems: "center" }}
@@ -636,91 +632,93 @@ function Home() {
       </Container> */}
 
       <div className="productivity">
-        <Row>
-          <Col md="7" className="productivitycard1">
-            <Col md="5" className="productivitycardtype">
-              <div class="feature-img-card">
-                <h3
-                  style={{
-                    position: "absolute",
-                    paddingLeft: "20px",
-                    paddingTop: "20px",
-                  }}
-                >
-                  Start your <br /> project from <br />
-                  your pocket.
-                </h3>
-                <img
-                  decoding="async"
-                  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-1.png"
-                />
-              </div>
+        <Narrow>
+          <Row className="py-32 max-xl:py-5">
+            <Col md="7" className="productivitycard1">
+              <Col md="5" className="productivitycardtype">
+                <div class="feature-img-card">
+                  <div className="text-2xl font-bold"
+                    style={{
+                      position: "absolute",
+                      paddingLeft: "20px",
+                      paddingTop: "20px",
+                    }}
+                  >
+                    Start your <br /> project from <br />
+                    your pocket.
+                  </div>
+                  <img
+                    decoding="async"
+                    src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-1.png"
+                  />
+                </div>
+              </Col>
+              <Col md="5" className="productivitycardtype">
+                <div class="feature-img-card">
+                  <div className="text-2xl font-bold"
+                    style={{
+                      position: "absolute",
+                      paddingLeft: "20px",
+                      paddingTop: "20px",
+                    }}
+                  >
+                    Available on <br />
+                    all responsive <br />
+                    devices.
+                  </div>
+                  <img
+                    decoding="async"
+                    src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-2.png"
+                  />
+                </div>
+              </Col>
             </Col>
-            <Col md="5" className="productivitycardtype">
-              <div class="feature-img-card">
-                <h3
-                  style={{
-                    position: "absolute",
-                    paddingLeft: "20px",
-                    paddingTop: "20px",
-                  }}
-                >
-                  Available on <br />
-                  all responsive <br />
-                  devices.
-                </h3>
+
+            <Col md="5" className="fetureproductbox section-title">
+              <Row>
+                <Col>
+                  <h6 className="inhow">FEATURED PRODUCT</h6>
+                  <h1 className="fetureproducthead">
+                    Seamless productivity <br /> with our new app
+                  </h1>
+                  <h4 className="fetureproductabout mt-3">
+                    Download Slack and experience a new era of organization{" "}
+                    <br /> and accomplishment.
+                  </h4>
+                </Col>
+              </Row>
+
+              <Row className="tasksign">
                 <img
-                  decoding="async"
-                  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/feature-img-2.png"
+                  src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962"
+                  alt=""
+                  className="righticonimagesize"
                 />
-              </div>
+                <h5 className="fetureproductabout">PPD Development </h5>
+              </Row>
+              <Row className="tasksign">
+                <img
+                  src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962"
+                  alt=""
+                  className="righticonimagesize"
+                />
+                <h5 className="fetureproductabout">Easy to use </h5>
+              </Row>
+
+              <Row className="productivitybutton">
+                <Col md="3">
+                  <Link to="/contactus"></Link>{" "}
+                  <Button className="productivitybtn">Get Started Now!</Button>
+                </Col>
+                <Col>
+                  <Link to="/contactus">
+                    <Button className="productivitybtn">Learn More</Button>
+                  </Link>
+                </Col>
+              </Row>
             </Col>
-          </Col>
-
-          <Col md="5" className="fetureproductbox section-title">
-            <Row>
-              <Col>
-                <h6 className="inhow">FEATURED PRODUCT</h6>
-                <h1 className="fetureproducthead">
-                  Seamless productivity <br /> with our new app
-                </h1>
-                <h4 className="fetureproductabout">
-                  Download Slack and experience a new era of organization <br />{" "}
-                  and accomplishment.
-                </h4>
-              </Col>
-            </Row>
-
-            <Row className="tasksign">
-              <img
-                src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962"
-                alt=""
-                className="righticonimagesize"
-              />
-              <h5 style={{ color: "white" }}>PPD Development </h5>
-            </Row>
-            <Row className="tasksign">
-              <img
-                src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962"
-                alt=""
-                className="righticonimagesize"
-              />
-              <h5 style={{ color: "white" }}>Easy to use </h5>
-            </Row>
-
-            <Row className="productivitybutton">
-              <Col md="3">
-                <Link to="/contactus"></Link>{" "}
-                <Button className="productivitybtn">Get Started Now!</Button>
-              </Col>
-              <Col>
-                <Link to="/contactus">
-                  <Button className="productivitybtn">Learn More</Button>
-                </Link>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
+          </Row>
+        </Narrow>
       </div>
 
       <Getintouch />

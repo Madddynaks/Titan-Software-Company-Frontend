@@ -60,8 +60,8 @@ export default function FullWidthTabs() {
         <>
 
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                <p className='home1para'>CASE STUDIES</p>
-                <h1>Detailing of our products</h1>
+                <p className='delinglogheading'>CASE STUDIES</p>
+                <h1 className='delingheading'>Detailing of our products</h1>
             </div>
 
 
