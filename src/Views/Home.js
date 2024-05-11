@@ -469,60 +469,7 @@ function Home() {
         </Narrow>
       </div>
 
-      {/* <div className="showcasework">
-        <Row>
-          <Col className="col1" md={4}>
-            <p className="delinglogheading">PROJECTS</p>
-            <h1>
-              Showcase of our <br /> recognized work
-            </h1>{" "}
-            <br />
-            <p className="dim">
-              Our collaborative approach ensures that we truly understand our
-              clients unique requirements and challenges.
-            </p>
-            <hr />
-            <Row className="rightsign">
-              <img
-                src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962"
-                alt=""
-                className="righticonimagesize"
-              />
-              <h5>PPD Development </h5>
-            </Row>
-            <Row className="rightsign">
-              <img
-                src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962"
-                alt=""
-                className="righticonimagesize"
-              />
-              <h5>Easy to Use </h5>
-            </Row>
-          </Col>
-
-          <Col className="col2" md={8}>
-            <Row
-              style={{
-                display: "flex",
-                justifyContent: "space-around",
-                gap: "15px",
-              }}
-            >
-              <Col md="12" sm="6" className="ecom">
-                <h2>E-commerce platform development </h2>
-              </Col>
-              <Col md="12" sm="6" className="saas">
-                <h2>Software as a service integration</h2>
-              </Col>
-              <Col md="12" sm="6" className="app">
-                <h2>Mobile platform Development</h2>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-      </div> */}
-
-      <Container className="articlebox">
+      {/* <Container className="articlebox">
         <Row>
           <Col>
             <p className="articleboxabout">INTERESTING ARTICLES</p>
@@ -561,9 +508,9 @@ function Home() {
             </h5>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
 
-      <Container>
+      {/* <Container>
         <Row className="productcard">
           <Col md="5" className="product">
             <img
@@ -686,7 +633,7 @@ function Home() {
             </Row>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
 
       <div className="productivity">
         <Row>

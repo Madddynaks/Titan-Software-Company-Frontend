@@ -916,7 +916,7 @@ li {
 .home1 {
   padding: 3rem;
   box-sizing: border-box;
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
   margin-bottom: 10vh;
   /* padding-bottom: 40px; */
   /* height: 90vh !important; */
