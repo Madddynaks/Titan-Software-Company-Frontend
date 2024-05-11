@@ -7,7 +7,7 @@ import img from "../../src/Images/file.png";
 export default function ShowcaseSlider() {
   return (
         <>
-            <Swiper style={{ paddingTop: "0", paddingBottom: "5em",zIndex:"0"}}
+            <Swiper style={{ paddingTop: "3rem", paddingBottom: "5em", zIndex:"0"}}
                 modules={[Navigation, Pagination, A11y, Autoplay]}
                 spaceBetween={20}
                 slidesPerView={6}
@@ -30,12 +30,12 @@ export default function ShowcaseSlider() {
                     waitForTransition: true,
                 }}
             >
-                <SwiperSlide ><img style={{height:"650px"}}  src={img} alt="" /></SwiperSlide>
-                <SwiperSlide ><img style={{height:"650px"}}  src={img} alt="" /></SwiperSlide>
-                <SwiperSlide ><img style={{height:"650px"}}  src={img} alt="" /></SwiperSlide>
-                <SwiperSlide ><img style={{height:"650px"}}  src={img} alt="" /></SwiperSlide>
-                <SwiperSlide ><img style={{height:"650px"}}  src={img} alt="" /></SwiperSlide>
-                <SwiperSlide ><img style={{height:"650px"}}  src={img} alt="" /></SwiperSlide>
+                <SwiperSlide ><img style={{height:"550px", borderRadius:"15px"}} src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/project-2.png" alt="" /></SwiperSlide>
+                <SwiperSlide ><img style={{height:"550px", borderRadius:"15px"}}  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/project-1.png" alt="" /></SwiperSlide>
+                <SwiperSlide ><img style={{height:"550px", borderRadius:"15px"}}  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/project-3.png" alt="" /></SwiperSlide>
+                <SwiperSlide ><img style={{height:"550px", borderRadius:"15px"}}  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/project-4.png" alt="" /></SwiperSlide>
+                <SwiperSlide ><img style={{height:"550px", borderRadius:"15px"}}  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/project-5-new.png" alt="" /></SwiperSlide>
+                <SwiperSlide ><img style={{height:"550px", borderRadius:"15px"}}  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/project-6-new.png" alt="" /></SwiperSlide>
 
             </Swiper>
 
