@@ -388,7 +388,7 @@ Button {
 
 .Narrow{
   max-width: 1300px;
-  padding: 1em;
+  padding: 0 1em;
   margin: auto;
 }
 @media screen and (max-width : 450px) {

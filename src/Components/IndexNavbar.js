@@ -30,9 +30,9 @@ function IndexNavbar() {
 
     return (
         <>
-        <div style={{backgroundColor:"black", padding:"0.5rem 0rem"}}>
+        <div style={{backgroundColor:"black", padding:"0.5rem 0rem",maxHeight:"65px"}}>
         <Narrow>
-        <div style={{height:"3rem",color:"white",display:"flex", alignItems:'center',justifyContent:"space-between"}}>
+        <div style={{height:"3rem",color:"white",display:"flex", alignItems:'center',justifyContent:"space-between",}}>
             <span>Panacee Software Company</span>
             <span>Janakpuri South </span>
         </div>
