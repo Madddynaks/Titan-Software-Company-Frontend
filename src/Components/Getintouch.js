@@ -7,7 +7,7 @@ function Getintouch() {
       <Narrow>
         <div className="getintouch">
           <Row>
-            <Col md="6" style={{ padding: "6rem" }} className="getintouch1">
+            <Col md="6" className="getintouch1 p-24 max-xl:p-10">
               <p style={{ color: "#1351d8", letterSpacing: "5px" }}>CONTACT</p>
               <h1>Lets get in touch</h1>
               <h5 style={{ marginTop: "30px" }}>
@@ -81,7 +81,7 @@ function Getintouch() {
               </Row>
             </Col>
             <Col md="3">
-              <div className="exprience">
+              <div className="exprience p-10 max-xl:p-0">
                 <Row className="expeince1con">
                   <div style={{ display: "flex" }}>
                     <span className="years22">5+</span>
@@ -137,7 +137,7 @@ function Getintouch() {
               </div>
             </Col>
             <Col md="3">
-              <div className="contactcard">
+              <div className="contactcard p-20 max-xl:p-10">
                 <Row>
                   <Col
                     style={{

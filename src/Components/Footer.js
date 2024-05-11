@@ -1,6 +1,7 @@
 import React from 'react'
 import { Row, Col, Button, Container } from 'reactstrap'
 import { Link } from 'react-router-dom'
+import Narrow from './Common/Narrow'
 function Footer() {
     return (
         <>
@@ -8,7 +9,8 @@ function Footer() {
 
 
             <div className='footer' >
-                <Container  >
+                <Narrow>
+                <div  >
                     <Row className='footercontainer' >
                         <Col md='6' className='inputdiv' >
                             <Row >
@@ -61,7 +63,7 @@ function Footer() {
                         </Col>
                     </Row>
 
-                </Container>
+                </div>
                 <Container className='footersignup' >
                     <Row>
                         <Col md='9' >
@@ -136,6 +138,7 @@ function Footer() {
 
 
                 </Container>
+                </Narrow>
             </div>
 
         </>

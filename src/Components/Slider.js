@@ -6,14 +6,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 function Slider() {
     return (
         <>
-            <Swiper style={{ paddingTop: "0", paddingBottom: "5em",zIndex:"0"}}
+            <Swiper
                 modules={[Navigation, Pagination, A11y, Autoplay]}
                 spaceBetween={20}
                 slidesPerView={6}
                 loop={true}
                 breakpoints={{
                     300: {
-                        slidesPerView: 1,
+                        slidesPerView: 2,
                     },
                     768: {
                         slidesPerView: 3,
