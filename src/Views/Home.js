@@ -64,7 +64,7 @@ function Home() {
       </div>
 
       <Narrow>
-        <Container style={{ marginLeft: "3rem" }} className="howedo">
+        <Container style={{ marginLeft: "0rem" }} className="howedo">
           <Row>
             <Col style={{ marginRight: "0vw" }} md="3">
               <h6 className="ourmodeltext">OUR MODEL</h6>
@@ -217,7 +217,7 @@ function Home() {
 
       <Narrow>
         <Container className="professionalservicescontainer">
-          <Row className="professionalservicesrow gx-5">
+          <Row className="professionalservicesrow ">
             <Col sm="1" md="2">
               <Card className="professionalservicescard">
                 <img
