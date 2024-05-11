@@ -349,9 +349,9 @@ function Home() {
                   borderRadius: "15px",
                 }}
               >
-                <div className="text-xl font-bold">Discovery and Analysis</div>
+                <div className="text-xl font-bold">Tailored Solutions</div>
                 <div className=" text-lg text-gray-500 mt-2">
-                  Perform an analysis of the client's existing IT systems.
+                Develop IT solutions based on the analysis phase.
                 </div>
               </div>
               <div
@@ -364,9 +364,9 @@ function Home() {
                   marginTop: "3vh",
                 }}
               >
-                <div className="text-xl font-bold">Discovery and Analysis</div>
+                <div className="text-xl font-bold">Deployment and Support</div>
                 <div className=" text-lg text-gray-500 mt-2">
-                  Perform an analysis of the client's existing IT systems.
+                Regularly communicate with our client to any concern.
                 </div>
               </div>
               <div
