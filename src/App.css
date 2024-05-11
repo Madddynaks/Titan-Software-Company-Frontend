@@ -387,8 +387,24 @@ Button {
 }
 
 .Narrow{
-  max-width: 1500px;
+  max-width: 1300px;
+  padding: 1em;
   margin: auto;
+}
+@media screen and (max-width : 450px) {
+  .Narrow{
+    max-width: 100vw;
+  }
+}
+@media screen and (max-width : 765px) {
+  .Narrow{
+    max-width: 680px;
+  }
+}
+@media screen and (max-width : 765px) {
+  .Narrow{
+    max-width: 680px;
+  }
 }
 
 .servicenavcard {
