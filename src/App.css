@@ -4,7 +4,7 @@
 :root {
 
   --btncolor: #1351D8;
-  font-family: DM;
+  font-family: DM Sans;
   --primarycolor: #f3f6fd;
 
 
@@ -15,6 +15,7 @@ body {
   box-sizing: border-box;
   /* overflow: hidden; */
   overflow-x: hidden;
+  font-family: DM Sans;
   background-color: #f9faff;
   margin: 0px;
   padding: 0px;
@@ -385,7 +386,20 @@ Button {
 .navbar .container-fluid{
   padding: 0px;
 }
-
+.contentNavbar>span{
+  width: 100px;
+}
+.dropdownMenu{
+  background-color: white;
+  height: 100vh;
+  width: 90vw;
+  top:0;
+  left:0;
+  z-index: 10;
+}
+.dropdownsvg{
+  padding: 5px;
+}
 .Narrow{
   width: 100%;
   max-width: 1300px;
@@ -1601,6 +1615,52 @@ a {
   font-size: 25px;
   margin-top: 35px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @tailwind base;
 @tailwind components;
