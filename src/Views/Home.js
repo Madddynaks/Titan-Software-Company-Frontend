@@ -9,6 +9,7 @@ import Getintouch from "../Components/Getintouch";
 import MultipleTab from "../Components/MultipleTab";
 import Narrow from "../Components/Common/Narrow";
 import ShowcaseSlider from "../Components/ShowcaseSlider";
+import img from "../../src/Images/Screenshot 2024-05-13 140345.png";
 
 function Home() {
   //   useEffect(() => {
@@ -22,61 +23,45 @@ function Home() {
   }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const elements = document.querySelectorAll(".professionalservicescard");
+    const elements = document.querySelectorAll(".professionalservicescard");
 
-      elements.forEach((element) => {
-        const top = window.scrollY;
-        const height = window.innerHeight;
-        const elementOffset = element.offsetTop;
-        const elementHeight = element.offsetHeight;
-
-        // Check if the top of the element is within the viewport
-        if (
-          top + height >= elementOffset &&
-          top < elementOffset + elementHeight
-        ) {
-          element.classList.add("fade-in");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
         } else {
-          element.classList.remove("fade-in");
+          entry.target.classList.remove("fade-in");
         }
       });
-    };
+    });
 
-    window.addEventListener("scroll", handleScroll);
-    // Trigger initial check when the component mounts
-    handleScroll();
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    // Cleanup observer on unmount
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const elements = document.querySelectorAll(".productivitycardtype");
+    const elements = document.querySelectorAll(".productivitycardtype");
 
-      elements.forEach((element) => {
-        const top = window.scrollY;
-        const height = window.innerHeight;
-        const elementOffset = element.offsetTop;
-        const elementHeight = element.offsetHeight;
-
-        // Check if the top of the element is within the viewport
-        if (
-          top + height >= elementOffset &&
-          top < elementOffset + elementHeight
-        ) {
-          element.classList.add("fade-in");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
         } else {
-          element.classList.remove("fade-in");
+          entry.target.classList.remove("fade-in");
         }
       });
-    };
+    });
 
-    window.addEventListener("scroll", handleScroll);
-    // Trigger initial check when the component mounts
-    handleScroll();
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    // Cleanup observer on unmount
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -352,8 +337,8 @@ function Home() {
 
       <div>
         <Narrow>
-          <Row className="p-3 mb-28 max-xl:mt-0 max-xl:mb-0">
-            <Col md="4" style={{ marginTop: "10vh" }}>
+          <div className="px-3 py-14 max-xl:pb-10 max-xl:pt-0 mb-28 max-xl:mt-0 max-xl:mb-0 flex max-xl:flex-col gap-5">
+            <div className="w-1/3 max-xl:w-full" style={{ marginTop: "10vh" }}>
               <p className="home1para">CONSULTING EXCELLENCE</p>
               <h1 className="delingheading">Best pathway to our clients.</h1>
               <p className="homepara3">
@@ -407,56 +392,60 @@ function Home() {
                   <p style={{ fontSize: "20px" }}>Easy to Approach us</p>
                 </div>
               </div>
-            </Col>
-            <Col md="8" style={{}}>
-              <div
-                className=" background ml-auto max-xl:ml-0 max-xl:mt-5 hover:bg-black hover:text-gray-100 transition duration-500 ease-in-out"
-                style={{
-                  padding: "2rem",
-                  width: "320px",
-                  borderRadius: "15px",
-                }}
-
-              >
-                <div className="text-xl font-bold">Tailored Solutions</div>
-                <p className=" text-lg text-gray-500 mt-2">
-                  Develop IT solutions based on the analysis phase.
-                </p>
-              </div>
-              <div
-                className=" background hover:bg-black hover:text-gray-100 transition duration-500 ease-in-out  ml-36 max-xl:ml-0"
-                style={{
-                  padding: "2rem",
-                  width: "320px",
-                  borderRadius: "15px",
-                  marginTop: "3vh",
-                }}
-              >
-                <div className="text-xl font-bold">Deployment and Support</div>
-                <div className=" text-lg text-gray-500 mt-2">
-                  Regularly communicate with our client to any concern.
+            </div>
+            <div className="w-2/3 max-xl:w-full flex max-xl:flex-col gap-5 max-xl:gap-0 justify-between" style={{}}>
+              <div className="my-auto">
+                <div
+                  className=" background max-xl:ml-0 max-xl:mt-5 hover:bg-black hover:text-gray-100 transition duration-500 ease-in-out"
+                  style={{
+                    padding: "2rem",
+                    width: "320px",
+                    borderRadius: "15px",
+                  }}
+                >
+                  <div className="text-xl font-bold">Tailored Solutions</div>
+                  <p className=" text-lg text-gray-500 mt-2">
+                    Develop IT solutions based on the analysis phase.
+                  </p>
                 </div>
               </div>
-              <div
-                className=" background ml-auto max-xl:ml-0 max-xl:mt-5 hover:bg-black hover:text-gray-100 transition duration-500 ease-in-out"
-                style={{
-                  padding: "2rem",
-                  width: "320px",
-                  borderRadius: "15px",
-                  marginTop: "3vh",
-                }}
-              >
-                <div className="text-xl font-bold">Discovery and Analysis</div>
-                <div className="text-lg text-gray-500 mt-2">
-                  Perform an analysis of the client's existing IT systems.
+              <div className="max-xl:hidden">
+                <img src={img} style={{ height: "500px" }} alt="" />
+              </div>
+              <div className="flex flex-col justify-between max-xl:-mt-10">
+                <div
+                  className=" background max-xl:ml-0 max-xl:mt-5 hover:bg-black hover:text-gray-100 transition duration-500 ease-in-out"
+                  style={{
+                    padding: "2rem",
+                    width: "320px",
+                    borderRadius: "15px",
+                  }}
+                >
+                  <div className="text-xl font-bold">Tailored Solutions</div>
+                  <p className=" text-lg text-gray-500 mt-2">
+                    Develop IT solutions based on the analysis phase.
+                  </p>
+                </div>
+                <div
+                  className=" background max-xl:ml-0 max-xl:mt-5 hover:bg-black hover:text-gray-100 transition duration-500 ease-in-out"
+                  style={{
+                    padding: "2rem",
+                    width: "320px",
+                    borderRadius: "15px",
+                  }}
+                >
+                  <div className="text-xl font-bold">Tailored Solutions</div>
+                  <p className=" text-lg text-gray-500 mt-2">
+                    Develop IT solutions based on the analysis phase.
+                  </p>
                 </div>
               </div>
-            </Col>
-          </Row>
+            </div>
+          </div>
         </Narrow>
       </div>
 
-      <div className="p-3 background">
+      <div className="py-24 max-xl:py-5 px-3 background">
         <Narrow>
           <Row>
             <Col md="4" className="mt-28 max-xl:mt-5">
