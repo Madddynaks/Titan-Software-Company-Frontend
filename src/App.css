@@ -12,7 +12,7 @@ body {
   font-family: DM Sans;
   overflow-x: hidden;
   font-family: DM Sans;
-  background-color: #f9faff;
+  background-color: #fdfeff;
   margin: 0px;
   padding: 0px;
   height: 100vh;
@@ -384,7 +384,8 @@ Button {
 
 .dropdownMenu {
   background-color: white;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: scroll;
   width: 90vw;
   top: 0;
   left: 0;

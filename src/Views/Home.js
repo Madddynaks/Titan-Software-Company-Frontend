@@ -12,9 +12,9 @@ import ShowcaseSlider from "../Components/ShowcaseSlider";
 import img from "../../src/Images/Screenshot 2024-05-13 140345.png";
 
 function Home() {
-  //   useEffect(() => {
-  //     window.scrollTo(0, 0);
-  //   }, []);
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -338,7 +338,7 @@ function Home() {
       <div>
         <Narrow>
           <div className="px-3 py-14 max-xl:pb-10 max-xl:pt-0 mb-28 max-xl:mt-0 max-xl:mb-0 flex max-xl:flex-col gap-5">
-            <div className="w-1/3 max-xl:w-full" style={{ marginTop: "10vh" }}>
+            <div className="w-1/3 max-xl:w-full" style={{ marginTop: "2vh" }}>
               <p className="home1para">CONSULTING EXCELLENCE</p>
               <h1 className="delingheading">Best pathway to our clients.</h1>
               <p className="homepara3">
