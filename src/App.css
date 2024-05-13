@@ -395,12 +395,22 @@ Button {
 }
 .dropdownMenu{
   background-color: white;
-  height: 100vh;
+  min-height: 100vh;
   width: 90vw;
   top:0;
   left:0;
   z-index: 10;
+  animation: slidein 2sec ease;
 }
+@keyframes slidein {
+  0%{
+    left:100%;
+  }
+  100%{
+    left:0%;
+  }
+}
+
 .dropdownsvg{
   padding: 5px;
 }
