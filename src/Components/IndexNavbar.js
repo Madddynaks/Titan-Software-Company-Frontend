@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Narrow from './Common/Narrow';
+import { Row, Col } from 'reactstrap';
 function IndexNavbar() {
     const navigate = useNavigate();
 
@@ -33,10 +34,10 @@ function IndexNavbar() {
                 <Narrow >
                     <div className='navbar w-full justify-between'>
                         <div className='flex'>
-                            <div><Link to="/" onClick={()=>{setPort(false);setServ(false)}}><img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/Panacee%20logo.png?updatedAt=1710924589184" alt="" className='navlogo' style={{ margin: "0px" }} /></Link></div>
+                            <div><Link to="/" onClick={() => { setPort(false); setServ(false) }}><img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/Panacee%20logo.png?updatedAt=1710924589184" alt="" className='navlogo' style={{ margin: "0px" }} /></Link></div>
                             <div className='contentNavbar flex items-center max-md:hidden text-sm'>
-                                <span ><Link to="/" onClick={()=>{setPort(false);setServ(false)}} className='text-center block hover:text-black' >Home</Link></span>
-                                <span className=' '><Link to='/about' onClick={()=>{setPort(false);setServ(false)}} className='text-center block hover:text-black'>About Us</Link></span>
+                                <span ><Link to="/" onClick={() => { setPort(false); setServ(false) }} className='text-center block hover:text-black' >Home</Link></span>
+                                <span className=' '><Link to='/about' onClick={() => { setPort(false); setServ(false) }} className='text-center block hover:text-black'>About Us</Link></span>
                                 <span className='  '><button onClick={displayPortfolio} className='w-full'><Link to='/impact' className=' w-full flex justify-center items-center hover:text-black'>Portfolio &nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="14" width="8.75" viewBox="0 0 320 512"><path fill="#000000" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" /></svg>
                                 </Link></button></span>
                                 <span className=' '><button onClick={displayServ} className='w-full'><Link to='/ourservices' className='flex justify-center items-center hover:text-black'>Services&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="14" width="8.75" viewBox="0 0 320 512"><path fill="#000000" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" /></svg></Link></button></span>
@@ -57,11 +58,45 @@ function IndexNavbar() {
                     </div>
 
                 </Narrow>
-            </div>
+                <hr />
 
-            <Narrow >
-                {Port && (<div className='absolute '>hi</div>)}
-            </Narrow>
+                <Narrow >
+                    {Port && (<div className='bg-white  flex'>
+                        <div className='w-9/12'>
+                            <div className=' grid grid-cols-2 gap-5 text-sm max-lg:text-xs py-5 pr-5 border-r-2'>
+                                <div className='flex justify-center items-center'>
+                                    <img src='https://wpriverthemes.com/synck/wp-content/uploads/2024/02/portfolio-mega-menu-1.jpg' alt='' className='w-6/12 max-lg:w-4/12 max-lg:h-1/2' />
+                                    <div className='flex flex-col justify-center pl-3 w-6/12 max-lg:w-8/12 '> <h3 className=' font-semibold'>E-commerce</h3><p>We undertook a project to migrate their existing.</p></div>
+                                </div>
+                                <div className='flex justify-center items-center'>
+                                    <img src='https://wpriverthemes.com/synck/wp-content/uploads/2024/02/portfolio-mega-menu-2.jpg' alt='' className='w-6/12 max-lg:w-4/12 max-lg:h-1/2' />
+                                    <div className='flex flex-col justify-center pl-3 w-6/12 max-lg:w-8/12 '> <h3 className=' font-semibold'>App Development</h3><p>The mobile application has significantly improved.</p></div>
+                                </div><div className='flex justify-center items-center'>
+                                    <img src='https://wpriverthemes.com/synck/wp-content/uploads/2024/02/portfolio-mega-menu-3.jpeg' alt='' className='w-6/12 max-lg:w-4/12 max-lg:h-1/2' />
+                                    <div className='flex flex-col justify-center pl-3 w-6/12 max-lg:w-8/12 '> <h3 className=' font-semibold'>SAAS Integration</h3><p>We partnered with DEF to upgrade their outdated IT.</p></div>
+                                </div><div className='flex justify-center items-center'>
+                                    <img src='https://wpriverthemes.com/synck/wp-content/uploads/2024/02/portfolio-mega-menu-4.jpeg' alt='' className='w-6/12 max-lg:w-4/12 max-lg:h-1/2' />
+                                    <div className='flex flex-col justify-center pl-3 w-6/12 max-lg:w-8/12 '> <h3 className=' font-semibold'>Virtual Reality</h3><p>Enter into the virtual reality world for real experience.</p></div>
+                                </div>
+                                
+                            </div>
+                            <div className='px-5'><hr /></div>
+                            
+                            <div>Hello</div>
+                        </div>
+                        <div className='w-3/12 flex flex-col justify-center items-center p-3 text-sm max-lg:text-xs'>
+                            <img src='https://wpriverthemes.com/synck/wp-content/uploads/2024/02/ipad.jpg' alt="Image" />
+                            <div  >
+                                <h3 className=' font-semibold'>Our product hits</h3>
+                                <p>Develop IT solutions based on the <br />
+                                    analysis phase.</p>
+                                <a href="/">View more</a>
+                            </div>
+                        </div>
+
+                    </div>)}
+                </Narrow>
+            </div>
             <Narrow >
                 {Serv && (<div className='absolute'>hello</div>)}
             </Narrow>
@@ -71,9 +106,9 @@ function IndexNavbar() {
                     <div className='text-md  px-4'>
                         <div className='my-3  border-b-2 py-2'><Link to='/' className=' block hover:text-black'>Home</Link></div>
                         <div className='my-3   border-b-2 py-2'><Link to='/about' className='block hover:text-black'>About Us</Link></div>
-                        <div className='my-3   border-b-2 py-1'><button onClick={displayPortfolio} className='w-full'><Link to='/impact' className=' w-full flex justify-between items-center hover:text-black'><span>Portfolio</span> <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512" className='dropdownsvg bg-blue-200 rounded-md'><path fill="#1d12f0" d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                        <div className='my-3   border-b-2 py-1'><button  className='w-full'><Link to='/impact' className=' w-full flex justify-between items-center hover:text-black'><span>Portfolio</span> <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512" className='dropdownsvg bg-blue-200 rounded-md'><path fill="#1d12f0" d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" /></svg>
                         </Link></button></div>
-                        <div className='my-3   border-b-2 py-1'><button onClick={displayServ} className='w-full'><Link to='/ourservices' className='flex justify-between items-center hover:text-black'>Services<svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512" className='dropdownsvg bg-blue-200 rounded-md'><path fill="#1d12f0" d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></Link></button></div>
+                        <div className='my-3   border-b-2 py-1'><button  className='w-full'><Link to='/ourservices' className='flex justify-between items-center hover:text-black'>Services<svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512" className='dropdownsvg bg-blue-200 rounded-md'><path fill="#1d12f0" d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" /></svg></Link></button></div>
                         <div className='my-2'>FAQ</div>
                     </div>
                 </div>)}
