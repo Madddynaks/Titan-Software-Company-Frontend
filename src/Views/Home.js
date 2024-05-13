@@ -2,6 +2,7 @@ import { React, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Button, Card } from "reactstrap";
 import "swiper/css";
+import { useState } from "react";
 
 import Slider from "../Components/Slider";
 import Getintouch from "../Components/Getintouch";
@@ -14,10 +15,78 @@ function Home() {
   //     window.scrollTo(0, 0);
   //   }, []);
 
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll(".professionalservicescard");
+
+      elements.forEach((element) => {
+        const top = window.scrollY;
+        const height = window.innerHeight;
+        const elementOffset = element.offsetTop;
+        const elementHeight = element.offsetHeight;
+
+        // Check if the top of the element is within the viewport
+        if (
+          top + height >= elementOffset &&
+          top < elementOffset + elementHeight
+        ) {
+          element.classList.add("fade-in");
+        } else {
+          element.classList.remove("fade-in");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    // Trigger initial check when the component mounts
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll(".productivitycardtype");
+
+      elements.forEach((element) => {
+        const top = window.scrollY;
+        const height = window.innerHeight;
+        const elementOffset = element.offsetTop;
+        const elementHeight = element.offsetHeight;
+
+        // Check if the top of the element is within the viewport
+        if (
+          top + height >= elementOffset &&
+          top < elementOffset + elementHeight
+        ) {
+          element.classList.add("fade-in");
+        } else {
+          element.classList.remove("fade-in");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    // Trigger initial check when the component mounts
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <Narrow>
-        <div className="home1 max-xl:mt-0 max-xl:mb-20">
+        <div
+          className={`home1 max-xl:mt-0 max-xl:mb-20 ${
+            isVisible ? "fade-in" : ""
+          }`}
+        >
           <Row>
             <Col md="6" className="">
               <p className="home1para">EMPOWERMENT</p>
@@ -214,8 +283,8 @@ function Home() {
       </Narrow>
 
       <Narrow>
-        <div className="professionalservicescontainer">
-          <Row className="professionalservicesrow space-x-12">
+        <Col className="professionalservicescontainer pb-32 max-xl:pb-0">
+          <Row className="professionalservicesrow w-full max-xl:p-3">
             <Col sm="1" md="2">
               <Card className="professionalservicescard ">
                 <img
@@ -228,7 +297,7 @@ function Home() {
               </Card>
             </Col>
             <Col sm="1" md="2">
-              <Card className="professionalservicescard">
+              <div className="professionalservicescard bg-white">
                 <img
                   src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-2-2.svg"
                   alt=""
@@ -236,7 +305,7 @@ function Home() {
                 />
                 <div className="text-xl font-bold">Woo Commerce</div>
                 <p>Our development is pixel perfect in all ways.</p>
-              </Card>
+              </div>
             </Col>
             <Col sm="1" md="2">
               <Card className="professionalservicescard">
@@ -272,7 +341,7 @@ function Home() {
               </Card>
             </Col>
           </Row>
-        </div>
+        </Col>
       </Narrow>
 
       {/* <div className="background p-3">
@@ -341,23 +410,22 @@ function Home() {
             </Col>
             <Col md="8" style={{}}>
               <div
-                className=" ml-auto max-xl:ml-0 max-xl:mt-5"
+                className=" background ml-auto max-xl:ml-0 max-xl:mt-5 hover:bg-black hover:text-gray-100 transition duration-500 ease-in-out"
                 style={{
-                  backgroundColor: "#ebf5ff",
                   padding: "2rem",
                   width: "320px",
                   borderRadius: "15px",
                 }}
+
               >
                 <div className="text-xl font-bold">Tailored Solutions</div>
-                <div className=" text-lg text-gray-500 mt-2">
-                Develop IT solutions based on the analysis phase.
-                </div>
+                <p className=" text-lg text-gray-500 mt-2">
+                  Develop IT solutions based on the analysis phase.
+                </p>
               </div>
               <div
-                className=" ml-36 max-xl:ml-0"
+                className=" background hover:bg-black hover:text-gray-100 transition duration-500 ease-in-out  ml-36 max-xl:ml-0"
                 style={{
-                  backgroundColor: "#ebf5ff",
                   padding: "2rem",
                   width: "320px",
                   borderRadius: "15px",
@@ -366,13 +434,12 @@ function Home() {
               >
                 <div className="text-xl font-bold">Deployment and Support</div>
                 <div className=" text-lg text-gray-500 mt-2">
-                Regularly communicate with our client to any concern.
+                  Regularly communicate with our client to any concern.
                 </div>
               </div>
               <div
-                className=" ml-auto max-xl:ml-0"
+                className=" background ml-auto max-xl:ml-0 max-xl:mt-5 hover:bg-black hover:text-gray-100 transition duration-500 ease-in-out"
                 style={{
-                  backgroundColor: "#ebf5ff",
                   padding: "2rem",
                   width: "320px",
                   borderRadius: "15px",
@@ -634,10 +701,11 @@ function Home() {
       <div className="productivity">
         <Narrow>
           <Row className="py-32 max-xl:py-5">
-            <Col md="7" className="productivitycard1">
+            <Col md="7" className="productivitycard1 ml-auto">
               <Col md="5" className="productivitycardtype">
                 <div class="feature-img-card">
-                  <div className="text-2xl font-bold"
+                  <div
+                    className="text-2xl font-bold"
                     style={{
                       position: "absolute",
                       paddingLeft: "20px",
@@ -655,7 +723,8 @@ function Home() {
               </Col>
               <Col md="5" className="productivitycardtype">
                 <div class="feature-img-card">
-                  <div className="text-2xl font-bold"
+                  <div
+                    className="text-2xl font-bold"
                     style={{
                       position: "absolute",
                       paddingLeft: "20px",

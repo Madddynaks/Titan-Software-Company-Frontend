@@ -60,7 +60,7 @@ function IndexNavbar() {
                                 <div className='flex'>Call Us &nbsp; <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/home%20arrow.svg?updatedAt=1713423053103" /></div>
                                 <div className='pr-2'>+91-965-090-0190</div></div>
                             <div className='flex items-center border-s border-black pl-2 max-md:border-none'>
-                                <button className='contactusbtn text-white' onClick={() => navigate('/contactus')}>Contact Us</button>
+                                <button className=' bg-[#1351d8] py-2 px-3 rounded-full text-white' onClick={() => navigate('/contactus')}>Contact Us</button>
                             </div>
                             <div className='hidden max-md:flex max-md:items-center px-3'>
                                 <button onClick={toggle}><svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" /></svg>
@@ -190,14 +190,14 @@ function IndexNavbar() {
                 </Narrow>
             </div>
             <Narrow >
-                {isOpen && (<div className={`absolute dropdownMenu ${isOpen ? 'open' : ''}`}>
+                {isOpen && (<div className={`absolute dropdownMenu ${isOpen ? 'open' : 'close'}`}>
                     <div className='flex justify-end pr-4 py-3 '><button onClick={toggle} className='rounded-full border-3 p-2'><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 384 512"><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" /></svg></button></div>
                     <div className='text-md  px-4'>
                         <div className='my-3  border-b-2 py-2'><Link to='/' className=' block hover:text-black'>Home</Link></div>
                         <div className='my-3   border-b-2 py-2'><Link to='/about' className='block hover:text-black'>About Us</Link></div>
                         <div className='my-3   border-b-2 py-1'><button onClick={displayPortfolioMobile} className='w-full'><Link to='/impact' className=' w-full flex justify-between items-center hover:text-black'><span>Portfolio</span> <svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512" className='dropdownsvg bg-blue-200 rounded-md'><path fill="#1d12f0" d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" /></svg>
                         </Link></button>
-                            {PortMobile && (<div className='  my-2'>
+                            {PortMobile && (<div className={`dropPort ${PortMobile?'open':''}  my-2`}>
                                 <div className=' grid grid-cols-1 gap-3  text-sm px-2 py-2'>
                                     <div className='flex justify-center items-center'>
                                         <img src='https://wpriverthemes.com/synck/wp-content/uploads/2024/02/portfolio-mega-menu-1.jpg' alt='' className='w-5/12 h-full rounded-md' />
