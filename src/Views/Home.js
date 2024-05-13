@@ -17,7 +17,7 @@ function Home() {
   return (
     <>
       <Narrow>
-        <div className="home1 max-xl:mb-20">
+        <div className="home1 max-xl:mt-0 max-xl:mb-20">
           <Row>
             <Col md="6" className="">
               <p className="home1para">EMPOWERMENT</p>
@@ -193,7 +193,7 @@ function Home() {
       </Narrow>
 
       <Narrow>
-        <div className="whatweoffering mt-36 max-xl:mt-10">
+        <div className="whatweoffering mt-36 max-xl:mt-10 max-xl:p-3">
           <Row>
             <Col md="6" className="homaepara2">
               <p className="delinglogheading">WHAT WE’RE OFFERING</p>
@@ -674,7 +674,7 @@ function Home() {
               </Col>
             </Col>
 
-            <Col md="5" className="fetureproductbox section-title">
+            <Col md="5" className="fetureproductbox max-xl:mt-10 section-title">
               <Row>
                 <Col>
                   <h6 className="inhow">FEATURED PRODUCT</h6>

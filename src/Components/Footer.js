@@ -8,15 +8,15 @@ function Footer() {
 
 
 
-            <div className='footer' >
+            <div className='footer pb-5' >
                 <Narrow>
                 <div  >
                     <Row className='footercontainer' >
                         <Col md='6' className='inputdiv' >
                             <Row >
-                                <Col style={{ display: 'flex' }}>
+                                <Col className=' flex align-items-center gap-3'>
                                     <img src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/Panacee%20logo.png?updatedAt=1710924589184" alt="" className='footerlogo' />
-                                    <h1 style={{ marginLeft: '10px' }} >Panacee</h1>
+                                    <h1 className='text-3xl font-semibold'>Panacee</h1>
                                 </Col>
                             </Row>
                             <Row>
@@ -54,9 +54,9 @@ function Footer() {
                             </Row>
                         </Col>
 
-                        <Col md='6' style={{display : 'flex' , flexDirection : 'column' , alignItems : 'center' , justifyContent : 'center' }} >
-                            <h3>Let’s get started on something great</h3>
-                            <h6 style={{ marginTop: '20px' }} >Our team of IT experts looks forward to meeting with you <br />
+                        <Col md='6' className='pl-28 max-xl:pl-7' style={{display : 'flex' , flexDirection : 'column', justifyContent : 'center'}} >
+                            <h3 className='text-2xl font-bold max-xl:mt-10'>Let’s get started on something great</h3>
+                            <h6 style={{ marginTop: '20px' }} className='text-xl text-gray-300' >Our team of IT experts looks forward to meeting with you <br />
                                 and providing valuable insights tailored to your business.</h6>
                             <Link to='/contactus' ><Button className='apontmentbtn'>Get an appointment now</Button></Link>
 
@@ -64,12 +64,12 @@ function Footer() {
                     </Row>
 
                 </div>
-                <Container className='footersignup' >
+                <div className='footersignup' >
                     <Row>
                         <Col md='9' >
-                            <Row className='footerdivider' >
-                                <Col md='3' className='footitem' >
-                                    <h5>Services</h5>
+                            <Row className='footerdivider leading-10 p-3 pt-5' >
+                                <Col md='3' className='footitem ' >
+                                    <h5 className='text-xl font-semibold'>Services</h5>
                                     <a href="/ourservices"><li>IT Support</li></a>
                                     <a href="/ourservices"><li>Web Design</li></a>
                                     <a href="/ourservices"><li>Development</li></a>
@@ -78,7 +78,7 @@ function Footer() {
                                     <a href="/ourservices"><li>CRM Solutions</li></a>
                                 </Col>
                                 <Col md='3' className='footitem'>  
-                                    <h5>Company</h5>
+                                    <h5 className='text-xl font-semibold max-xl:mt-10'>Company</h5>
                                     <a href="/"><li>Blog</li></a>
                                     <a href="/"><li>About Us</li></a>
                                     <a href="/"><li>Partners</li></a>
@@ -86,8 +86,8 @@ function Footer() {
                                     <a href="/"><li>Events</li></a>
                                     <a href="/"><li>Team</li></a>
                                 </Col>
-                                <Col md='3' className='footitem' >
-                                    <h5>Product</h5>
+                                <Col md='3' className='footitem max-xl:mt-10' >
+                                    <h5 className='text-xl font-semibold'>Product</h5>
                                     <a href="/"><li>Case Studies</li></a>
                                     <a href="/"><li>Our Pricing</li></a>
                                     <a href="/"><li>Features</li></a>
@@ -95,8 +95,8 @@ function Footer() {
                                     <a href="/"><li>New Releases</li></a>
                                     <a href="/"><li>Solutions</li></a>
                                 </Col>
-                                <Col md='3' className='footitem' >
-                                    <h5>Services</h5>
+                                <Col md='3' className='footitem max-xl:mt-10' >
+                                    <h5 className='text-xl font-semibold'>Services</h5>
                                     <a href="/ourservices"><li>IT Support</li></a>
                                     <a href="/ourservices"><li>Web Design</li></a>
                                     <a href="/ourservices"><li>Development</li></a>
@@ -109,35 +109,36 @@ function Footer() {
 
                         </Col>
 
-                        <Col md='3' className='footcontact'  >
+                        <Col md='3' className='footcontact pl-24 max-xl:pl-6'  >
 
-                            <h6>Phone</h6>
+                            <p className='text-xl font-semibold'>Phone</p>
                             <a href="/"><p>9650900190</p></a>
 
-                            <h6>Email</h6>
+                            <br />
+                            <p className='text-xl font-semibold'>Email</p>
                             <a href="/"><p>infopanacee@gmail.com</p></a>
 
 
 
                         </Col>
                     </Row>
-                </Container>
-                <Container style={{ marginTop: '35px' }} >
-                    <Row style={{ display: 'flex', flexDirection: 'row', gap: '15px' }} >
-                        <Col md='4' style={{ display: 'flex', gap: '28px' }} >
+                </div>
+                <div style={{ marginTop: '35px' }} className='max-xl:p-3'>
+                    <Row style={{ display: 'flex', flexDirection: 'row', justifyContent:"space-between" }} >
+                        <Col md='4' style={{ display: 'flex', alignItems:"center", gap: '28px' }} >
                             <a href="/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="" className="connection-logo" /></a>
                             <a href="/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" className="connection-logo" /></a>
                             <a href="https://www.linkedin.com/company/panacee-software-solutions/"><img src="https://ik.imagekit.io/2q7cgnqzi/icon/icons8-linkedin.svg?updatedAt=1710492054727" alt="" className="connection-logo-linkedin" /></a>
                             <a href="/"><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-icon.png" alt="" className="connection-logo" /></a>
                         </Col>
                         <Col md='5' >
-                            <Link to='/contactus' ><p style={{ color: 'white' }}>© Copyright 2023, Panacea Software Solutions</p></Link>
+                            <Link to='/contactus' ><p className=' text-right max-xl:text-left max-xl:mt-5'>© Copyright 2023, Panacea Software Solutions</p></Link>
              
                         </Col>
                     </Row>
 
 
-                </Container>
+                </div>
                 </Narrow>
             </div>
 
