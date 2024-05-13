@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
 :root {
-
-  --btncolor: #1351D8;
+  --btncolor: #1351d8;
   font-family: DM Sans;
   --primarycolor: #f3f6fd;
 }
@@ -20,19 +17,15 @@ body {
   padding: 0px;
   height: 100vh;
   width: 100%;
-
 }
 
 p {
   font-family: DM Sans;
   /* color: rgb(28 28 28 / 80%); */
   line-height: 28px;
-
 }
 
-
 @media screen and (max-width: 768px) {
-
   html,
   body {
     overflow-x: hidden;
@@ -74,7 +67,6 @@ p {
   .contactushead {
     padding: 25px !important;
   }
-
 }
 
 .fetureproductbox {
@@ -102,7 +94,6 @@ p {
   font-weight: 500;
   color: #000000 !important;
   margin: 0px !important;
-
 }
 
 .articletypeimage {
@@ -110,7 +101,6 @@ p {
   border-radius: 15px;
   object-fit: cover;
   max-width: 100%;
-
 }
 
 .fetureproducthead {
@@ -141,20 +131,18 @@ p {
 }
 
 .css-hip9hq-MuiPaper-root-MuiAppBar-root {
-
   color: black !important;
   border-radius: 9px;
   border-radius: 10px !important;
   background-color: #999999 !important;
-  color: #1351D8 !important;
+  color: #1351d8 !important;
   /* text-decoration-color: #1351D8 !important; */
 }
 
 .css-1vw5i9y-MuiButtonBase-root-MuiTab-root.Mui-selected {
   color: #fff;
-  font-weight: 900; 
+  font-weight: 900;
   /* background-color: #202122 !important; */
-
 }
 
 .css-19kzrtu {
@@ -164,7 +152,6 @@ p {
 }
 
 .ourmodelimg {
-
   height: 50px;
   width: 50px;
   object-fit: contain;
@@ -229,12 +216,10 @@ p {
 
 .navitem a {
   color: #000000;
-
 }
 
 Button {
   outline-color: 2px solid red;
-
 }
 
 .contactusbtncard {
@@ -247,14 +232,13 @@ Button {
   /* outline:1px solid rgb(55, 75, 252); */
 }
 
-@media screen and (max-width : 450px) {
-  .contactusbtncard{
+@media screen and (max-width: 450px) {
+  .contactusbtncard {
     margin-top: 10px;
   }
 }
 
 @media scr {
-  
 }
 
 .contactusbtnfoot {
@@ -290,8 +274,6 @@ Button {
   background-color: black;
 }
 
-
-
 .css-heg063-MuiTabs-flexContainer {
   color: #ffffff !important;
 }
@@ -304,7 +286,7 @@ Button {
   height: 47px;
   margin-left: 20px;
   background-color: rgb(191, 228, 253);
-  color: #1351D8;
+  color: #1351d8;
 }
 
 .letstalkbtnhome {
@@ -314,12 +296,14 @@ Button {
   font-size: 18px;
   font-weight: 600;
   background-color: #d2e8fb;
-  color: #1351D8;
+  color: #1351d8;
   border: 0px solid black;
   transition: background-color 0.6s ease;
+  transition: color 0.6s ease; /* Add transition for color change */
 }
 .letstalkbtnhome:hover {
-  background-color: #1351D8;
+  background-color: #1351d8;
+  color: #d2e8fb;
 }
 
 .navbtnbox {
@@ -367,7 +351,6 @@ Button {
 
 .callmenavsec {
   /* border-left: 1px solid black; */
-
 }
 
 .dropdown-menu {
@@ -378,8 +361,8 @@ Button {
   margin-top: 0px;
 }
 
-.navbarContainer{
-  position:sticky;
+.navbarContainer {
+  position: sticky;
   top: 0;
   background-color: white;
   z-index: 10;
@@ -387,41 +370,41 @@ Button {
 .navbar {
   width: 100%;
 }
-.navbar .container-fluid{
+.navbar .container-fluid {
   padding: 0px;
 }
-.contentNavbar>span{
+.contentNavbar > span {
   width: 100px;
 }
-.dropdownMenu{
+.dropdownMenu {
   background-color: white;
   height: 100vh;
   width: 90vw;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   z-index: 10;
 }
-.dropdownsvg{
+.dropdownsvg {
   padding: 5px;
 }
-.Narrow{
+.Narrow {
   width: 100%;
   max-width: 1450px;
   padding: 0 0px;
   margin: auto;
 }
-@media screen and (max-width : 450px) {
-  .Narrow{
+@media screen and (max-width: 450px) {
+  .Narrow {
     max-width: 100vw;
   }
 }
-@media screen and (max-width : 1600px) {
-  .Narrow{
+@media screen and (max-width: 1600px) {
+  .Narrow {
     max-width: 85vw;
   }
 }
-@media screen and (max-width : 765px) {
-  .Narrow{
+@media screen and (max-width: 765px) {
+  .Narrow {
     max-width: 680px;
   }
 }
@@ -450,7 +433,6 @@ Button {
   display: flex;
   flex-direction: column;
   gap: 8px;
-
 }
 
 .col1 p {
@@ -458,28 +440,25 @@ Button {
   /* letter-spacing: 5px; */
 }
 
-.background{
+.background {
   background: rgb(19 81 216 / 5%);
 }
 
-@media screen and (max-width : 450px) {
+@media screen and (max-width: 450px) {
   .howedocard1 {
     width: 100% !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
     justify-content: space-around;
-
   }
-
 }
 
 .howedocard1 {
   width: 250px;
-
 }
 
-@media screen and (max-width : 450px) {
+@media screen and (max-width: 450px) {
   .last {
     width: 300px !important;
     /* background-color: #1351d8; */
@@ -488,7 +467,7 @@ Button {
   }
 }
 
-@media screen and (max-width : 450px) {
+@media screen and (max-width: 450px) {
   .last11 {
     width: 300px !important;
 
@@ -497,11 +476,10 @@ Button {
   }
 }
 
-@media screen and (max-width : 450px) {
+@media screen and (max-width: 450px) {
   .hwdcon2 {
     padding-top: 0px !important;
   }
-
 
   .contactpara2 {
     font-size: 25px;
@@ -511,19 +489,13 @@ Button {
   .contactpara1 {
     font-size: 15px;
   }
-
-
-
-
 }
-
 
 .hwdcon2 {
   display: flex;
   justify-content: center;
   padding: 20px;
   gap: 15px;
-
 }
 
 .hwdcon {
@@ -546,7 +518,6 @@ Button {
   line-height: 82px;
   font-weight: 500;
 }
-
 
 .navcardtext {
   margin-left: 15px;
@@ -575,7 +546,6 @@ li {
 }
 
 .proffolionavimg {
-
   object-fit: cover;
   /* width: 100%; */
   /* height: 50%; */
@@ -587,20 +557,15 @@ li {
 }
 
 .portfolionavcard {
-
-
-
   padding: 20px;
 
   align-items: center;
   justify-content: center;
-
 }
 
 .portfolionavcardtext {
   margin-left: 18px;
   margin-top: 15px;
-
 }
 
 .portfolionavcon {
@@ -623,7 +588,6 @@ li {
   border-radius: 15px;
   margin-top: 10vh;
 }
-
 
 .howedotext {
   font-size: 50px;
@@ -674,7 +638,6 @@ li {
 }
 
 .services5 {
-
   height: 35px;
   width: 35px;
   margin-top: 45px;
@@ -686,6 +649,8 @@ li {
   padding: 31px;
   border-radius: 10px;
   border: 2px solid rgb(247, 247, 247);
+  opacity: 0;
+  transform: scale(0.1);
 }
 
 @media screen and (max-width: 450px) {
@@ -694,15 +659,9 @@ li {
   }
 }
 
-
-
 .professionalservicesrow {
-
   display: flex;
   justify-content: space-between;
-  /* justify-content: space-around; */
-  align-items: center;
-
 }
 
 .ourteamcheck {
@@ -714,26 +673,25 @@ li {
 
 .professionalservicescontainer {
   margin-top: 70px;
-  padding-bottom: 150px;
+  /* padding-bottom: 150px; */
   display: flex;
   width: 100%;
 }
 
-@media screen and (max-width : 1600px) {
-  .professionalservicescontainer{
+@media screen and (max-width: 1600px) {
+  .professionalservicescontainer {
     margin-top: 10px;
   }
 }
 
-
-.casestudies{
+.casestudies {
   background-color: #ebf5ff;
   padding: 5rem;
 }
 
-.empowermentHeading{
+.empowermentHeading {
   font-size: 50px;
-  font-weight:700;
+  font-weight: 700;
 }
 
 .footer {
@@ -915,6 +873,8 @@ li {
 
 .productivitycardtype {
   position: relative;
+  opacity: 0;
+  transform: scale(0.8);
 }
 
 .thirdcolicon {
@@ -933,22 +893,28 @@ li {
   box-sizing: border-box;
   margin-top: 150px;
   padding-bottom: 40px;
+  opacity: 0;
+  transform: scale(0.8);
   /* height: 90vh !important; */
 }
 
-@media screen and (max-width : 1600px) {
-  .home1{
+.fade-in {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.4s ease-out, transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media screen and (max-width: 1600px) {
+  .home1 {
     margin-top: 100px;
   }
 }
-
 
 .contactcard {
   /* padding: 71px; */
   background-color: #f3f6fd;
   border-radius: 20px;
   justify-content: center;
-
 }
 
 .css-heg063-MuiTabs-flexContainer {
@@ -995,12 +961,10 @@ li {
   background: #141414;
   /* margin: 13px; */
   /* margin-top: 50px; */
-
 }
 .productivitybtn:hover {
   background: white;
   color: black;
-
 }
 
 .sliderimage {
@@ -1019,7 +983,6 @@ li {
   height: 108px;
   width: 128px;
   object-fit: contain;
-
 }
 
 input::placeholder {
@@ -1039,8 +1002,6 @@ input::placeholder {
   width: 650px;
 }
 
-
-
 img {
   object-fit: cover;
   max-width: 100%;
@@ -1054,12 +1015,10 @@ img {
   border-radius: 15px;
   box-sizing: border-box;
   width: 70vh;
-
 }
 
 .product p {
   margin-top: 23px;
-
 }
 
 .endbtn {
@@ -1073,7 +1032,6 @@ img {
   height: 60px;
   width: 60px;
   background-color: #44547e;
-
 }
 
 .tabcardbtn {
@@ -1094,9 +1052,7 @@ img {
   width: 190px;
   border-radius: 15px;
   left: 15px;
-
 }
-
 
 .tabcardbtn p {
   margin-left: 15px;
@@ -1133,7 +1089,6 @@ img {
 .dim {
   font-size: 20px;
   color: rgb(28 28 28 / 80%) !important;
-
 }
 
 a {
@@ -1253,7 +1208,6 @@ a {
   margin-top: 25px;
   color: blue;
   letter-spacing: 2px;
-
 }
 
 .firstbtnsec {
@@ -1269,7 +1223,6 @@ a {
   align-items: center;
   padding: 90px;
   /* margin-top: 50px ; */
-
 }
 
 .whatweofferingbig {
@@ -1293,7 +1246,6 @@ a {
   align-items: center;
   border-radius: 10px;
   width: 10px !important;
-
 }
 
 .productivitycardtext {
@@ -1303,7 +1255,7 @@ a {
 }
 
 .aboutcard h1 {
-  color: #1351D8;
+  color: #1351d8;
 }
 
 .tasksign {
@@ -1337,7 +1289,7 @@ a {
   animation: popIn 1.5s ease;
 }
 .simple-shadow {
-  box-shadow: 0px 4px 20px 5px rgba(0,0,0,0.03);
+  box-shadow: 0px 4px 20px 5px rgba(0, 0, 0, 0.03);
   border-radius: 10px;
   background: #ffffff;
   padding: 10px;
@@ -1382,12 +1334,9 @@ a {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  
 }
 
 .aboutcardindex {
-
-
   margin-top: 80px;
 }
 
@@ -1413,7 +1362,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .assitanttext {
@@ -1423,7 +1371,6 @@ a {
   align-items: center;
   margin-top: 25px;
   gap: 10px;
-
 }
 
 .bookappoinmentnow {
@@ -1433,22 +1380,20 @@ a {
   border-radius: 8px;
 }
 
-@media screen and (max-width : 450px) {
+@media screen and (max-width: 450px) {
   .whybetter {
     padding: 8px;
   }
 }
 
-@media screen and (max-width : 450px) {
+@media screen and (max-width: 450px) {
   .whybettertext {
     padding: 25px !important;
   }
 }
 
 .whybetter {
-
   padding: 10px;
-
 }
 
 .whybetter {
@@ -1472,11 +1417,9 @@ a {
 }
 
 .bookappwexp {
-  background-color: #1351D8;
+  background-color: #1351d8;
   border-radius: 10px;
   padding: 12px;
-
-
 }
 
 .ourexpert {
@@ -1526,10 +1469,9 @@ a {
   margin-top: 35px;
   font-size: 22px;
   color: rgb(28 28 28 / 80%);
-
 }
 
-.text{
+.text {
   font-size: 22px;
   color: rgb(28 28 28 / 80%);
 }
@@ -1580,9 +1522,8 @@ a {
 }
 
 .howwedobtn {
-  background-color: #1351D8;
+  background-color: #1351d8;
   width: 6vw;
-
 }
 
 .abouta1 {
@@ -1597,8 +1538,6 @@ a {
   justify-content: center;
   align-items: center;
 }
-
-
 
 .hwd1btn {
   background-color: #cddbff;
@@ -1622,52 +1561,6 @@ a {
   font-size: 25px;
   margin-top: 35px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @tailwind base;
 @tailwind components;

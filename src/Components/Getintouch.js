@@ -20,7 +20,7 @@ function Getintouch() {
               <Row className="touchform">
                 <Col>
                   <Row style={{ marginTop: "30px", display: "flex" }}>
-                    <Col md="6">
+                    <Col md="6" className="max-xl:mb-5">
                       <h6>First Name</h6>
                       <input
                         type="text"
@@ -48,7 +48,7 @@ function Getintouch() {
                     </Col>
                   </Row>
                   <Row style={{ marginTop: "30px" }}>
-                    <Col md="6">
+                    <Col md="6" className="max-xl:mb-5">
                       <h6>Phone Number</h6>
                       <input
                         type="text"
