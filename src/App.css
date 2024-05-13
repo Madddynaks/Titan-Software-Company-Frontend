@@ -389,8 +389,9 @@ Button {
   top: 0;
   left: 0;
   z-index: 10;
-  position: relative; /* Add position relative to make animation work */
+  position: fixed; /* Add position relative to make animation work */
   transform: translateX(-100%); /* Initial state off-screen */
+  backdrop-filter: blur(100px);
 }
 
 .dropdownMenu.open {
@@ -401,21 +402,18 @@ Button {
 }
 .dropPort{
   position: relative;
-  height: 0px;
-  overflow: scroll;
-}
-
-.dropPort .open{
   height: auto;
-  animation: slidedown 0.5 forwards;
+  overflow: hidden;
+  animation: heightinc 0.6s ease ;
 }
-@keyframes slidedown {
+@keyframes heightinc {
   from {
-    height: 0;
+    height:10px;
   }
-  to {
-    height:auto;
+  to{
+    height: 1000px;
   }
+  
 }
 
 @keyframes slidein {
@@ -426,15 +424,6 @@ Button {
     transform: translateX(0);
   }
 }
-@keyframes slideout {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
 .dropdownsvg {
   padding: 5px;
 }

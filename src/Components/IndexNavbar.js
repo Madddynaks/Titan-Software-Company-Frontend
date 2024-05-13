@@ -190,7 +190,7 @@ function IndexNavbar() {
                 </Narrow>
             </div>
             <Narrow >
-                {isOpen && (<div className={`absolute dropdownMenu ${isOpen ? 'open' : 'close'}`}>
+                { (<div className={`absolute dropdownMenu ${isOpen ? 'open' : 'close'}`}>
                     <div className='flex justify-end pr-4 py-3 '><button onClick={toggle} className='rounded-full border-3 p-2'><svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 384 512"><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z" /></svg></button></div>
                     <div className='text-md  px-4'>
                         <div className='my-3  border-b-2 py-2'><Link to='/' className=' block hover:text-black'>Home</Link></div>
@@ -239,7 +239,7 @@ function IndexNavbar() {
                                 </div>
                             </div>)}</div>
                         <div className='my-3 border-b-2 py-1'><button onClick={displayServMobile} className='w-full'><Link to='/ourservices' className='flex justify-between items-center hover:text-black'>Services<svg xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512" className='dropdownsvg bg-blue-200 rounded-md'><path fill="#1d12f0" d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" /></svg></Link></button>
-                            {ServMobile && (<div className='  my-2'>
+                            {ServMobile && (<div className=' dropPort my-2'>
                                 <div className='flex flex-col'>
                                     <div className='flex flex-col px-3'>
                                         <div className=' grid grid-cols-1 gap-3 text-sm max-lg:text-xs py-5 pr-5 '>
