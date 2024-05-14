@@ -384,7 +384,7 @@ Button {
 }
 
 .contentNavbar>span {
-  width: 100px;
+  width: 11aw0px;
 }
 
 .dropdownMenu {
@@ -731,7 +731,6 @@ li {
 }
 
 .professionalservicescontainer {
-  margin-top: 70px;
   /* padding-bottom: 150px; */
   display: flex;
   width: 100%;
@@ -960,7 +959,7 @@ li {
 .fade-in {
   opacity: 1;
   transform: scale(1);
-  transition: opacity 0.4s ease-out, transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 0.5s ease-out, transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 @media screen and (max-width: 1600px) {
@@ -1273,7 +1272,6 @@ a {
 .firstbtnsec {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
 }
 
 .contactushead {
@@ -1317,6 +1315,7 @@ a {
 .aboutcard h1 {
   color: #1351d8;
 }
+
 
 .tasksign {
   display: flex;
@@ -1372,8 +1371,6 @@ a {
 .aboutcard {
   padding: 50px;
   border-radius: 10px;
-  opacity: 0.6;
-  transform: scale(0.8);
 }
 
 .aboutcard p {
@@ -1401,16 +1398,12 @@ a {
   gap: 15px;
 }
 
-.aboutcardindex {
-  margin-top: 80px;
-}
-
 .OURCOMPANY {
   margin-top: 40px;
 }
 
 .assitance {
-  background-color: #000000;
+  background-color: #1d1d1d;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
@@ -1459,8 +1452,7 @@ a {
 }
 
 .whybetter {
-  border-radius: 15px;
-  background-color: #1d241c;
+  background-color: rgb(15, 15, 15);
   color: white;
   box-sizing: content-box;
   padding: 50px;
@@ -1485,14 +1477,13 @@ a {
 }
 
 .ourexpert {
-  background-color: #e5e6e7;
+  background-color: #F3F6FD;
   padding: 50px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   box-sizing: border-box;
-  margin-top: 80px;
   justify-content: center;
   align-items: center;
 }
@@ -1502,7 +1493,7 @@ a {
   margin-top: 40px;
   justify-content: center;
   align-items: center;
-  background-color: #e5e6e7;
+  background-color: #F3F6FD;
   padding: 70px;
   border-radius: 15px;
 }
