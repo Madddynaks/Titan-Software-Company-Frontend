@@ -79,12 +79,7 @@ function About() {
             <p className='aboutheader2' >Experience the transformative power of innovation and seamless solutions with <br /> dynamics. Our journey doesn't end with the delivery of a solution.</p>
           </Col>
         </Row>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-
+          
 
         <div className=' about mt-5 flex gap-5' >
           <div >
