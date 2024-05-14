@@ -6,15 +6,15 @@ import { useState } from "react";
 
 import Slider from "../Components/Slider";
 import Getintouch from "../Components/Getintouch";
-import MultipleTab from "../Components/MultipleTab";
 import Narrow from "../Components/Common/Narrow";
 import ShowcaseSlider from "../Components/ShowcaseSlider";
 import img from "../../src/Images/Screenshot 2024-05-13 140345.png";
+import MultiTab2 from "../Components/MultiTab2";
 
 function Home() {
-    useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+    // useEffect(() => {
+    //   window.scrollTo(0, 0);
+    // }, []);
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -329,11 +329,11 @@ function Home() {
         </Col>
       </Narrow>
 
-      {/* <div className="background p-3">
+      <div className="background p-3">
         <Narrow>
-          <MultipleTab />
+          <MultiTab2/>
         </Narrow>
-      </div> */}
+      </div>
 
       <div>
         <Narrow>

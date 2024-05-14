@@ -22,7 +22,7 @@ export default function ShowcaseSlider() {
                         slidesPerView: 3,
                     },
                 }}
-                speed={2500}
+                speed={1700}
                 autoplay={{
                     delay: 0,
                     disableOnInteraction: false,
