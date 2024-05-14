@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom'
 
 import Slider from '../Components/Slider'
 import Getintouch from '../Components/Getintouch'
+import Narrow from '../Components/Common/Narrow'
 
 function About() {
   useEffect(() => {
 
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, [])
   useEffect(() => {
     const elements = document.querySelectorAll(".aboutcard");
@@ -54,12 +55,12 @@ function About() {
             <p className='aboutheader2' >Experience the transformative power of innovation and seamless solutions with <br /> dynamics. Our journey doesn't end with the delivery of a solution.</p>
           </Col>
         </Row>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
 
         <Row className='aboutcardindex' >
           <Col md='3' >
@@ -101,54 +102,47 @@ function About() {
 
 
 
-
-
-      <Container className='OURCOMPANY' >
-        <p className='delinglogheading'>WHAT WE’RE OFFERING</p>
-
-        <Row style={{display : 'flex' , gap : '25px'}} >
-          <Col md='10' >
-            <h1 style={{ fontSize: '45px' }} >Why our company is too popular?</h1>
-            <h5 style={{marginTop : '20px'}} >Contact us today to begin your journey!</h5>
-          </Col>
-          <Col>
-            <Link to='/contactus' > <Button className='contactusbtnhome'>Contact Us</Button></Link>
-
-          </Col>
-        </Row>
-
-
-
-        <Row>
-          <Col style={{ marginTop: '50px' }} >
-            <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/hero-company-about.jpg" alt="" className='ourpopulaityimage' />
-            <p style={{ marginTop: '30px' }} >Our team is a collective force of top talents, pros, experts, and visionaries from diverse fields. With a passion for excellence, our professionals bring a wealth of experience and knowledge to every project. At Slack, we are committed to delivering nothing short of excellence. From concept to implementation, we maintain the highest standards of quality and craftsmanship, leaving no room for compromise.</p>
-          </Col>
-        </Row>
-        <br />
-        <Row className='whatweofferingbig' >
-          <Col md= {4} >
-            <Row className='tasksign' >
-              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
-              <h5>Managed Services and Products </h5>
+      <div className='bg-[#F3F6FD]'>
+        <Narrow>
+          <div className='OURCOMPANY py-5 px-3' >
+            <p className='delinglogheading'>WHAT WE’RE OFFERING</p>
+            <div className='flex justify-between max-md:flex-col'>
+              <div className='w-9/12'>
+                <h1 style={{ fontSize: '45px' }} className=' font-semibold'>Why our company is too popular?</h1>
+                <h5 style={{ marginTop: '20px' }} className='text-lg'>Contact us today to begin your journey!</h5>
+              </div>
+              <div className='flex justify-end w-3/12 max-md:w-full max-md:justify-start max-md:my-3'>
+              <Link to='/contactus' > <Button className=' bg-[#1351d8] py-3 px-7 rounded-full text-white'>Contact Us</Button></Link>
+              </div>
+            </div>
+            <Row>
+              <Col className='my-2' >
+                <img src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/hero-company-about.jpg" alt="" className='ourpopulaityimage' />
+                <p style={{ marginTop: '30px' }} >Our team is a collective force of top talents, pros, experts, and visionaries from diverse fields. With a passion for excellence, our professionals bring a wealth of experience and knowledge to every project. At Slack, we are committed to delivering nothing short of excellence. From concept to implementation, we maintain the highest standards of quality and craftsmanship, leaving no room for compromise.</p>
+              </Col>
             </Row>
-          </Col>
-          <Col md= {4}>
-            <Row className='tasksign' >
-              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
-              <h5>Flexibility and Adaptability </h5>
-            </Row>
-          </Col>
-          <Col md= {4}>
-            <Row className='tasksign' >
-              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
-              <h5>Competitive Advantage </h5>
-            </Row>
-          </Col>
-        </Row>
-      </Container>
-
-
+            <br />
+            <div className='grid grid-cols-3 gap-2 max-md:grid-cols-1' >
+              <div className='flex items-center'>
+                  <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className=' w-1/12' />
+                  <h5 className='pl-2'>Managed Services and Products </h5>
+              </div>
+              <div className='flex items-center'>
+                
+              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className=' w-1/12' />
+              <h5 className='pl-2'>Flexibility and Adaptability </h5>
+                
+              </div>
+              <div className='flex items-center'>
+                
+              <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className=' w-1/12' />
+              <h5 className='pl-2'>Competitive Advantage </h5>
+                
+              </div>
+            </div>
+          </div>
+        </Narrow>
+      </div>
 
 
       <Container className='whatweareoffering'>
@@ -208,10 +202,10 @@ function About() {
 
 
       <Container className='ourexpert1' >
-     
+
         <Row>
           <Col md='8' >
-          <p className='delinglogheading'>WHAT WE’RE OFFERING</p>
+            <p className='delinglogheading'>WHAT WE’RE OFFERING</p>
             <h1>Our professional experts</h1>
             <p>Our team is a collective force of top talents, experts, and <br />
               visionaries from diverse fields.</p>
@@ -290,7 +284,7 @@ function About() {
               <h5>We believe in delivering value that extends your beyond the immediate project. Our services are designed to provide a long-term benefits.</h5>
 
               <Row>
-                <Col style={{ display: 'flex' , flexWrap : 'wrap' , justifyContent : 'space-between' }} >
+                <Col style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }} >
                   <Row className='tasksign' >
                     <img src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962" alt="" className='righticonimagesize' />
                     <h5>PPD Development </h5>
