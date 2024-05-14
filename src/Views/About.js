@@ -10,13 +10,33 @@ function About() {
 
     window.scrollTo(0, 0);
   }, [])
+  useEffect(() => {
+    const elements = document.querySelectorAll(".aboutcard");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+        } else {
+          entry.target.classList.remove("fade-in");
+        }
+      });
+    });
+
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
+
+    // Cleanup observer on unmount
+    return () => observer.disconnect();
+  }, []);
   return (
 
     <>
 
 
 
-      <Container style={{marginTop : '150px'}}>
+      <Container >
         <Row >
           <Col className='firstbtnsec'>
 
@@ -34,7 +54,12 @@ function About() {
             <p className='aboutheader2' >Experience the transformative power of innovation and seamless solutions with <br /> dynamics. Our journey doesn't end with the delivery of a solution.</p>
           </Col>
         </Row>
-
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          
 
         <Row className='aboutcardindex' >
           <Col md='3' >

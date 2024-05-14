@@ -369,6 +369,11 @@ Button {
   background-color: white;
   z-index: 10;
 }
+.callsvg{
+  transform: rotate(-45deg);
+  position: relative;
+  top:2px;
+}
 
 .navbar {
   width: 100%;
@@ -573,14 +578,23 @@ li {
   margin-top: 8px;
 }
 
-.connection-logo {
-  height: 25px;
-  width: 25px;
+.dropPort1{
+  position: absolute;
+  top: 100%;
+  left:0;
+  display:none;
 }
 
-.connection-logo-linkedin {
-  height: 32px;
-  width: 32px;
+.Port:hover .dropPort1{
+  display: flex;
+}
+
+.dropServ1{
+  display:none;
+}
+
+.Serv:hover .dropServ1{
+  display: flex;
 }
 
 .navserviceimg {
@@ -1358,6 +1372,8 @@ a {
 .aboutcard {
   padding: 50px;
   border-radius: 10px;
+  opacity: 0.6;
+  transform: scale(0.8);
 }
 
 .aboutcard p {
