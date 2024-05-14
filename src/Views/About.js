@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 import Slider from '../Components/Slider'
 import Getintouch from '../Components/Getintouch'
-import Narrow from '../Components/Common/Narrow';
+import Narrow from '../Components/Common/Narrow'
 
 function About() {
   // useEffect(() => {
