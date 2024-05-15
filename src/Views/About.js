@@ -33,36 +33,13 @@ function About() {
     return () => observer.disconnect();
   }, []);
 
-
-
   const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      {
-        threshold: 1, // Adjust as needed
-      }
-    );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
+    setIsVisible(true);
   }, []);
+
 
   useEffect(() => {
     const elements = document.querySelectorAll(".aboutheader1");
@@ -115,7 +92,10 @@ function About() {
               <span className="abouta1">Company</span>
             </Col>
           </Row>
-          <Row style={{ marginTop: "10px" }}>
+          <Row
+            className={`header ${isVisible ? "fade-in" : ""}`}
+            style={{ marginTop: "10px" }}
+          >
             <Col>
               <p className="aboutheader1 max-xl:text-3xl font-semibold">
                 Our company provide a best{" "}
@@ -136,21 +116,21 @@ function About() {
           <div ref={sectionRef}
       className={`about mt-5 grid grid-cols-4 max-xl:grid-cols-1 gap-5 max-xl:p-3 ${isVisible ? 'fade-in' : ''}`}>
             <div>
-              <Card className="aboutcard max-xl:p-3">
+              <Card className="aboutcard h-full max-xl:p-3">
                 <h1 className="text-4xl font-bold">300+</h1>
                 <h5 className="text-2xl font-semibold">Projects</h5>
                 <p className="text-xl">We are spread around the world.</p>
               </Card>
             </div>
             <div>
-              <Card className="aboutcard max-xl:p-3">
+              <Card className="aboutcard h-full max-xl:p-3">
                 <h1 className="text-4xl font-bold">100%</h1>
                 <h5 className="text-2xl font-semibold">Client Satisfaction</h5>
                 <p className="text-xl">Our clients a happy with our service.</p>
               </Card>
             </div>
             <div>
-              <Card className="aboutcard max-xl:p-3">
+              <Card className="aboutcard h-full max-xl:p-3">
                 <h1 className="text-4xl font-bold">300+</h1>
                 <h5 className="text-2xl font-semibold">Legal Customers</h5>
                 <p className="text-xl">
@@ -159,7 +139,7 @@ function About() {
               </Card>
             </div>
             <div>
-              <Card className="aboutcard max-xl:p-3">
+              <Card className="aboutcard h-full max-xl:p-3">
                 <h1 className="text-4xl font-bold">2020</h1>
                 <h5 className="text-2xl font-semibold">We Established On</h5>
                 <p className="text-xl">Our company have a great history.</p>
@@ -201,7 +181,6 @@ function About() {
                   src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/hero-company-about.jpg"
                   alt=""
                   className="ourpopulaityimage"
-                  
                 />
                 <p style={{ marginTop: "30px" }}>
                   Our team is a collective force of top talents, pros, experts,
@@ -271,7 +250,7 @@ function About() {
       <div className="bg-black py-14 max-xl:py-2">
         <Narrow>
           <div className="professionalservicescontainer pb-32 max-xl:pb-0">
-            <div className="professionalservicesrow w-full max-xl:p-3 flex max-xl:flex-col max-xl:gap-3">
+            <div className="professionalservicesrow justify-between w-full max-xl:p-3 flex max-xl:flex-col max-xl:gap-3">
               <div sm="1" md="2">
                 <Card className="professionalservicescard">
                   <img
@@ -348,7 +327,7 @@ function About() {
             </div>
             <div className="max-xl: mt-5">
               <Link to="/contactus">
-                <Button className="bookappwexp">
+                <Button className="bookappwexp bg-blue-600 hover:bg-black font-semibold">
                   Book an appointment with our expert now
                 </Button>
               </Link>
@@ -358,7 +337,7 @@ function About() {
       </Narrow>
 
       <Narrow>
-        <div className="mb-32">
+        <div className="team mb-32">
           <Row className="ourexpertrow mt-3">
             <Col className="ourexpert">
               <img
@@ -507,7 +486,9 @@ function About() {
                         alt=""
                         className="righticonimagesize w-10"
                       />
-                      <h5 className="text-xl my-auto text-gray-200">PPD Development </h5>
+                      <h5 className="text-xl my-auto text-gray-200">
+                        PPD Development{" "}
+                      </h5>
                     </div>
 
                     <div className="tasksign">
@@ -516,7 +497,9 @@ function About() {
                         alt=""
                         className="righticonimagesize w-10"
                       />
-                      <h5 className="text-xl my-auto text-gray-200">Quick Response </h5>
+                      <h5 className="text-xl my-auto text-gray-200">
+                        Quick Response{" "}
+                      </h5>
                     </div>
                   </div>
                 </div>
@@ -559,7 +542,6 @@ function About() {
               </h3>
               <Link to="/contactus">
                 <Button className="bookappoinmentnow">
-                  
                   Book an appointment now
                 </Button>
               </Link>
