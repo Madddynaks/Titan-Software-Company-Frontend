@@ -148,6 +148,7 @@ function About() {
                   src="https://wpriverthemes.com/synck/wp-content/uploads/2024/01/hero-company-about.jpg"
                   alt=""
                   className="ourpopulaityimage"
+                  
                 />
                 <p style={{ marginTop: "30px" }}>
                   Our team is a collective force of top talents, pros, experts,
@@ -279,8 +280,8 @@ function About() {
       </div>
 
       <Narrow>
-        <div className="ourexpert1 p-28 max-xl:p-3 max-xl:py-20 mt-32 max-xl:mt-0">
-          <div className="flex max-xl:flex-col">
+        <div className="ourexpert1 p-28 max-xl:p-3  max-xl:py-20 mt-32 max-xl:mt-0">
+          <div className="flex max-xl:flex-col max-xl:items-center">
             <div className="w-2/3">
               <p className="delinglogheading">WHAT WE’RE OFFERING</p>
               <h1 className="text-5xl font-bold mt-3">
@@ -496,16 +497,16 @@ function About() {
           </Row>
 
           <div>
-            <div className="assitanttext">
-              <h1 className="text-4xl font-bold">
+            <div className="assitanttext w-9/12 mx-auto text-center">
+              <h1 className="text-4xl font-bold ">
                 Need any further assitance?
               </h1>
-              <h3 className="text-2xl text-gray-200">
+              <h3 className="text-2xl text-gray-200  ">
                 Feel free to reach out for any inquiries or assistance.
               </h3>
               <Link to="/contactus">
                 <Button className="bookappoinmentnow">
-                  {" "}
+                  
                   Book an appointment now
                 </Button>
               </Link>
