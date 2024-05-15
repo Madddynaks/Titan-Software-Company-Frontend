@@ -12,9 +12,9 @@ import img from "../../src/Images/Screenshot 2024-05-13 140345.png";
 import MultiTab2 from "../Components/MultiTab2";
 
 function Home() {
-    // useEffect(() => {
-    //   window.scrollTo(0, 0);
-    // }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -43,6 +43,7 @@ function Home() {
     return () => observer.disconnect();
   }, []);
 
+
   useEffect(() => {
     const elements = document.querySelectorAll(".productivitycardtype");
 
@@ -68,9 +69,8 @@ function Home() {
     <>
       <Narrow>
         <div
-          className={`home1 max-xl:mt-0 max-xl:mb-20 ${
-            isVisible ? "fade-in" : ""
-          }`}
+          className={`home1 max-xl:mt-0 max-xl:mb-20 ${isVisible ? "fade-in" : ""
+            }`}
         >
           <Row>
             <Col md="6" className="">
@@ -117,132 +117,118 @@ function Home() {
 
       <Narrow>
         <div className="howedo p-20 max-xl:p-5 max-xl:py-10 max-xl:rounded-none mt-36 max-xl:mt-20 mx-auto">
-          <Row>
-            <Col style={{ marginRight: "0vw" }} md="3">
-              <h6 className="ourmodeltext">OUR MODEL</h6>
-              <h1 className="howedotext">How we do</h1>
-              <h5 className="savetimetext">
-                Save time and money with our powerful method.
-              </h5>
+          <div className="flex max-lg:flex-col">
+            <div className="flex w-1/3 max-xl:w-3/12 flex-col justify-between max-lg:w-full">
+              <div>
+                <h6 className="ourmodeltext">OUR MODEL</h6>
+                <h1 className="howedotext">How we do</h1>
+                <h5 className="savetimetext">
+                  Save time and money with our powerful method.
+                </h5>
+              </div>
               <Link to="/contactus">
-                <Button className="contactusbtncard">Contact Us</Button>
+                <Button className=' bg-[#1351d8] py-2 px-3 rounded-full text-white max-lg:mt-5 mb-10'>Contact Us</Button>
               </Link>
-            </Col>
+            </div>
 
-            <Col md="9">
-              <Row className="hwdcon">
-                <Col md="3" style={{ padding: "0px" }}>
-                  <Card className="howedocard1">
-                    <div className="howedocard" style={{ display: "flex" }}>
-                      <div>
-                        <img
-                          src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/brain-svgrepo-com.svg?updatedAt=1710937497361"
-                          alt=""
-                          className="ourmodelimg"
-                        />
-                      </div>
-                      <div className="navcardtext">
-                        <h6>Brainstroming</h6>
-                        <p>Ideas</p>
-                      </div>
-                    </div>
-                  </Card>
-                </Col>
-                <Col md="3" style={{ padding: "0px" }}>
-                  <Card className="howedocard1">
-                    <div className="howedocard" style={{ display: "flex" }}>
-                      <div>
-                        <img
-                          src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
-                          alt=""
-                          className="ourmodelimg"
-                        />
-                      </div>
-                      <div className="navcardtext">
-                        <h6>Product</h6>
-                        <p>Design</p>
-                      </div>
-                    </div>
-                  </Card>
-                </Col>
-                <Col md="3" style={{ padding: "0px" }}>
-                  <Card className="howedocard1">
-                    <div className="howedocard" style={{ display: "flex" }}>
-                      <div>
-                        <img
-                          src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/graphic-design.png?updatedAt=1711008512725"
-                          alt=""
-                          className="ourmodelimg"
-                        />
-                      </div>
-                      <div className="navcardtext">
-                        <h6>Front-End</h6>
-                        <p>Development</p>
-                      </div>
-                    </div>
-                  </Card>
-                </Col>
-              </Row>
+            <div className=" w-2/3 max-xl:w-9/12 max-lg:w-full">
+              <div className="flex max-md:flex-col max-md:items-center ">
+                <Card className="w-3/12  py-4 px-1 flex items-center justify-center max-md:w-9/12 ">
+                  <div className="flex items-center justify-center w-full">
 
-              <Row className="hwdcon2">
-                <Col md="4" style={{ padding: "0px" }}>
-                  <Card className="howedocard1">
-                    <div className="howedocard">
-                      <div>
-                        <img
-                          src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
-                          alt=""
-                          className="ourmodelimg"
-                        />
-                      </div>
-                      <div className="navcardtext">
-                        <h6>SEO</h6>
-                        <p>Optimization</p>
-                      </div>
+                    <img
+                      src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/brain-svgrepo-com.svg?updatedAt=1710937497361"
+                      alt=""
+                      className="w-3/12 "
+                    />
+                    <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
+                      <h6>Brainstroming</h6>
+                      <p>Ideas</p>
                     </div>
-                  </Card>
-                </Col>
+                  </div>
+                </Card>
+                <Card className="w-3/12  py-4 px-1 mx-24 flex items-center justify-center max-md:w-9/12  max-md:my-10">
+                  <div className="flex items-center justify-center w-full">
+                    <img
+                      src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
+                      alt=""
+                      className="w-3/12"
+                    />
+                    <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
+                      <h6>Product</h6>
+                      <p>Design</p>
+                    </div>
+                  </div>
+                </Card>
+                <Card className="w-3/12  py-4 px-1 flex items-center justify-center max-md:w-9/12 ">
+                  <div className="flex items-center justify-center w-full">
 
-                <Col md="4" style={{ padding: "0px" }}>
-                  <Card className="howedocard1 ">
-                    <div className="howedocard" style={{ display: "flex" }}>
-                      <div>
-                        <img
-                          src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
-                          alt=""
-                          className="ourmodelimg"
-                        />
-                      </div>
-                      <div className="navcardtext ">
-                        <h6>Back-End</h6>
-                        <p>Development</p>
-                      </div>
-                    </div>
-                  </Card>
-                </Col>
-              </Row>
+                    <img
+                      src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/graphic-design.png?updatedAt=1711008512725"
+                      alt=""
+                      className="w-3/12"
+                    />
 
-              <Row>
-                <Col className="last11">
-                  <Card className="howedocard1 last">
-                    <div className="howedocard " style={{ display: "flex" }}>
-                      <div>
-                        <img
-                          src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
-                          alt=""
-                          className="ourmodelimg"
-                        />
-                      </div>
-                      <div className="navcardtext">
-                        <h6>Digital</h6>
-                        <p>Marketing</p>
-                      </div>
+                    <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
+                      <h6>Front-End</h6>
+                      <p>Development</p>
                     </div>
-                  </Card>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
+                  </div>
+                </Card>
+              </div>
+
+              <div className="flex my-10 max-md:flex-col items-center">
+                <Card className="w-3/12 mx-32 max-xl:mx-28 max-lg:mx-32 py-4 px-1 flex items-center justify-center max-md:w-9/12  max-md:mx-0 max-md:mb-10">
+                  <div className="flex items-center justify-center w-full ">
+
+                    <img
+                      src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
+                      alt=""
+                      className="w-3/12"
+                    />
+
+                    <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
+                      <h6>SEO</h6>
+                      <p>Optimization</p>
+                    </div>
+                  </div>
+                </Card>
+                <Card className="w-3/12  py-4 px-1 flex items-center justify-center max-md:w-9/12 ">
+                  <div className="flex items-center justify-center w-full">
+
+                    <img
+                      src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
+                      alt=""
+                      className="w-3/12"
+                    />
+
+                    <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
+                      <h6>Back-End</h6>
+                      <p>Development</p>
+                    </div>
+                  </div>
+                </Card>
+
+              </div>
+
+              <div>
+                <Card className="w-3/12  py-4 px-1 flex items-center justify-center max-md:w-9/12 mx-auto">
+                  <div className="flex items-center justify-center  w-full">
+                    <img
+                      src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
+                      alt=""
+                      className="w-3/12"
+                    />
+
+                    <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
+                      <h6>Digital</h6>
+                      <p>Marketing</p>
+                    </div>
+                  </div>
+                </Card>
+              </div>
+            </div>
+          </div>
         </div>
       </Narrow>
 
@@ -331,7 +317,7 @@ function Home() {
 
       <div className="background p-3">
         <Narrow>
-          <MultiTab2/>
+          <MultiTab2 />
         </Narrow>
       </div>
 
