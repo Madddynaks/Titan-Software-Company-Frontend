@@ -117,7 +117,7 @@ function IndexNavbar() {
                 </Narrow>
 
                 <Narrow >
-                    {Serv && (<div className='bg-white  flex ' style={{ minHeight: "385px" }} >
+                    {Serv && (<div className='bg-white absolute  flex ' style={{ minHeight: "385px" }} >
                         <div className='w-9/12 border-r-2'>
                             <div className='flex  px-3'>
                                 <div className='w-6/12 grid grid-cols-2 gap-5 text-sm max-lg:text-xs py-5 pr-5 '>
