@@ -237,7 +237,7 @@ function Getintouch() {
                     </Row>
                     <h4>Contact info</h4>
                     <p style={{ marginBottom: "4px" }}>96509 00190</p>
-                    <p style={{ margin: "0px" }}>infopanacee@gmail.com</p>{" "}
+                    <p style={{ margin: "0px" }}>infopanacee@gmail.com</p>
                     <br />
                     <Row style={{ marginTop: "30px" }}>
                       {" "}

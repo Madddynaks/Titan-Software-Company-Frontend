@@ -1,4 +1,4 @@
-import { React, useEffect } from "react";
+import { React, useEffect,useState,useRef } from "react";
 import { Container, Row, Col, Button, Card } from "reactstrap";
 import { Link } from "react-router-dom";
 
@@ -31,6 +31,37 @@ function About() {
 
     // Cleanup observer on unmount
     return () => observer.disconnect();
+  }, []);
+
+
+
+  const sectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 1, // Adjust as needed
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
   }, []);
 
   useEffect(() => {
@@ -102,7 +133,8 @@ function About() {
             </Col>
           </Row>
 
-          <div className=" about mt-5 grid grid-cols-4 max-xl:grid-cols-1 gap-5 max-xl:p-3">
+          <div ref={sectionRef}
+      className={`about mt-5 grid grid-cols-4 max-xl:grid-cols-1 gap-5 max-xl:p-3 ${isVisible ? 'fade-in' : ''}`}>
             <div>
               <Card className="aboutcard max-xl:p-3">
                 <h1 className="text-4xl font-bold">300+</h1>
@@ -302,8 +334,8 @@ function About() {
 
       <Narrow>
         <div className="ourexpert1 p-28 max-xl:p-3  max-xl:py-20 mt-32 max-xl:mt-0">
-          <div className="flex max-xl:flex-col max-xl:items-center">
-            <div className="w-2/3">
+          <div className="flex max-xl:flex-col max-xl:text-center max-xl:mx-auto">
+            <div className="w-2/3 max-xl:w-full">
               <p className="delinglogheading">WHAT WE’RE OFFERING</p>
               <h1 className="text-5xl font-bold mt-3">
                 Our professional experts
