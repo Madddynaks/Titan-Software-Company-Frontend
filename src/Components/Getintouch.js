@@ -1,15 +1,47 @@
 import React from "react";
 import { Container, Row, Col, Button } from "reactstrap";
+import { useState } from "react";
 import Narrow from "./Common/Narrow";
 function Getintouch() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phoneNumber: "",
+    country: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can handle form submission, like sending data to a server
+    console.log(formData);
+    // Reset form fields after submission
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phoneNumber: "",
+      country: "",
+      message: "",
+    });
+  };
   return (
     <>
       <Narrow>
         <div className="getintouch">
           <Row>
-            <Col md="6" className="getintouch1 p-24 max-xl:p-10">
+            <Col md="6" className="getintouch1 p-20 max-xl:p-10">
               <p style={{ color: "#1351d8", letterSpacing: "5px" }}>CONTACT</p>
-              <h1>Lets get in touch</h1>
+              <h1 className="text-4xl font-bold">Lets get in touch</h1>
               <h5 style={{ marginTop: "30px" }}>
                 You can reach us anytime via
                 <a style={{ color: "blue" }} href="/">
@@ -17,68 +49,119 @@ function Getintouch() {
                   infopanacee@gmail.com
                 </a>
               </h5>
-              <Row className="touchform">
-                <Col>
-                  <Row style={{ marginTop: "30px", display: "flex" }}>
-                    <Col md="6" className="max-xl:mb-5">
-                      <h6>First Name</h6>
+              <div className=" mt-5">
+                <form onSubmit={handleSubmit} className=" rounded mb-4">
+                  <div className="flex justify-between">
+                    <div style={{ width: "48%" }} className="mb-4">
+                      <label
+                        className="block text-gray-700 font-semibold text-sm mb-2"
+                        htmlFor="firstName"
+                      >
+                        First Name
+                      </label>
                       <input
+                        className=" appearance-none border rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="firstName"
+                        name="firstName"
                         type="text"
-                        placeholder="First Name"
-                        className="inputarea"
+                        value={formData.firstName}
+                        onChange={handleChange}
                       />
-                    </Col>
-                    <Col md="6">
-                      <h6>Last Name</h6>
+                    </div>
+                    <div style={{ width: "48%" }} className="mb-4">
+                      <label
+                        className="block text-gray-700 text-sm font-semibold mb-2"
+                        htmlFor="firstName"
+                      >
+                        Last Name
+                      </label>
                       <input
+                        className=" appearance-none border rounded w-full py-2 px-2  text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="lastName"
+                        name="lastName"
                         type="text"
-                        placeholder="Last Name"
-                        className="inputarea"
+                        value={formData.lastName}
+                        onChange={handleChange}
                       />
-                    </Col>
-                  </Row>
-                  <Row style={{ marginTop: "30px" }}>
-                    <Col md="12">
-                      <h6> Email</h6>
+                    </div>
+                  </div>
+                  <div className="mb-4">
+                    <label
+                      className="block text-gray-700 text-sm font-semibold mb-2"
+                      htmlFor="firstName"
+                    >
+                      Email
+                    </label>
+                    <input
+                      className=" appearance-none border rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      id="email"
+                      name="email"
+                      type="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
+                  </div>
+
+                  <div className="flex justify-between">
+                    <div style={{width:"48%"}} className="mb-4">
+                      <label
+                        className="block text-gray-700 text-sm font-semibold mb-2"
+                        htmlFor="firstName"
+                      >
+                        Phone Number
+                      </label>
                       <input
-                        type="text"
-                        className="emailtextaria"
-                        placeholder="Email"
+                        className=" appearance-none border rounded w-full py-2 px-2 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="phoneNumber"
+                        name="phoneNumber"
+                        type="number"
+                        value={formData.phoneNumber}
+                        onChange={handleChange}
                       />
-                    </Col>
-                  </Row>
-                  <Row style={{ marginTop: "30px" }}>
-                    <Col md="6" className="max-xl:mb-5">
-                      <h6>Phone Number</h6>
+                    </div>
+                    <div style={{width:"48%"}} className="mb-4">
+                      <label
+                        className="block text-gray-700 text-sm font-semibold mb-2"
+                        htmlFor="firstName"
+                      >
+                        Country
+                      </label>
                       <input
+                        className=" appearance-none border rounded w-full py-2 px-2  text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="country"
+                        name="country"
                         type="text"
-                        placeholder="Phone Number"
-                        className="inputarea"
+                        value={formData.country}
+                        onChange={handleChange}
                       />
-                    </Col>
-                    <Col md="6">
-                      <h6>Country</h6>
-                      <input
-                        type="text"
-                        placeholder="Country"
-                        className="inputarea"
-                      />
-                    </Col>
-                  </Row>
-                  <Row style={{ marginTop: "30px" }}>
-                    <h6>Message</h6>
+                    </div>
+                  </div>
+                  <div className="mb-4">
+                    <label
+                      className="block text-gray-700 text-sm font-semibold mb-2"
+                      htmlFor="message"
+                    >
+                      Message
+                    </label>
                     <textarea
-                      className="textarea"
-                      style={{
-                        marginLeft: "10px",
-                        width: "96%",
-                        height: "17vh",
-                      }}
+                      className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      id="message"
+                      name="message"
+                      placeholder="Message"
+                      value={formData.message}
+                      onChange={handleChange}
                     ></textarea>
-                  </Row>
-                  <Button className="formsubmit">Submit</Button>
-                </Col>
-              </Row>
+                  </div>
+                  <div className="">
+                    <button
+                      className="bg-blue-700 w-full hover:bg-black text-white font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
+                      type="submit"
+                    >
+                      Submit
+                    </button>
+                  </div>
+                </form>
+              </div>
             </Col>
             <Col md="3">
               <div className="exprience p-10 max-xl:p-0">
@@ -141,7 +224,6 @@ function Getintouch() {
                 <Row>
                   <Col
                     style={{
-                      
                       justifyContent: "left",
                     }}
                   >

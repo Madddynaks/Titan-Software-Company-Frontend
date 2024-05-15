@@ -566,7 +566,6 @@ Button {
   text-align: center;
   /* font-family: 'Courier New', Courier, monospace; */
   line-height: 82px;
-  font-weight: 500;
 }
 
 .navcardtext {
@@ -710,6 +709,8 @@ li {
   border: 2px solid rgb(247, 247, 247);
   opacity: 0;
   transform: scale(0.1);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 450px) {
@@ -842,6 +843,7 @@ li {
   border-radius: 5px;
   height: 40px;
   border: 1px solid #cfcfcf;
+  padding: 10px;
   /* border-color: rgb(228, 228, 228); */
 }
 
@@ -906,8 +908,6 @@ li {
 }
 
 .righticonimagesize {
-  width: 50px !important;
-  height: 28 !important;
   object-fit: contain !important;
 }
 
@@ -1032,10 +1032,10 @@ li {
   width: 100%;
   display: flex;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 10px;
   justify-content: center;
-  border: 0px solid #f3f2f2;
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f3f2f2;
+  box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.03);
 }
 
 .home-slider-img {
@@ -1373,10 +1373,6 @@ a {
   border-radius: 10px;
 }
 
-.aboutcard p {
-  margin-top: 5px;
-}
-
 .hwd {
   margin-top: 0px !important;
   margin-right: 0px !important;
@@ -1434,13 +1430,6 @@ a {
   width: 350px;
   border-radius: 8px;
 }
-
-@media screen and (max-width: 450px) {
-  .whybetter {
-    padding: 8px;
-  }
-}
-
 @media screen and (max-width: 450px) {
   .whybettertext {
     padding: 25px !important;
@@ -1448,14 +1437,9 @@ a {
 }
 
 .whybetter {
-  padding: 10px;
-}
-
-.whybetter {
   background-color: rgb(15, 15, 15);
   color: white;
   box-sizing: content-box;
-  padding: 50px;
   margin-top: 40px;
 }
 
@@ -1494,7 +1478,6 @@ a {
   justify-content: center;
   align-items: center;
   background-color: #F3F6FD;
-  padding: 70px;
   border-radius: 15px;
 }
 
