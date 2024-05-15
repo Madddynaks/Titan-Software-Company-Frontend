@@ -12,9 +12,9 @@ import img from "../../src/Images/Screenshot 2024-05-13 140345.png";
 import MultiTab2 from "../Components/MultiTab2";
 
 function Home() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -254,8 +254,8 @@ function Home() {
       </Narrow>
 
       <Narrow>
-          <div className="professionalservicescontainer pb-32 max-xl:pb-0">
-            <div className="professionalservicesrow w-full max-xl:p-3 flex max-xl:flex-col max-xl:gap-3">
+          <div className="professionalservicescontainer mt-20 max-xl:mt-2 pb-32 max-xl:pb-0">
+            <div className="professionalservicesrow justify-between w-full max-xl:p-3 flex max-xl:flex-col max-xl:gap-3">
               <div sm="1" md="2">
                 <Card className="professionalservicescard">
                   <img
