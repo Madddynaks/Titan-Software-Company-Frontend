@@ -386,6 +386,14 @@ Button {
 .contentNavbar>span {
   width: 110px;
 }
+@media screen and (max-width:890px){
+  .contentNavbar>span{
+    width:80px;
+  }
+  .contentNavbar>Span{
+    font-size: small;
+  }
+}
 
 .dropdownMenu {
   background-color: white;
@@ -1328,6 +1336,7 @@ a {
 
 .ourpopulaityimage {
   border-radius: 15px;
+  min-height: 250px;
 }
 
 .whatweareoffering {
@@ -1406,7 +1415,6 @@ a {
   height: 100%;
   width: 100%;
   color: white;
-  padding: 100px;
   border-radius: 15px;
   margin-top: 80px;
 }
