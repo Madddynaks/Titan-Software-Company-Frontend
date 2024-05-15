@@ -39,9 +39,9 @@ function Getintouch() {
       <Narrow>
         <div className="getintouch">
           <Row>
-            <Col md="6" className="getintouch1 p-24 max-xl:p-10">
+            <Col md="6" className="getintouch1 p-20 max-xl:p-10">
               <p style={{ color: "#1351d8", letterSpacing: "5px" }}>CONTACT</p>
-              <h1>Lets get in touch</h1>
+              <h1 className="text-4xl font-bold">Lets get in touch</h1>
               <h5 style={{ marginTop: "30px" }}>
                 You can reach us anytime via
                 <a style={{ color: "blue" }} href="/">
@@ -49,68 +49,6 @@ function Getintouch() {
                   infopanacee@gmail.com
                 </a>
               </h5>
-              {/* <Row className="touchform">
-                <Col>
-                  <Row style={{ marginTop: "30px", display: "flex" }}>
-                    <Col md="6" className="max-xl:mb-5">
-                      <h6>First Name</h6>
-                      <input
-                        type="text"
-                        // placeholder="First Name"
-                        className="inputarea"
-                      />
-                    </Col>
-                    <Col md="6">
-                      <h6>Last Name</h6>
-                      <input
-                        type="text"
-                        // placeholder="Last Name"
-                        className="inputarea"
-                      />
-                    </Col>
-                  </Row>
-                  <Row style={{ marginTop: "30px" }}>
-                    <Col md="12">
-                      <h6> Email</h6>
-                      <input
-                        type="text"
-                        className="emailtextaria"
-                        placeholder="Email"
-                      />
-                    </Col>
-                  </Row>
-                  <Row style={{ marginTop: "30px" }}>
-                    <Col md="6" className="max-xl:mb-5">
-                      <h6>Phone Number</h6>
-                      <input
-                        type="text"
-                        placeholder="Phone Number"
-                        className="inputarea"
-                      />
-                    </Col>
-                    <Col md="6">
-                      <h6>Country</h6>
-                      <input
-                        type="text"
-                        placeholder="Country"
-                        className="inputarea"
-                      />
-                    </Col>
-                  </Row>
-                  <Row style={{ marginTop: "30px" }}>
-                    <h6>Message</h6>
-                    <textarea
-                      className="textarea"
-                      style={{
-                        marginLeft: "10px",
-                        width: "96%",
-                        height: "17vh",
-                      }}
-                    ></textarea>
-                  </Row>
-                  <Button className="formsubmit">Submit</Button>
-                </Col>
-              </Row> */}
               <div className=" mt-5">
                 <form onSubmit={handleSubmit} className=" rounded mb-4">
                   <div className="flex justify-between">
