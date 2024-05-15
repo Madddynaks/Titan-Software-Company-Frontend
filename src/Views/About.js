@@ -34,6 +34,27 @@ function About() {
   }, []);
 
   useEffect(() => {
+    const elements = document.querySelectorAll(".aboutheader1");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+        } else {
+          entry.target.classList.remove("fade-in");
+        }
+      });
+    });
+
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
+
+    // Cleanup observer on unmount
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
     const elements = document.querySelectorAll(".about");
 
     const observer = new IntersectionObserver((entries) => {

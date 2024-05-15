@@ -233,7 +233,7 @@ function Home() {
       </Narrow>
 
       <Narrow>
-        <div className="whatweoffering mt-36 max-xl:mt-10 max-xl:p-3">
+        <div className="whatweoffering mt-40 max-xl:mt-10 max-xl:p-3">
           <Row>
             <Col md="6" className="homaepara2">
               <p className="delinglogheading">WHAT WE’RE OFFERING</p>
@@ -254,66 +254,66 @@ function Home() {
       </Narrow>
 
       <Narrow>
-        <Col className="professionalservicescontainer pb-32 max-xl:pb-0">
-          <Row className="professionalservicesrow w-full max-xl:p-3">
-            <Col sm="1" md="2">
-              <Card className="professionalservicescard ">
-                <img
-                  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg"
-                  alt=""
-                  className="services5"
-                />
-                <div className="text-xl font-bold">Development</div>
-                <p>Our development is pixel perfect in all ways.</p>
-              </Card>
-            </Col>
-            <Col sm="1" md="2">
-              <div className="professionalservicescard bg-white">
-                <img
-                  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-2-2.svg"
-                  alt=""
-                  className="services5"
-                />
-                <div className="text-xl font-bold">Woo Commerce</div>
-                <p>Our development is pixel perfect in all ways.</p>
+          <div className="professionalservicescontainer pb-32 max-xl:pb-0">
+            <div className="professionalservicesrow w-full max-xl:p-3 flex max-xl:flex-col max-xl:gap-3">
+              <div sm="1" md="2">
+                <Card className="professionalservicescard">
+                  <img
+                    src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg"
+                    alt=""
+                    className="services5"
+                  />
+                  <div className="text-xl font-bold">Development</div>
+                  <p>Our development is pixel perfect in all ways.</p>
+                </Card>
               </div>
-            </Col>
-            <Col sm="1" md="2">
-              <Card className="professionalservicescard">
-                <img
-                  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-3-2.svg"
-                  alt=""
-                  className="services5"
-                />
-                <div className="text-xl font-bold">CRM Solutions</div>
-                <p>Our development is pixel perfect in all ways.</p>
-              </Card>
-            </Col>
-            <Col sm="1" md="2">
-              <Card className="professionalservicescard">
-                <img
-                  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg"
-                  alt=""
-                  className="services5"
-                />
-                <div className="text-xl font-bold">Web Design</div>
-                <p>Our development is pixel perfect in all ways.</p>
-              </Card>
-            </Col>
-            <Col sm="1" md="2">
-              <Card className="professionalservicescard">
-                <img
-                  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-5-2.svg"
-                  alt=""
-                  className="services5"
-                />
-                <div className="text-xl font-bold">IT Support</div>
-                <p>Our development is pixel perfect in all ways.</p>
-              </Card>
-            </Col>
-          </Row>
-        </Col>
-      </Narrow>
+              <div sm="1" md="2">
+                <div className="professionalservicescard bg-white">
+                  <img
+                    src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-2-2.svg"
+                    alt=""
+                    className="services5"
+                  />
+                  <div className="text-xl font-bold">Woo Commerce</div>
+                  <p>Our development is pixel perfect in all ways.</p>
+                </div>
+              </div>
+              <div sm="1" md="2">
+                <Card className="professionalservicescard">
+                  <img
+                    src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-3-2.svg"
+                    alt=""
+                    className="services5"
+                  />
+                  <div className="text-xl font-bold">CRM Solutions</div>
+                  <p>Our development is pixel perfect in all ways.</p>
+                </Card>
+              </div>
+              <div sm="1" md="2">
+                <Card className="professionalservicescard">
+                  <img
+                    src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg"
+                    alt=""
+                    className="services5"
+                  />
+                  <div className="text-xl font-bold">Web Design</div>
+                  <p>Our development is pixel perfect in all ways.</p>
+                </Card>
+              </div>
+              <div sm="1" md="2">
+                <Card className="professionalservicescard">
+                  <img
+                    src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-5-2.svg"
+                    alt=""
+                    className="services5"
+                  />
+                  <div className="text-xl font-bold">IT Support</div>
+                  <p>Our development is pixel perfect in all ways.</p>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </Narrow>
 
       <div className="background p-3">
         <Narrow>
@@ -732,22 +732,24 @@ function Home() {
                 </Col>
               </Row>
 
-              <Row className="tasksign">
+              <div className="flex gap-10 max-xl:gap-0 max-xl:flex-col">
+              <div className="tasksign">
                 <img
                   src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962"
                   alt=""
-                  className="righticonimagesize"
+                  className="righticonimagesize h-10"
                 />
-                <h5 className="fetureproductabout">PPD Development </h5>
-              </Row>
-              <Row className="tasksign">
+                <h5 className="fetureproductabout my-auto">PPD Development </h5>
+              </div>
+              <div className="tasksign">
                 <img
                   src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962"
                   alt=""
-                  className="righticonimagesize"
+                  className="righticonimagesize h-10"
                 />
-                <h5 className="fetureproductabout">Easy to use </h5>
-              </Row>
+                <h5 className="fetureproductabout my-auto">Easy to use </h5>
+              </div>
+              </div>
 
               <Row className="productivitybutton">
                 <Col md="3">
