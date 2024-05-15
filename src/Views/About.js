@@ -1,7 +1,6 @@
-import { React, useEffect } from "react";
+import { React, useEffect,useState,useRef } from "react";
 import { Container, Row, Col, Button, Card } from "reactstrap";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 import Slider from "../Components/Slider";
 import Getintouch from "../Components/Getintouch";
@@ -34,31 +33,33 @@ function About() {
     return () => observer.disconnect();
   }, []);
 
-  // useEffect(() => {
-  //   const elements = document.querySelectorAll(".header");
-
-  //   const observer = new IntersectionObserver((entries) => {
-  //     entries.forEach((entry) => {
-  //       if (entry.isIntersecting) {
-  //         entry.target.classList.add("fade-in");
-  //       } else {
-  //         entry.target.classList.remove("fade-in");
-  //       }
-  //     });
-  //   });
-
-  //   elements.forEach((element) => {
-  //     observer.observe(element);
-  //   });
-
-  //   // Cleanup observer on unmount
-  //   return () => observer.disconnect();
-  // }, []);
-
+  const sectionRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     setIsVisible(true);
+  }, []);
+
+
+  useEffect(() => {
+    const elements = document.querySelectorAll(".aboutheader1");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+        } else {
+          entry.target.classList.remove("fade-in");
+        }
+      });
+    });
+
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
+
+    // Cleanup observer on unmount
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
@@ -112,7 +113,8 @@ function About() {
             </Col>
           </Row>
 
-          <div className=" about mt-5 grid grid-cols-4 max-xl:grid-cols-1 gap-5 max-xl:p-3">
+          <div ref={sectionRef}
+      className={`about mt-5 grid grid-cols-4 max-xl:grid-cols-1 gap-5 max-xl:p-3 ${isVisible ? 'fade-in' : ''}`}>
             <div>
               <Card className="aboutcard h-full max-xl:p-3">
                 <h1 className="text-4xl font-bold">300+</h1>
@@ -311,8 +313,8 @@ function About() {
 
       <Narrow>
         <div className="ourexpert1 p-28 max-xl:p-3  max-xl:py-20 mt-32 max-xl:mt-0">
-          <div className="flex max-xl:flex-col max-xl:items-center">
-            <div className="w-2/3">
+          <div className="flex max-xl:flex-col max-xl:text-center max-xl:mx-auto">
+            <div className="w-2/3 max-xl:w-full">
               <p className="delinglogheading">WHAT WE’RE OFFERING</p>
               <h1 className="text-5xl font-bold mt-3">
                 Our professional experts
