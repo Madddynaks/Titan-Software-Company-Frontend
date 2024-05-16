@@ -13,15 +13,10 @@ import MultiTab2 from "../Components/MultiTab2";
 import img1 from "../../src/Images/lshape.png";
 
 function Home() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
 
   const [isVisible, setIsVisible] = useState(false);
 
