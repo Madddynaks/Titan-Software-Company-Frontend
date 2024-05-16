@@ -15,6 +15,9 @@ function Home() {
   // useEffect(() => {
   //   window.scrollTo(0, 0);
   // }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -135,13 +138,13 @@ function Home() {
 
             {/* <div className=" w-2/3 max-xl:w-9/12 max-lg:w-full">
               <div className="flex max-md:flex-col max-md:items-center ">
-                <Card className="w-3/12  py-4 px-1 flex items-center justify-center max-md:w-9/12 ">
-                  <div className="flex items-center justify-center w-full">
+                <Card className="w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
+                  <div className="flex items-center justify-center w-full ">
 
                     <img
                       src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/brain-svgrepo-com.svg?updatedAt=1710937497361"
                       alt=""
-                      className="w-3/12 "
+                      className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
                     <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
                       <h6>Brainstorming</h6>
@@ -149,29 +152,29 @@ function Home() {
                     </div>
                   </div>
                 </Card>
-                <Card className="w-3/12  py-4 px-1 mx-24 flex items-center justify-center max-md:w-9/12  max-md:my-10">
+                <Card className="w-3/12  py-3 px-3 mx-24 flex items-center justify-center max-md:w-9/12  max-md:my-10">
                   <div className="flex items-center justify-center w-full">
                     <img
                       src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
                       alt=""
-                      className="w-3/12"
+                      className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
-                    <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
                       <h6>Product</h6>
                       <p>Design</p>
                     </div>
                   </div>
                 </Card>
-                <Card className="w-3/12  py-4 px-1 flex items-center justify-center max-md:w-9/12 ">
+                <Card className="w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
                   <div className="flex items-center justify-center w-full">
 
                     <img
                       src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/graphic-design.png?updatedAt=1711008512725"
                       alt=""
-                      className="w-3/12"
+                      className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
 
-                    <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
                       <h6>Front-End</h6>
                       <p>Development</p>
                     </div>
@@ -180,31 +183,31 @@ function Home() {
               </div>
 
               <div className="flex my-10 max-md:flex-col items-center">
-                <Card className="w-3/12 mx-32 max-xl:mx-28 max-lg:mx-32 py-4 px-1 flex items-center justify-center max-md:w-9/12  max-md:mx-0 max-md:mb-10">
+                <Card className="w-3/12 mx-32 max-xl:mx-28 max-lg:mx-32 py-3 px-3 flex items-center justify-center max-md:w-9/12  max-md:mx-0 max-md:mb-10">
                   <div className="flex items-center justify-center w-full ">
 
                     <img
                       src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
                       alt=""
-                      className="w-3/12"
+                      className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
 
-                    <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
                       <h6>SEO</h6>
                       <p>Optimization</p>
                     </div>
                   </div>
                 </Card>
-                <Card className="w-3/12  py-4 px-1 flex items-center justify-center max-md:w-9/12 ">
+                <Card className="w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
                   <div className="flex items-center justify-center w-full">
 
                     <img
                       src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
                       alt=""
-                      className="w-3/12"
+                      className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
 
-                    <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
                       <h6>Back-End</h6>
                       <p>Development</p>
                     </div>
@@ -214,15 +217,15 @@ function Home() {
               </div>
 
               <div>
-                <Card className="w-3/12  py-4 px-1 flex items-center justify-center max-md:w-9/12 mx-auto">
+                <Card className="w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 mx-auto">
                   <div className="flex items-center justify-center  w-full">
                     <img
                       src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
                       alt=""
-                      className="w-3/12"
+                      className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
 
-                    <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
                       <h6>Digital</h6>
                       <p>Marketing</p>
                     </div>
@@ -260,7 +263,7 @@ function Home() {
                     </div>
                   </Card>
                   <Card className="card4 w-3/12 py-4 px-1 flex items-center justify-center max-md:w-9/12 relative">
-                    <div className="flex items-center justify-center w-full">
+                    <div className="flex items-center justify-center w-full ">
                       <img
                         src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20logo/graphic-design.png?updatedAt=1711008512725"
                         alt=""
@@ -272,21 +275,21 @@ function Home() {
                       </div>
                     </div>
                     <svg
-                      className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-                      height={100}
+                      className="lshape absolute -translate-y-full"
+                      height={150}
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 320 512"
                       style={{ transform: "scale(-1, 1)" }}
                     >
                       <path
-                        fill="#dbdbdb"
+                        fill="#ffffff"
                         d="M64 32c17.7 0 32 14.3 32 32V416H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32z"
                       />
                     </svg>
                   </Card>
                 </div>
                 <div className="flex my-10 card-row max-md:flex-col items-center">
-                  <Card className="card2 w-3/12 mx-32 max-xl:mx-28 max-lg:mx-32 py-4 px-1 flex items-center justify-center max-md:w-9/12 max-md:mx-0 max-md:mb-10">
+                  <Card className="card4 w-3/12 mx-32 max-xl:mx-28 max-lg:mx-32 py-4 px-1 flex items-center justify-center max-md:w-9/12 max-md:mx-0 max-md:mb-10">
                     <div className="flex items-center justify-center w-full">
                       <img
                         src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
@@ -298,6 +301,17 @@ function Home() {
                         <p>Optimization</p>
                       </div>
                     </div>
+                    <svg
+                      className="lshape absolute -translate-y-full"
+                      height={150}
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 320 512"
+                    >
+                      <path
+                        fill="#ffffff"
+                        d="M64 32c17.7 0 32 14.3 32 32V416H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32z"
+                      />
+                    </svg>
                   </Card>
                   <Card className="card4 w-3/12 py-4 px-1 flex items-center justify-center max-md:w-9/12">
                     <div className="flex items-center justify-center w-full">
