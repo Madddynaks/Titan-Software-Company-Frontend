@@ -10,6 +10,7 @@ import Narrow from "../Components/Common/Narrow";
 import ShowcaseSlider from "../Components/ShowcaseSlider";
 import img from "../../src/Images/Screenshot 2024-05-13 140345.png";
 import MultiTab2 from "../Components/MultiTab2";
+import img1 from "../../src/Images/lshape.png";
 
 function Home() {
   useEffect(() => {
@@ -136,7 +137,7 @@ function Home() {
 
             <div className=" w-2/3 max-xl:w-9/12 max-lg:w-full text-sm">
               <div className="flex max-md:flex-col max-md:items-center ">
-                <Card className="w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
+                <Card className="card1 w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
                   <div className="flex items-center justify-center w-full ">
                     <img
                       src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/brain-svgrepo-com.svg?updatedAt=1710937497361"
@@ -149,8 +150,7 @@ function Home() {
                     </div>
                   </div>
                 </Card>
-                
-                <Card className="w-3/12  py-3 px-3 mx-24 flex items-center justify-center max-md:w-9/12  max-md:my-10">
+                <Card className="card1 w-3/12  py-3 px-3 mx-24 flex items-center justify-center max-md:w-9/12  max-md:my-10">
                   <div className="flex items-center justify-center w-full">
                     <img
                       src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
@@ -163,7 +163,7 @@ function Home() {
                     </div>
                   </div>
                 </Card>
-                <Card className="w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
+                <Card className="card4 w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
                   <div className="flex items-center justify-center w-full">
 
                     <img
@@ -181,7 +181,7 @@ function Home() {
               </div>
 
               <div className="flex my-10 max-md:flex-col items-center">
-                <Card className="w-3/12 mx-32 max-xl:mx-28 max-lg:mx-32 py-3 px-3 flex items-center justify-center max-md:w-9/12  max-md:mx-0 max-md:mb-10">
+                <Card className="card5 w-3/12 mx-32 max-xl:mx-28 max-lg:mx-32 py-3 px-3 flex items-center justify-center max-md:w-9/12  max-md:mx-0 max-md:mb-10">
                   <div className="flex items-center justify-center w-full ">
 
                     <img
@@ -196,7 +196,7 @@ function Home() {
                     </div>
                   </div>
                 </Card>
-                <Card className="w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
+                <Card className="card6 w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
                   <div className="flex items-center justify-center w-full">
 
                     <img
@@ -231,7 +231,6 @@ function Home() {
                 </Card>
               </div>
             </div> 
-            
           </div>
         </div>
       </Narrow>
