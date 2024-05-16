@@ -12,12 +12,10 @@ import img from "../../src/Images/Screenshot 2024-05-13 140345.png";
 import MultiTab2 from "../Components/MultiTab2";
 
 function Home() {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -140,7 +138,6 @@ function Home() {
               <div className="flex max-md:flex-col max-md:items-center ">
                 <Card className="w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
                   <div className="flex items-center justify-center w-full ">
-
                     <img
                       src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/brain-svgrepo-com.svg?updatedAt=1710937497361"
                       alt=""
@@ -152,6 +149,7 @@ function Home() {
                     </div>
                   </div>
                 </Card>
+                
                 <Card className="w-3/12  py-3 px-3 mx-24 flex items-center justify-center max-md:w-9/12  max-md:my-10">
                   <div className="flex items-center justify-center w-full">
                     <img
