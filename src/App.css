@@ -742,7 +742,7 @@ li {
   top: 50%;
   left: 100%;
   width: 100%;
-  border-top: 3px dashed white;
+  border-top: 2px dashed white;
   transform: translateY(-50%);
 }
 
@@ -771,7 +771,7 @@ li {
 }
 .card4::after{
   position: absolute;
-  content: url(../src/Images/l\ shape\ right.png);
+  content: url(../src/Images/final_l_shape.png);
   left: -10%;
   z-index: 0;
   top: 90%;
@@ -784,7 +784,7 @@ li {
 
 .card5::after{
   position: absolute;
-  content: url(../src/Images/l\ shape\ right.png);
+  content: url(../src/Images/final_l_shape.png);
   left: 50%;
   z-index: 0;
   top: 90%;
@@ -799,7 +799,7 @@ li {
   top: 50%;
   right: 100%;
   width: 100%;
-  border-top: 3px dashed white;
+  border-top: 2px dashed white;
   transform: translateY(-50%);
 }
 
