@@ -732,6 +732,66 @@ li {
   }
 }
 
+.card1 {
+  position: relative;
+}
+
+.card1::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 100%;
+  border-top: 5px solid gray;
+  transform: translateY(-50%);
+}
+
+.card2 {
+  position: relative;
+}
+
+.card2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 100%;
+  border-top: 5px solid gray;
+  transform: translateY(-50%);
+}
+
+.card3 {
+  position: relative;
+}
+
+.card3::before {
+  content: '';
+  position: absolute;
+  top: 105%; /* Adjust the position */
+  left: 120%; /* Adjust the position */
+  width: 90%; /* Adjust the size as needed */
+  height: 5px; /* Border width */
+  background-color: gray; /* Same color as the border */
+  transform: translate(-50%, -50%) rotate(135deg); /* Rotate and position */
+  transform-origin: top left; /* Adjust the rotation origin */
+}
+
+.relative-container {
+  position: relative;
+}
+
+.card4 {
+  position: relative;
+}
+
+.card4 .lshape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(-1, 1);
+}
+
+
 .ourteamcheck {
   display: flex;
   justify-content: space-between;

@@ -15,6 +15,9 @@ function Home() {
   // useEffect(() => {
   //   window.scrollTo(0, 0);
   // }, []);
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -43,7 +46,6 @@ function Home() {
     return () => observer.disconnect();
   }, []);
 
-
   useEffect(() => {
     const elements = document.querySelectorAll(".productivitycardtype");
 
@@ -69,8 +71,9 @@ function Home() {
     <>
       <Narrow>
         <div
-          className={`home1 max-xl:mt-0 max-xl:mb-20 ${isVisible ? "fade-in" : ""
-            }`}
+          className={`home1 max-xl:mt-0 max-xl:mb-20 ${
+            isVisible ? "fade-in" : ""
+          }`}
         >
           <Row>
             <Col md="6" className="">
@@ -116,7 +119,7 @@ function Home() {
       </div>
 
       <Narrow>
-        <div className="howedo p-20 max-xl:p-5 max-xl:py-10 max-xl:rounded-none mt-36 max-xl:mt-20 mx-auto">
+        <div className="howedo py-20 px-10 max-xl:p-5 max-xl:py-10 max-xl:rounded-none mt-36 max-xl:mt-20 mx-auto">
           <div className="flex max-lg:flex-col">
             <div className="flex w-1/3 max-xl:w-3/12 flex-col justify-between max-lg:w-full">
               <div>
@@ -127,7 +130,9 @@ function Home() {
                 </h5>
               </div>
               <Link to="/contactus">
-                <Button className=' bg-[#1351d8] py-2 px-3 rounded-full text-white max-lg:mt-5 mb-10'>Contact Us</Button>
+                <Button className=" bg-[#1351d8] py-2 px-3 rounded-full text-white max-lg:mt-5 mb-10">
+                  Contact Us
+                </Button>
               </Link>
             </div>
 
@@ -141,8 +146,8 @@ function Home() {
                       alt=""
                       className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
-                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
-                      <h6>Brainstroming</h6>
+                    <div className="w-8/12 pl-2 max-md:w-8/12 max-md:pl-5">
+                      <h6>Brainstorming</h6>
                       <p>Ideas</p>
                     </div>
                   </div>
@@ -154,7 +159,7 @@ function Home() {
                       alt=""
                       className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
-                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-2 max-md:w-8/12 max-md:pl-5">
                       <h6>Product</h6>
                       <p>Design</p>
                     </div>
@@ -169,7 +174,7 @@ function Home() {
                       className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
 
-                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-2 max-md:w-8/12 max-md:pl-5">
                       <h6>Front-End</h6>
                       <p>Development</p>
                     </div>
@@ -187,7 +192,7 @@ function Home() {
                       className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
 
-                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-2 max-md:w-8/12 max-md:pl-5">
                       <h6>SEO</h6>
                       <p>Optimization</p>
                     </div>
@@ -202,7 +207,7 @@ function Home() {
                       className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
 
-                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-2 max-md:w-8/12 max-md:pl-5">
                       <h6>Back-End</h6>
                       <p>Development</p>
                     </div>
@@ -220,14 +225,15 @@ function Home() {
                       className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
 
-                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-2 max-md:w-8/12 max-md:pl-5">
                       <h6>Digital</h6>
                       <p>Marketing</p>
                     </div>
                   </div>
                 </Card>
               </div>
-            </div>
+            </div> 
+            
           </div>
         </div>
       </Narrow>
@@ -254,66 +260,66 @@ function Home() {
       </Narrow>
 
       <Narrow>
-          <div className="professionalservicescontainer mt-20 max-xl:mt-2 pb-32 max-xl:pb-0">
-            <div className="professionalservicesrow justify-between w-full max-xl:p-3 flex max-xl:flex-col max-xl:gap-3">
-              <div sm="1" md="2">
-                <Card className="professionalservicescard">
-                  <img
-                    src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg"
-                    alt=""
-                    className="services5"
-                  />
-                  <div className="text-xl font-bold">Development</div>
-                  <p>Our development is pixel perfect in all ways.</p>
-                </Card>
-              </div>
-              <div sm="1" md="2">
-                <div className="professionalservicescard bg-white">
-                  <img
-                    src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-2-2.svg"
-                    alt=""
-                    className="services5"
-                  />
-                  <div className="text-xl font-bold">Woo Commerce</div>
-                  <p>Our development is pixel perfect in all ways.</p>
-                </div>
-              </div>
-              <div sm="1" md="2">
-                <Card className="professionalservicescard">
-                  <img
-                    src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-3-2.svg"
-                    alt=""
-                    className="services5"
-                  />
-                  <div className="text-xl font-bold">CRM Solutions</div>
-                  <p>Our development is pixel perfect in all ways.</p>
-                </Card>
-              </div>
-              <div sm="1" md="2">
-                <Card className="professionalservicescard">
-                  <img
-                    src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg"
-                    alt=""
-                    className="services5"
-                  />
-                  <div className="text-xl font-bold">Web Design</div>
-                  <p>Our development is pixel perfect in all ways.</p>
-                </Card>
-              </div>
-              <div sm="1" md="2">
-                <Card className="professionalservicescard">
-                  <img
-                    src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-5-2.svg"
-                    alt=""
-                    className="services5"
-                  />
-                  <div className="text-xl font-bold">IT Support</div>
-                  <p>Our development is pixel perfect in all ways.</p>
-                </Card>
+        <div className="professionalservicescontainer mt-20 max-xl:mt-2 pb-32 max-xl:pb-0">
+          <div className="professionalservicesrow justify-between w-full max-xl:p-3 flex max-xl:flex-col max-xl:gap-3">
+            <div sm="1" md="2">
+              <Card className="professionalservicescard">
+                <img
+                  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-1-2.svg"
+                  alt=""
+                  className="services5"
+                />
+                <div className="text-xl font-bold">Development</div>
+                <p>Our development is pixel perfect in all ways.</p>
+              </Card>
+            </div>
+            <div sm="1" md="2">
+              <div className="professionalservicescard bg-white">
+                <img
+                  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-2-2.svg"
+                  alt=""
+                  className="services5"
+                />
+                <div className="text-xl font-bold">Woo Commerce</div>
+                <p>Our development is pixel perfect in all ways.</p>
               </div>
             </div>
+            <div sm="1" md="2">
+              <Card className="professionalservicescard">
+                <img
+                  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-3-2.svg"
+                  alt=""
+                  className="services5"
+                />
+                <div className="text-xl font-bold">CRM Solutions</div>
+                <p>Our development is pixel perfect in all ways.</p>
+              </Card>
+            </div>
+            <div sm="1" md="2">
+              <Card className="professionalservicescard">
+                <img
+                  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-4-2.svg"
+                  alt=""
+                  className="services5"
+                />
+                <div className="text-xl font-bold">Web Design</div>
+                <p>Our development is pixel perfect in all ways.</p>
+              </Card>
+            </div>
+            <div sm="1" md="2">
+              <Card className="professionalservicescard">
+                <img
+                  src="https://wpriverthemes.com/synck/wp-content/uploads/2023/11/service-icon-5-2.svg"
+                  alt=""
+                  className="services5"
+                />
+                <div className="text-xl font-bold">IT Support</div>
+                <p>Our development is pixel perfect in all ways.</p>
+              </Card>
+            </div>
           </div>
-        </Narrow>
+        </div>
+      </Narrow>
 
       <div className="background p-3">
         <Narrow>
@@ -379,7 +385,10 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-2/3 max-xl:w-full flex max-xl:flex-col gap-5 max-xl:gap-0 justify-between" style={{}}>
+            <div
+              className="w-2/3 max-xl:w-full flex max-xl:flex-col gap-5 max-xl:gap-0 justify-between"
+              style={{}}
+            >
               <div className="my-auto">
                 <div
                   className=" background max-xl:ml-0 max-xl:mt-5 hover:bg-black hover:text-gray-100 transition duration-500 ease-in-out"
@@ -733,22 +742,24 @@ function Home() {
               </Row>
 
               <div className="flex gap-10 max-xl:gap-0 max-xl:flex-col">
-              <div className="tasksign">
-                <img
-                  src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962"
-                  alt=""
-                  className="righticonimagesize h-10"
-                />
-                <h5 className="fetureproductabout my-auto">PPD Development </h5>
-              </div>
-              <div className="tasksign">
-                <img
-                  src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962"
-                  alt=""
-                  className="righticonimagesize h-10"
-                />
-                <h5 className="fetureproductabout my-auto">Easy to use </h5>
-              </div>
+                <div className="tasksign">
+                  <img
+                    src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962"
+                    alt=""
+                    className="righticonimagesize h-10"
+                  />
+                  <h5 className="fetureproductabout my-auto">
+                    PPD Development{" "}
+                  </h5>
+                </div>
+                <div className="tasksign">
+                  <img
+                    src="https://ik.imagekit.io/2q7cgnqzi/icon/check.png?updatedAt=1711451555962"
+                    alt=""
+                    className="righticonimagesize h-10"
+                  />
+                  <h5 className="fetureproductabout my-auto">Easy to use </h5>
+                </div>
               </div>
 
               <Row className="productivitybutton">
