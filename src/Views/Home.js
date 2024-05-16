@@ -144,7 +144,6 @@ function Home() {
               <div className="flex max-md:flex-col max-md:items-center ">
                 <Card className="card1 w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
                   <div className="flex items-center justify-center w-full ">
-
                     <img
                       src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/brain-svgrepo-com.svg?updatedAt=1710937497361"
                       alt=""
