@@ -10,8 +10,12 @@ import Narrow from "../Components/Common/Narrow";
 import ShowcaseSlider from "../Components/ShowcaseSlider";
 import img from "../../src/Images/Screenshot 2024-05-13 140345.png";
 import MultiTab2 from "../Components/MultiTab2";
+import img1 from "../../src/Images/lshape.png";
 
 function Home() {
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
   // useEffect(() => {
   //   window.scrollTo(0, 0);
   // }, []);
@@ -119,7 +123,7 @@ function Home() {
       </div>
 
       <Narrow>
-        <div className="howedo p-20 max-xl:p-5 max-xl:py-10 max-xl:rounded-none mt-36 max-xl:mt-20 mx-auto">
+        <div className="howedo py-20 px-10 max-xl:p-5 max-xl:py-10 max-xl:rounded-none mt-36 max-xl:mt-20 mx-auto">
           <div className="flex max-lg:flex-col">
             <div className="flex w-1/3 max-xl:w-3/12 flex-col justify-between max-lg:w-full">
               <div>
@@ -136,9 +140,9 @@ function Home() {
               </Link>
             </div>
 
-            {/* <div className=" w-2/3 max-xl:w-9/12 max-lg:w-full">
+            <div className=" w-2/3 max-xl:w-9/12 max-lg:w-full text-sm">
               <div className="flex max-md:flex-col max-md:items-center ">
-                <Card className="w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
+                <Card className="card1 w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
                   <div className="flex items-center justify-center w-full ">
 
                     <img
@@ -146,26 +150,26 @@ function Home() {
                       alt=""
                       className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
-                    <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-2 max-md:w-8/12 max-md:pl-5">
                       <h6>Brainstorming</h6>
                       <p>Ideas</p>
                     </div>
                   </div>
                 </Card>
-                <Card className="w-3/12  py-3 px-3 mx-24 flex items-center justify-center max-md:w-9/12  max-md:my-10">
+                <Card className="card1 w-3/12  py-3 px-3 mx-24 flex items-center justify-center max-md:w-9/12  max-md:my-10">
                   <div className="flex items-center justify-center w-full">
                     <img
                       src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
                       alt=""
                       className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
-                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-2 max-md:w-8/12 max-md:pl-5">
                       <h6>Product</h6>
                       <p>Design</p>
                     </div>
                   </div>
                 </Card>
-                <Card className="w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
+                <Card className="card4 w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
                   <div className="flex items-center justify-center w-full">
 
                     <img
@@ -174,7 +178,7 @@ function Home() {
                       className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
 
-                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-2 max-md:w-8/12 max-md:pl-5">
                       <h6>Front-End</h6>
                       <p>Development</p>
                     </div>
@@ -183,7 +187,7 @@ function Home() {
               </div>
 
               <div className="flex my-10 max-md:flex-col items-center">
-                <Card className="w-3/12 mx-32 max-xl:mx-28 max-lg:mx-32 py-3 px-3 flex items-center justify-center max-md:w-9/12  max-md:mx-0 max-md:mb-10">
+                <Card className="card5 w-3/12 mx-32 max-xl:mx-28 max-lg:mx-32 py-3 px-3 flex items-center justify-center max-md:w-9/12  max-md:mx-0 max-md:mb-10">
                   <div className="flex items-center justify-center w-full ">
 
                     <img
@@ -192,13 +196,13 @@ function Home() {
                       className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
 
-                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-2 max-md:w-8/12 max-md:pl-5">
                       <h6>SEO</h6>
                       <p>Optimization</p>
                     </div>
                   </div>
                 </Card>
-                <Card className="w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
+                <Card className="card6 w-3/12  py-3 px-3 flex items-center justify-center max-md:w-9/12 ">
                   <div className="flex items-center justify-center w-full">
 
                     <img
@@ -207,7 +211,7 @@ function Home() {
                       className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
 
-                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-2 max-md:w-8/12 max-md:pl-5">
                       <h6>Back-End</h6>
                       <p>Development</p>
                     </div>
@@ -225,125 +229,14 @@ function Home() {
                       className="w-4/12 p-2 rounded-xl bg-[#1351d81a]"
                     />
 
-                    <div className="w-8/12 pl-3 max-md:w-8/12 max-md:pl-5">
+                    <div className="w-8/12 pl-2 max-md:w-8/12 max-md:pl-5">
                       <h6>Digital</h6>
                       <p>Marketing</p>
                     </div>
                   </div>
                 </Card>
               </div>
-            </div> */}
-            <div className="w-2/3 max-xl:w-9/12 max-lg:w-full mx-auto">
-              <div className="flex flex-col relative-container">
-                <div className="flex card-row max-md:flex-col max-md:items-center">
-                  <Card className=" card1 w-3/12 py-4 px-1 flex items-center justify-center max-md:w-9/12">
-                    <div className="flex items-center justify-center w-full">
-                      <img
-                        src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/brain-svgrepo-com.svg?updatedAt=1710937497361"
-                        alt=""
-                        className="w-3/12"
-                      />
-                      <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
-                        <h6>Brainstorming</h6>
-                        <p>Ideas</p>
-                      </div>
-                    </div>
-                  </Card>
-                  <Card className="card1 w-3/12 py-4 px-1 mx-24 flex items-center justify-center max-md:w-9/12 max-md:my-10">
-                    <div className="flex items-center justify-center w-full">
-                      <img
-                        src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
-                        alt=""
-                        className="w-3/12"
-                      />
-                      <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
-                        <h6>Product</h6>
-                        <p>Design</p>
-                      </div>
-                    </div>
-                  </Card>
-                  <Card className="card4 w-3/12 py-4 px-1 flex items-center justify-center max-md:w-9/12 relative">
-                    <div className="flex items-center justify-center w-full ">
-                      <img
-                        src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20logo/graphic-design.png?updatedAt=1711008512725"
-                        alt=""
-                        className="w-3/12"
-                      />
-                      <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
-                        <h6>Front-End</h6>
-                        <p>Development</p>
-                      </div>
-                    </div>
-                    <svg
-                      className="lshape absolute -translate-y-full"
-                      height={150}
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 320 512"
-                      style={{ transform: "scale(-1, 1)" }}
-                    >
-                      <path
-                        fill="#ffffff"
-                        d="M64 32c17.7 0 32 14.3 32 32V416H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32z"
-                      />
-                    </svg>
-                  </Card>
-                </div>
-                <div className="flex my-10 card-row max-md:flex-col items-center">
-                  <Card className="card4 w-3/12 mx-32 max-xl:mx-28 max-lg:mx-32 py-4 px-1 flex items-center justify-center max-md:w-9/12 max-md:mx-0 max-md:mb-10">
-                    <div className="flex items-center justify-center w-full">
-                      <img
-                        src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
-                        alt=""
-                        className="w-3/12"
-                      />
-                      <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
-                        <h6>SEO</h6>
-                        <p>Optimization</p>
-                      </div>
-                    </div>
-                    <svg
-                      className="lshape absolute -translate-y-full"
-                      height={150}
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 320 512"
-                    >
-                      <path
-                        fill="#ffffff"
-                        d="M64 32c17.7 0 32 14.3 32 32V416H288c17.7 0 32 14.3 32 32s-14.3 32-32 32H64c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32z"
-                      />
-                    </svg>
-                  </Card>
-                  <Card className="card4 w-3/12 py-4 px-1 flex items-center justify-center max-md:w-9/12">
-                    <div className="flex items-center justify-center w-full">
-                      <img
-                        src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
-                        alt=""
-                        className="w-3/12"
-                      />
-                      <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
-                        <h6>Back-End</h6>
-                        <p>Development</p>
-                      </div>
-                    </div>
-                  </Card>
-                </div>
-                <div className="flex card-row justify-center">
-                  <Card className="w-3/12 py-4 px-1 flex items-center justify-center max-md:w-9/12 mx-auto">
-                    <div className="flex items-center justify-center w-full">
-                      <img
-                        src="https://ik.imagekit.io/2q7cgnqzi/Panacee%20React%20/logo/icons8-seo-50.png?updatedAt=1711008899519"
-                        alt=""
-                        className="w-3/12"
-                      />
-                      <div className="w-9/12 max-md:w-8/12 max-md:pl-5">
-                        <h6>Digital</h6>
-                        <p>Marketing</p>
-                      </div>
-                    </div>
-                  </Card>
-                </div>
-              </div>
-            </div>
+            </div> 
           </div>
         </div>
       </Narrow>

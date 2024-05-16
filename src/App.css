@@ -742,21 +742,7 @@ li {
   top: 50%;
   left: 100%;
   width: 100%;
-  border-top: 5px solid gray;
-  transform: translateY(-50%);
-}
-
-.card2 {
-  position: relative;
-}
-
-.card2::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 100%;
-  width: 100%;
-  border-top: 5px solid gray;
+  border-top: 3px dashed white;
   transform: translateY(-50%);
 }
 
@@ -783,15 +769,45 @@ li {
 .card4 {
   position: relative;
 }
-
-.card4 .lshape {
+.card4::after{
   position: absolute;
-  top: 70%;
-  left: 20%;
-  transform: translate(-50%, -50%) scale(-1, 1);
+  content: url(../src/Images/l\ shape\ right.png);
+  left: -10%;
   z-index: 0;
+  top: 90%;
+  transform: rotateY(180deg);
 }
 
+.card5 {
+  position: relative;
+}
+
+.card5::after{
+  position: absolute;
+  content: url(../src/Images/l\ shape\ right.png);
+  left: 50%;
+  z-index: 0;
+  top: 90%;
+}
+.card6 {
+  position: relative;
+}
+
+.card6::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 100%;
+  border-top: 3px dashed white;
+  transform: translateY(-50%);
+}
+
+@media screen and (max-width: 765px) {
+  .card5::after, .card1::before , .card3::before, .card6::before, .card4::after{
+    display: none;
+  }
+}
 
 .ourteamcheck {
   display: flex;
