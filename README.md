@@ -1,4 +1,15 @@
-# Getting Started with Create React App
+# TITAN SOFTWARE COMPANY
+Titan Infosolutions, based in Janakpuri South, is a leading software company established in 2020, specializing in Web Technologies, Artificial Intelligence, and automation solutions. With over 300 projects completed globally and a 100% client satisfaction rate, the company prides itself on delivering innovative, customized solutions to meet diverse business needs. Their highly skilled team offers fast delivery and continuous support, ensuring seamless integration of technology and human potential. Titan Infosolutions aims to be a driving force for businesses prioritizing customer-centric strategies, helping them harness technology to fulfill customer needs effectively.
+
+## Active Website link
+https://titan-website.netlify.app/
+
+## Technologies Used
+1. ReactJS
+2. Tailwind CSS
+3. EmailJS
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
